@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+
+<html class="sidebar-visible no-js light" lang="zh-Hant">
+<head>
+<!-- Book generated using mdBook -->
+<meta charset="utf-8"/>
+<title>[轉載] 一個網友的“個人網路身份整改方案” - privacy.noarch</title>
+<!-- Custom HTML head -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="一本面向新手的隱私教程" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color">
+<link href="../../favicon.png" rel="shortcut icon"/>
+<link href="../../css/variables.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../css/variables.css" rel="stylesheet"/></noscript>
+<link href="../../css/general.css" rel="stylesheet"/>
+<link href="../../css/chrome.css" rel="stylesheet"/>
+<!-- Font Awesome 5.13 free content -->
+<link href="../../FontAwesome/css/all.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../FontAwesome/css/all.css" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" rel="stylesheet"/>
+</noscript>
+<!-- Fonts -->
+<!-- Highlight.js Stylesheets -->
+<link href="../../highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../highlight.css" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" rel="stylesheet"/>
+</noscript>
+<!-- Custom theme stylesheets -->
+<link href="../../sidebar.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../sidebar.css" rel="stylesheet"/></noscript>
+</meta></head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+<nav aria-label="Table of contents" class="sidebar" id="sidebar">
+<div class="sidebar-scrollbox">
+<ol class="chapter"><li class="chapter-item expanded affix"><a href="../../index.html">privacy.noarch</a></li><li class="chapter-item expanded affix"><a href="../../SUMMARY.html">目錄</a></li><li class="chapter-item expanded affix"><div>前言</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">1.</strong> 在開始前</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Fundamentals/BasicOfTheBasics.html"><strong aria-hidden="true">1.1.</strong> 常見錯誤集合：線上安全基本原則</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.</strong> 從可信的來源安裝軟體</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">2.1.</strong> [Android] F-Droid</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.2.</strong> [Android] Aurora Store</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.</strong> 安全地使用瀏覽器上網</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Browsers/Bromite/Bromite.html"><strong aria-hidden="true">3.1.</strong> [Android] Bromite</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.</strong> [Desktop/All] Firefox</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.1.</strong> 使用外掛來增強瀏覽體驗 ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.3.</strong> [Desktop/All]Tor Browser ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Input/Input.html"><strong aria-hidden="true">4.</strong> 自由打字，打字自由</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Input/NoNetworkAccess/NoNetworkAccess.html"><strong aria-hidden="true">4.1.</strong> [Android] 禁止輸入法聯網</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">4.2.</strong> 同文輸入法 (TRIME) ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Passwords/Passwords.html"><strong aria-hidden="true">5.</strong> 帳號安全：保護，隔離，整理</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Passwords/PasswordManagers.html"><strong aria-hidden="true">5.1.</strong> 讓密碼管理器幫你記住密碼</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.1.</strong> [Android] Bitwarden</div></li><li class="chapter-item expanded"><a href="../../Passwords/BitwardenWeb/BitwardenWeb.html"><strong aria-hidden="true">5.1.2.</strong> [Web] Bitwarden</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.3.</strong> [Desktop/All] KeePassXC ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.</strong> 二步驗證 - 增強帳號安全</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.1.</strong> [Android] andOTP</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.2.</strong> [Desktop/All] KeePassXC 的二步驗證功能</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../WallBreak/WallBreak.html"><strong aria-hidden="true">6.</strong> 突破網路長城</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.1.</strong> 代理提供商</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.</strong> 代理工具 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.1.</strong> V2Ray</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.2.</strong> Trojan</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.3.</strong> Shadowsocks*</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">7.</strong> 在享受自由言論之前：“分裂人格”的魅力</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Identities/iYP_DID/iYP_DID.html"><strong aria-hidden="true">7.1.</strong> [轉載] 分身術完整指南：妥善管理您的線上身份並獲得安全的方法</a></li><li class="chapter-item expanded"><a class="active" href="../../Identities/WorldIsMine/WorldIsMine.html"><strong aria-hidden="true">7.2.</strong> [轉載] 一個網友的“個人網路身份整改方案”</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.</strong> 在網路圍牆外社交</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.</strong> 中心化</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.1.</strong> [All] Telegram</div></li><li class="chapter-item expanded"><a href="../../RTC/Signal/Signal.html"><strong aria-hidden="true">8.1.2.</strong> [Android] Signal</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.</strong> 去中心化 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.1.</strong> [Android/iOS] Matrix/Element</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.2.</strong> [Web] Matrix/Element</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.</strong> 私密地傳送和接收郵件</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.</strong> 郵件提供商</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.1.</strong> [Web] ProtonMail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.2.</strong> [Web] Tutanota</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.</strong> 郵件客戶端 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.1.</strong> [Android] K-9 Mail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.2.</strong> [Desktop/All] Thunderbird</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../Encryption/Encryption.html"><strong aria-hidden="true">10.</strong> 加密，加密一切</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Encryption/Pubkey/Pubkey.html"><strong aria-hidden="true">10.1.</strong> [翻譯] 公鑰加密簡介</a></li><li class="chapter-item expanded"><a href="../../Encryption/OpenKeychain/OpenKeychain.html"><strong aria-hidden="true">10.2.</strong> [Android] PGP: OpenKeychain</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.</strong> Android 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.1.</strong> 系統設定</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.</strong> “刷機”基礎</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.1.</strong> 深入瞭解自己的裝置</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.2.</strong> 選擇第三方 ROM</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.3.</strong> Magisk</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.4.</strong> microG</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">12.</strong> Windows 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Windows/VHD/VHD.html"><strong aria-hidden="true">12.1.</strong> 使用 VHD(X) 部署原生多系統 ^</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">13.</strong> 類 Unix 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Unix/dos-donts/dos-donts.html"><strong aria-hidden="true">13.1.</strong> 網上教程不會告訴你的類 Unix 使用注意事項</a></li></ol></li><li class="chapter-item expanded"><div>後記</div></li><li class="chapter-item expanded affix"><a href="../../CONTRIBUTING.html">反饋與貢獻</a></li></ol>
+<!-- mods to the vanilla sidebar-->
+<hr/>
+<p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
+<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
+</div>
+<div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+</nav>
+<div class="page-wrapper" id="page-wrapper">
+<div class="page">
+<div id="menu-bar-hover-placeholder"></div>
+<div class="menu-bar sticky bordered" id="menu-bar">
+<div class="left-buttons">
+<button aria-controls="sidebar" aria-label="Toggle Table of Contents" class="icon-button" id="sidebar-toggle" title="Toggle Table of Contents" type="button">
+<i class="fa fa-bars"></i>
+</button>
+<button aria-controls="theme-list" aria-expanded="false" aria-haspopup="true" aria-label="Change theme" class="icon-button" id="theme-toggle" title="Change theme" type="button">
+<i class="fa fa-paint-brush"></i>
+</button>
+<ul aria-label="Themes" class="theme-popup" id="theme-list" role="menu">
+<li role="none"><button class="theme" id="light" role="menuitem">Light (default)</button></li>
+<li role="none"><button class="theme" id="rust" role="menuitem">Rust</button></li>
+<li role="none"><button class="theme" id="coal" role="menuitem">Coal</button></li>
+<li role="none"><button class="theme" id="navy" role="menuitem">Navy</button></li>
+<li role="none"><button class="theme" id="ayu" role="menuitem">Ayu</button></li>
+</ul>
+</div>
+<h1 class="menu-title">privacy.noarch</h1>
+<div class="right-buttons">
+<a aria-label="Switch between Simplified and Traditional Chinese" class="icon-button" onclick="
+                        'use strict';
+
+                        const CN_CLEAR = 'privacy.n0ar.ch';
+                        const TW_CLEAR = 'privacy-tw.n0ar.ch';
+                        const CN_TOR = 'fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+                        const TW_TOR = 'tw.fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+
+                        switch (window.location.hostname) {
+                            case CN_CLEAR:
+                                window.location.hostname = TW_CLEAR;
+                                break;
+                            case TW_CLEAR:
+                                window.location.hostname = CN_CLEAR;
+                                break;
+                            case CN_TOR:
+                                window.location.hostname = TW_TOR;
+                                break;
+                            case TW_TOR:
+                                window.location.hostname = CN_TOR;
+                                break;
+                            default:
+                                window.alert('Error determining current site language.\nI\'m either being served locally, or running as a mirror.\n\nIf you are running a mirror, please change the hostnames on line ~166 in theme/index.hbs.');
+                                break;
+                        }
+                        " title="Switch between Simplified and Traditional Chinese">
+<strong>簡/繁</strong>
+</a>
+<a aria-label="Git repository" href="https://github.com/noarchwastaken/privacy" title="Git repository">
+<i class="fa fa-github" id="git-repository-button"></i>
+</a>
+</div>
+</div>
+<!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+<script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+<div class="content" id="content">
+<main>
+<!-- Page table of contents -->
+<div class="sidetoc"><nav class="pagetoc"></nav></div>
+<h1 id="一個網友的個人網路身份整改方案"><a class="header" href="#一個網友的個人網路身份整改方案">一個網友的“個人網路身份整改方案”</a></h1>
+<p>轉自 Telegram 頻道 <a href="https://t.me/CWorldisMine">Notes of World is Mine</a>. <a href="https://t.me/CWorldisMine/138">原文連結</a></p>
+<blockquote>
+<p><em>noarch</em> 注：這個方案<strong>僅供參考</strong>。</p>
+<p>每個人的生活環境、社會地位，以及威脅模型都不一樣；因此你需要作出對應的調整。轉載這個方案的目的是列出一些常見的考量，並在此過程中揭露一些你可能沒有注意到的威脅。</p>
+<p>轉載此文章不代表 <code>privacy.noarch</code> 贊成其中的所有做法；<em>noarch</em> 會在文章結束後提出一些不同的意見，以及回答遺留問題。</p>
+</blockquote>
+<hr/>
+<h2 id="我的個人網路身份整改方案oct13-2020版"><a class="header" href="#我的個人網路身份整改方案oct13-2020版">我的《個人網路身份整改方案》Oct.13 2020版</a></h2>
+<p>【提示】這不是面向大家寫的教程，只是我針對自己情況寫的一篇日記兼備忘錄。由於我的個人情況與其餘網友未必相同，本文的參考價值及借鑑價值可能很低。</p>
+<p>（居然寫了3549字）</p>
+<p>《個人網路身份整改方案》具體內容</p>
+<h3 id="0前言"><a class="header" href="#0前言">0.前言</a></h3>
+<p>0.1.整改原因<br/>
+此前我在同一賬號混用多種身份，造成了諸多不便和安全隱患。我打算與網友開展關於個人情況的深入溝通時，被迫因安全而放棄溝通。我打算把現實中熟悉的人拉過來分享一些有用資訊時，也被迫因安全放棄拉人。想說的話不方便說，想拉的人不方便拉。為了確保安全，兼顧無所顧忌地盡情發表、談論、分享個人情況，即日起我開始整改個人網路身份。</p>
+<p>0.2.整改方式<br/>
+通過新註冊賬號、整改過往發言內容等方式，實現不同身份分離，專身專用。本賬號 @WorldisMineTelegram 及其開設的群組、頻道因與網友有較深的情感積澱，不宜放棄。參照身份2標準進行整改，保留非敏感內容，僅刪除敏感內容。首先開展前端（公開可見的發言內容等）整改，之後開展後端（非公開的繫結賬號等）整改。</p>
+<p>0.3.整改執行流程<br/>
+細化各環節整改方案，規定各身份使用時均必須遵守的《身份基本法》及各身份使用原則。整改方案及基本法隨需求及狀況可能隨時做出修改，但需在不影響安全性的前提下執行。之後模擬將來在現實中和網路上可能遇到的交際場景，將各場景下使用哪種身份安排妥當，避免出現安全漏洞。</p>
+<p>0.4.《身份基本法》<br/>
+0.4.1.從網路交流轉為現實交流時，要比從現實交流轉為網路交流更加謹慎小心，務必做好安全防範。網友的可靠性是未知的，防人之心不可無。<br/>
+0.4.2.禁止在實名身份下發布或談論敏感內容，留下此類內容可能引發巨大的麻煩。極少數情況下必須談論時，務必採用口頭溝通等無法留下證據的方式，且確保聽者可靠，充分隔離周邊無關人員，避免敏感內容發生不可防不可控的大面積連續人傳人。</p>
+<h3 id="1身份1"><a class="header" href="#1身份1">1.身份1</a></h3>
+<p>1.1.用途：特殊用途。<br/>
+1.2.匿名性：完全匿名。</p>
+<p>1.3.網路現實互通性：雙向不互通。在網上不透露任何個人資訊，在現實中不透露任何該身份資訊。在知根知底、絕對可靠、三觀相符、立場一致的摯友群體中，經過細緻觀察對方為人和謹慎稽核對方安全性後，若有充分必要，可在現實中向對方私下口頭透露該身份用於互動。口頭透露身份時，嚴禁留下任何文字、語音、視訊等證據，以免洩密後使大家認出身份1對應的真實人物是我。<br/>
+不同身份間互通性：完全不互通。不與任何其他身份發生連線。不向其他身份傳送或接收訊息、檔案。避免在同一個ip、同一個程式程序下使用身份1與其它身份。
+1.4.交流物件：陌生網友</p>
+<p>1.5.發表內容：與個人狀況無關的任何內容。嚴禁涉及任何可用於識別及證明真實身份的個人特徵，如常用語氣、慣用詞、特殊經歷、生活細節等。<br/>
+1.6.言論尺度：無。<br/>
+1.7.參與群組或網站種類：全部匿名群組或網站</p>
+<p>1.8.使用場合：該身份在Telegram賬號1（目前尚未註冊）及其餘境外網站賬號使用，不與中國境內發生聯絡。<br/>
+1.9.繫結：繫結外國手機號1及郵箱1。<br/>
+1.10.使用軟硬體：僅限於身份1專用iPhone或電腦虛擬機器內。必須使用高安全性VPN聯網。嚴禁訪問通訊錄、攝像頭、麥克風、定位等涉及隱私的許可權。出於許可權管理嚴格性考慮，避免在Android手機上使用該身份。<br/>
+1.11.持續性：不確保持續性，可能即用即棄</p>
+<h3 id="2身份2"><a class="header" href="#2身份2">2.身份2</a></h3>
+<p>2.1.用途：用於分享自己生活中的各種事情和談論普通話題，相當於課餘活動時和朋友在一起的我。<br/>
+2.2.匿名性：半實名。</p>
+<p>2.3.網路現實互通性：雙向半互通。在網上可提及現實中的一些個人狀況。在現實中可向熟悉的人或熟人小群體中透露網上身份2資訊。<br/>
+2.4.本身份境內外互通性：雙向全互通。境外身份2與境內身份2均可以公開附註對方賬號。<br/>
+2.5.不同身份間互通性：雙向邀請制有限互通。大圈子中僅知道我身份3的人若與我關係加深，進入我的小圈子後，在我的私下邀請下可得知我的身份2。小圈子中僅知道我身份2的人若與我有進一步溝通需求，且對方被我認為是可靠的，私下邀請下可得知我的身份3。<br/>
+2.6.交流物件：熟悉的網友和現實中熟悉的人，也就是小圈子。</p>
+<p>2.7.發表內容：個人隨筆。<br/>
+2.8.言論尺度：可以有輕微的抱怨和批評，但要確保即使所發內容傳至小圈子外，在網上或現實中被大面積公開，仍不會引起別人的普遍反感、厭惡、報復，不會導致自己被處罰或貶損。<br/>
+2.9.參與群組或網站種類：敏感度較低的群組或網站，例如目前我所在的留學、移民，興趣愛好，海外華人群。群中出現別人的敏感發言時不參與相關話題。</p>
+<p>2.10.使用場合：境外身份2在Telegram賬號2（本賬號），其餘境外網站賬號（目前尚未註冊）使用。境內身份2在境內賬號2（目前尚未註冊）使用。<br/>
+2.11.繫結：境內身份2繫結中國手機號2及外國郵箱2（避免必要的國際通訊受阻），境外身份2繫結外國手機號2（目前尚未註冊）及外國郵箱2（目前尚未註冊）。<br/>
+2.12.使用軟硬體：任何手機及電腦，除身份1專用機外。允許使用不保證安全性的VPN聯網。<br/>
+2.13.持續性：確保長時間持續，因身份2與別人的粘性（？）、羈絆（?）、感情連線較為緊密，溝通較為深入內心。尤其是外國手機號要確保持續。</p>
+<h3 id="3身份3"><a class="header" href="#3身份3">3.身份3</a></h3>
+<p>3.1.用途：公開展現給所有人看的我。<br/>
+3.2.匿名性：全實名。</p>
+<p>3.3.網路現實互通性：雙向全互通。在網上可提及任何個人資訊（不宜公開的隱私除外），可在賬號中備註真名，手機號，在現實中可向任何需要聯絡我的人公開透露網上身份3資訊。出於躲避推銷等目的時，可適度隱藏資訊。<br/>
+3.4.本身份境內外互通性：雙向全互通。境外身份3與境內身份3均可以公開附註對方賬號。<br/>
+3.5.不同身份間互通性：雙向邀請制有限互通。大圈子中僅知道我身份3的人若與我關係加深，進入我的小圈子後，在我的私下邀請下可得知我的身份2。小圈子中僅知道我身份2的人若與我有進一步溝通需求，在我的私下邀請下可得知我的身份3。<br/>
+3.6.交流物件：任何需要聯絡我的人，也就是大圈子。</p>
+<p>3.7.發表內容：只進行必要性的發言或事務、工作用途的發言。<br/>
+3.8.言論尺度：小心謹慎，保護自己在國內和國際上的真實形象。儘可能避免引發別人的誤解、偏見、或不愉快。絕對禁止任何可能違背讀者所在地政治正確，引發讀者負面聯想，違反當地法律法規及違反香港國安法、中華人民共和國法律的內容。該說的內容，有所保留地說。可說可不說的內容，儘量不說。不該說的內容，堅決不說。<br/>
+3.9.參與群組或網站種類：完全不敏感的群組或網站，例如目前我所在的學術、技術、圖書、學習群。“完全不敏感”的定義為群內所有內容均適合在中華人民共和國公開討論而不引發任何處罰或批評。</p>
+<p>3.10.使用場合：境外身份3在Telegram賬號3（目前尚未註冊），其餘境外網站賬號3使用。境內身份3在境內賬號3使用。<br/>
+3.11繫結：境內身份3繫結中國手機號3及外國郵箱3（避免必要的國際通訊受阻），境外身份3繫結外國手機號3（目前尚未註冊）及外國郵箱3。<br/>
+3.12.使用軟硬體：任何手機及電腦，除身份1專用機外。允許使用不保證安全性的VPN聯網。<br/>
+3.13.持續性：永久持續，該身份代表我的真實身份。</p>
+<h3 id="4注意事項"><a class="header" href="#4注意事項">4.注意事項：</a></h3>
+<p>整改過程中，在進行賬號遷移及變更操作時，提前瞭解該操作可能導致哪些資訊的丟失（如聊天記錄、備忘錄、網址列表、聯絡人列表、檔案、虛擬手機號等），提前做好資訊備份措施，避免發生資訊丟失。</p>
+<h3 id="5場景模擬"><a class="header" href="#5場景模擬">5.場景模擬：</a></h3>
+<p>5.1.場景A：我對將來的大學同學公開聯絡方式為身份3. 上大學遇到同學討論學術，用身份3拉他進相關的學術群組。(依3.3法)。碰到與我志趣相投的同學，發現對方也打算移民，我向他私下透露身份2，拉他進移民群，分享移民網站(依3.5法)。</p>
+<p>5.2.場景B.我在某個興趣愛好群使用的是身份2，遇到了志趣相投的網友，希望在現實中認識對方並開展更多交流。經過鑑別，我認為對方是可靠的，可以開展現實聯絡，向對方透露身份3(依3.5法)</p>
+<h3 id="遺留問題"><a class="header" href="#遺留問題">遺留問題：</a></h3>
+<p>A，我的境外身份2，境外身份3，身份1均需使用VPN訪問外網。如何確保身份1的保密性，避免身份1通過VPN與另外兩者產生關聯？是否應參照B？<br/>
+B，我的VPN使用方案是否應該如下所述，付費高安全性VPN僅用於身份1。對於境外身份2、境外身份3則可使用任意VPN或其餘梯子？<br/>
+C，目前我已有此前建立的境外身份3，多數方面均達標，但繫結的是中國手機。是否需要更改？<br/>
+D，身份1與境外身份2，境外身份3的Telegram賬號，是否應分開在兩個不同的Telegram軟體裡執行？<br/>
+E，明年上了大學之後，要在集體宿舍里居住，無法保證完全的私密性。這種情況下，該如何做好身份保密，避免被同學窺屏、被借用電腦、在電腦上交流學習時洩密？<br/>
+我此前沒有住校過。對於一些需要保密的文字、密碼、連結等，我會手寫/列印到紙上放在家裡，既能長久儲存又能絕對保密。但是在宿舍這樣做就會洩密了。</p>
+<hr/>
+<h2 id="noarch-的評論"><a class="header" href="#noarch-的評論"><em>noarch</em> 的評論</a></h2>
+<p>首先，感謝 <a href="https://t.me/WorldisMineTelegram"><i aria-hidden="true" class="fa fa-telegram"></i> @WorldisMineTelegram</a> 的貢獻。<em>noarch</em> 相信大多數人對於網路身份的隔離都是完全保留在心，而不分享。World is Mine 則將它的整改過程和思路用文字寫了下來，除去其中的敏感個人資訊，然後以利於社群的方式釋出。</p>
+<h3 id="幾點異議"><a class="header" href="#幾點異議">幾點異議</a></h3>
+<h4 id="iphone-並不尊重隱私"><a class="header" href="#iphone-並不尊重隱私">iPhone 並不尊重隱私</a></h4>
+<p><a href="#1%E8%BA%AB%E4%BB%BD1">身份1</a>中提到了，它只屬於專用 iPhone 或電腦虛擬機器內，阻止一切攝像頭、麥克風等訪問；<em>noarch</em> 想說 iPhone 其實比一些開源的 Android ROM 更加侵犯隱私。</p>
+<p>iPhone 具有幾乎關不掉的位置記錄，它的應用商店依賴專有服務，並且你基本上必須要登入 Apple 賬戶才能正常使用。登入了 Apple 賬戶就意味著有資訊會被傳送到雲端，而根據賬戶所屬地區不同，政府可能有許可權直接訪問這個 Apple 賬戶。同時因為 Apple 的軟體是閉源的，即使關閉了同步服務，<em>noarch</em> 也懷疑它可以被後門開啟。</p>
+<p>實際上，<em>noarch</em> 認為“紅色”的身份完全不應該在手機上操作，並且只應當在<strong>經過 VPN 閘道器的虛擬機器</strong>，例如搭配 <a href="https://www.whonix.org/">Whonix Gateway</a> 的虛擬機器上操作。這樣能保證，除非被專門設計於虛擬機器逃逸，否則就連病毒也無法傷害你的匿名性。</p>
+<p>對於智慧手機對你的監控，你還可以參考 <a href="https://www.iyouport.org/%e9%bb%84%e8%b2%82%e9%b1%bc%e7%9a%84%e5%b4%9b%e8%b5%b7/">黃貂魚 (IMSI Catchers) 的崛起</a>。這篇文章的概要是，只要這個手機不在飛航模式，政府就可以監視到你的位置。</p>
+<h4 id="關於-vpn-安全性"><a class="header" href="#關於-vpn-安全性">關於 VPN 安全性</a></h4>
+<blockquote>
+<p>小隱隱於野，大隱隱於市。</p>
+</blockquote>
+<p>知道 <a href="https://www.torproject.org/">Tor</a> 匿名性為什麼比 VPN 要好嗎？其中一個重要的原因就是，公共的 Tor Exit Node, 也就是三個跳點中最終幫你連線到（明網）目標網站的那個，被非常多人使用。有用它們在明網訪問兒童色情的，有用它們洗錢的... 總之，Tor Exit Node 的流量極其混亂。</p>
+<p>你可能會問，<em>這些公共代理不會竊取我的資訊嗎？</em></p>
+<p>答案是 <strong>“會”</strong> , 但前提是你的流量為<strong>非加密</strong>的情況下。如果你的流量經過例如 HTTPS 加密，Tor Exit Nodes 將無從知道資訊的內容是什麼，以及這個資訊傳回給哪個使用者。（參考<a href="/Encryption/Encryption.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%B8%BA%E4%BF%A1%E6%81%AF%E5%8A%A0%E5%AF%86">加密，加密一切</a>）</p>
+<p>當你使用一個混亂的代理時，其他人做的惡將會掩蓋你做的“惡”，意即無法將這個代理和一個單獨的人聯絡起來。</p>
+<p>你可能會認為 Tor 在中國的速度不現實，不過你可以對傳統翻牆代理做同樣的事：連線到自己獨享的代理，再通過這個代理連線到公共 VPN。</p>
+<p>這樣做也不難，以經過 VPN 閘道器的虛擬機器為例：讓閘道器虛擬機器<strong>通過宿主機上的專用代理連線公用代理</strong>，然後讓“工作站”虛擬機器經過閘道器虛擬機器聯網。</p>
+<p>或者你可以直接使用 SSR + Whonix Gateway, 在 Whonix Gateway 連線 Tor 時指定宿主機 SSR 的 SOCKS 本地代理，然後啟動 Whonix Workstation 或指定任何虛擬機器使用 Whonix 私有網路即可。</p>
+<h4 id="邀請制的人性弱點"><a class="header" href="#邀請制的人性弱點">“邀請制”的人性弱點</a></h4>
+<p>社交工程攻擊，<em>noarch</em> 應該不用過多解釋了。在身份2寫隨筆的情況下，攻擊者可以得知你很多的愛好和性格。它進而可以通過這個奪取你的信任，進入身份3，毀掉你的匿名性。</p>
+<p>身份3“升級”到身份2的關係也值得商榷：往往，對你威脅最多的，就是和你最親密的人。如果讓他們知道了你的身份3，無論是有意還是無意，或是在意外發生時（例如被審訊），他們都無法保護你的身份2不被得知。</p>
+<h3 id="遺留問題回答"><a class="header" href="#遺留問題回答">遺留問題回答</a></h3>
+<p>A, 已經被<a href="#%E5%85%B3%E4%BA%8E-vpn-%E5%AE%89%E5%85%A8%E6%80%A7">關於 VPN 安全性</a>回答：建議身份1使用 <code>私人代理 -&gt; Tor</code>, 身份2使用私人代理，身份3使用<code>私人 -&gt; 公共代理</code>。</p>
+<p>B, 已經被<a href="#%E5%85%B3%E4%BA%8E-vpn-%E5%AE%89%E5%85%A8%E6%80%A7">關於 VPN 安全性</a>回答。</p>
+<p>C, 不建議修改，即使修改也無用。<strong>永遠假設</strong>這些更改是被記錄的，並且這些 logs 永久保留。</p>
+<p>D, 建議，主要為了防止人工錯誤（例如用錯帳號或傳錯圖片）。參考方案有虛擬機器，Android Work Profile, Android 多使用者。</p>
+<p>E, 多系統 / 虛擬機器，選用防窺膜，<a href="https://privacytools.io/software/passwords/"><strong>使用密碼管理器</strong></a>，<a href="https://privacytools.io/software/encryption-tools/">對檔案進行加密</a>，並使用<a href="https://privacytools.io/software/notebooks/">端到端加密的電子記事本</a>。<em>noarch</em> 認為用紙筆記密碼是最不安全的方案之一：它不防偷盜，不防搜查，搜尋麻煩...</p>
+<h3 id="更多的問題"><a class="header" href="#更多的問題">更多的問題</a></h3>
+<p><em>noarch</em> 想到了一個問題，如果你使用身份1發現了一個有趣的圈子，你將如何向這個圈子投入更多？例如你發現了 <code>privacy.noarch</code>, 想要為它做貢獻。</p>
+<p>根據你的電腦配置，在 Whonix Workstation 裡編輯 Markdown 並預覽真的不是什麼好體驗... 而如果你像 <em>noarch</em> 一樣，每週投入3-4個小時進這個專案，你很快就會無法忍受 VirtualBox, 特別是 Whonix Workstation 在處理文字上的卡慢。</p>
+<blockquote>
+<p>注：Whonix Workstation 打字卡慢是故意為之的一個功能，稱之為 <a href="https://github.com/vmonaco/kloak">Kloak</a>. 它可以隨機化你打字時的按鍵間隔，並由此抵抗<a href="https://www.whonix.org/wiki/Keystroke_Deanonymization">鍵盤生物識別</a>。</p>
+</blockquote>
+<p>最後，<em>noarch</em> 希望所有人都能有一個匿名的身份，並能在他們之間遊走自如。</p>
+<hr/>
+<p><a href="https://t.me/CWorldisMine/138">原文</a>使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.zh-Hans">CC BY-SA 4.0</a> 許可協議釋出。</p>
+<p><code>privacy.noarch</code> 與 <a href="https://t.me/WorldisMineTelegram"><i aria-hidden="true" class="fa fa-telegram"></i> @WorldisMineTelegram</a> 並無隸屬關係。</p>
+</main>
+<nav aria-label="Page navigation" class="nav-wrapper">
+<!-- Mobile navigation buttons -->
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="mobile-nav-chapters previous" href="../../Identities/iYP_DID/iYP_DID.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="mobile-nav-chapters next" href="../../RTC/Signal/Signal.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+<div style="clear: both"></div>
+</nav>
+</div>
+</div>
+<nav aria-label="Page navigation" class="nav-wide-wrapper">
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="nav-chapters previous" href="../../Identities/iYP_DID/iYP_DID.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="nav-chapters next" href="../../RTC/Signal/Signal.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+</nav>
+</div>
+<script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+<script charset="utf-8" src="../../clipboard.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../highlight.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../book.js" type="text/javascript"></script>
+<!-- Custom JS scripts -->
+<script src="../../sidebar.js" type="text/javascript"></script>
+</body>
+</html>

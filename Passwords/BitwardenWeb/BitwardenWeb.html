@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+
+<html class="sidebar-visible no-js light" lang="zh-Hant">
+<head>
+<!-- Book generated using mdBook -->
+<meta charset="utf-8"/>
+<title>[Web] Bitwarden - privacy.noarch</title>
+<!-- Custom HTML head -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="一本面向新手的隱私教程" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color">
+<link href="../../favicon.png" rel="shortcut icon"/>
+<link href="../../css/variables.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../css/variables.css" rel="stylesheet"/></noscript>
+<link href="../../css/general.css" rel="stylesheet"/>
+<link href="../../css/chrome.css" rel="stylesheet"/>
+<!-- Font Awesome 5.13 free content -->
+<link href="../../FontAwesome/css/all.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../FontAwesome/css/all.css" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" rel="stylesheet"/>
+</noscript>
+<!-- Fonts -->
+<!-- Highlight.js Stylesheets -->
+<link href="../../highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../highlight.css" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" rel="stylesheet"/>
+</noscript>
+<!-- Custom theme stylesheets -->
+<link href="../../sidebar.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../sidebar.css" rel="stylesheet"/></noscript>
+</meta></head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+<nav aria-label="Table of contents" class="sidebar" id="sidebar">
+<div class="sidebar-scrollbox">
+<ol class="chapter"><li class="chapter-item expanded affix"><a href="../../index.html">privacy.noarch</a></li><li class="chapter-item expanded affix"><a href="../../SUMMARY.html">目錄</a></li><li class="chapter-item expanded affix"><div>前言</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">1.</strong> 在開始前</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Fundamentals/BasicOfTheBasics.html"><strong aria-hidden="true">1.1.</strong> 常見錯誤集合：線上安全基本原則</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.</strong> 從可信的來源安裝軟體</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">2.1.</strong> [Android] F-Droid</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.2.</strong> [Android] Aurora Store</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.</strong> 安全地使用瀏覽器上網</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Browsers/Bromite/Bromite.html"><strong aria-hidden="true">3.1.</strong> [Android] Bromite</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.</strong> [Desktop/All] Firefox</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.1.</strong> 使用外掛來增強瀏覽體驗 ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.3.</strong> [Desktop/All]Tor Browser ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Input/Input.html"><strong aria-hidden="true">4.</strong> 自由打字，打字自由</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Input/NoNetworkAccess/NoNetworkAccess.html"><strong aria-hidden="true">4.1.</strong> [Android] 禁止輸入法聯網</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">4.2.</strong> 同文輸入法 (TRIME) ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Passwords/Passwords.html"><strong aria-hidden="true">5.</strong> 帳號安全：保護，隔離，整理</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Passwords/PasswordManagers.html"><strong aria-hidden="true">5.1.</strong> 讓密碼管理器幫你記住密碼</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.1.</strong> [Android] Bitwarden</div></li><li class="chapter-item expanded"><a class="active" href="../../Passwords/BitwardenWeb/BitwardenWeb.html"><strong aria-hidden="true">5.1.2.</strong> [Web] Bitwarden</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.3.</strong> [Desktop/All] KeePassXC ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.</strong> 二步驗證 - 增強帳號安全</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.1.</strong> [Android] andOTP</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.2.</strong> [Desktop/All] KeePassXC 的二步驗證功能</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../WallBreak/WallBreak.html"><strong aria-hidden="true">6.</strong> 突破網路長城</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.1.</strong> 代理提供商</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.</strong> 代理工具 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.1.</strong> V2Ray</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.2.</strong> Trojan</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.3.</strong> Shadowsocks*</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">7.</strong> 在享受自由言論之前：“分裂人格”的魅力</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Identities/iYP_DID/iYP_DID.html"><strong aria-hidden="true">7.1.</strong> [轉載] 分身術完整指南：妥善管理您的線上身份並獲得安全的方法</a></li><li class="chapter-item expanded"><a href="../../Identities/WorldIsMine/WorldIsMine.html"><strong aria-hidden="true">7.2.</strong> [轉載] 一個網友的“個人網路身份整改方案”</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.</strong> 在網路圍牆外社交</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.</strong> 中心化</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.1.</strong> [All] Telegram</div></li><li class="chapter-item expanded"><a href="../../RTC/Signal/Signal.html"><strong aria-hidden="true">8.1.2.</strong> [Android] Signal</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.</strong> 去中心化 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.1.</strong> [Android/iOS] Matrix/Element</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.2.</strong> [Web] Matrix/Element</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.</strong> 私密地傳送和接收郵件</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.</strong> 郵件提供商</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.1.</strong> [Web] ProtonMail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.2.</strong> [Web] Tutanota</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.</strong> 郵件客戶端 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.1.</strong> [Android] K-9 Mail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.2.</strong> [Desktop/All] Thunderbird</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../Encryption/Encryption.html"><strong aria-hidden="true">10.</strong> 加密，加密一切</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Encryption/Pubkey/Pubkey.html"><strong aria-hidden="true">10.1.</strong> [翻譯] 公鑰加密簡介</a></li><li class="chapter-item expanded"><a href="../../Encryption/OpenKeychain/OpenKeychain.html"><strong aria-hidden="true">10.2.</strong> [Android] PGP: OpenKeychain</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.</strong> Android 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.1.</strong> 系統設定</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.</strong> “刷機”基礎</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.1.</strong> 深入瞭解自己的裝置</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.2.</strong> 選擇第三方 ROM</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.3.</strong> Magisk</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.4.</strong> microG</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">12.</strong> Windows 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Windows/VHD/VHD.html"><strong aria-hidden="true">12.1.</strong> 使用 VHD(X) 部署原生多系統 ^</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">13.</strong> 類 Unix 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Unix/dos-donts/dos-donts.html"><strong aria-hidden="true">13.1.</strong> 網上教程不會告訴你的類 Unix 使用注意事項</a></li></ol></li><li class="chapter-item expanded"><div>後記</div></li><li class="chapter-item expanded affix"><a href="../../CONTRIBUTING.html">反饋與貢獻</a></li></ol>
+<!-- mods to the vanilla sidebar-->
+<hr/>
+<p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
+<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
+</div>
+<div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+</nav>
+<div class="page-wrapper" id="page-wrapper">
+<div class="page">
+<div id="menu-bar-hover-placeholder"></div>
+<div class="menu-bar sticky bordered" id="menu-bar">
+<div class="left-buttons">
+<button aria-controls="sidebar" aria-label="Toggle Table of Contents" class="icon-button" id="sidebar-toggle" title="Toggle Table of Contents" type="button">
+<i class="fa fa-bars"></i>
+</button>
+<button aria-controls="theme-list" aria-expanded="false" aria-haspopup="true" aria-label="Change theme" class="icon-button" id="theme-toggle" title="Change theme" type="button">
+<i class="fa fa-paint-brush"></i>
+</button>
+<ul aria-label="Themes" class="theme-popup" id="theme-list" role="menu">
+<li role="none"><button class="theme" id="light" role="menuitem">Light (default)</button></li>
+<li role="none"><button class="theme" id="rust" role="menuitem">Rust</button></li>
+<li role="none"><button class="theme" id="coal" role="menuitem">Coal</button></li>
+<li role="none"><button class="theme" id="navy" role="menuitem">Navy</button></li>
+<li role="none"><button class="theme" id="ayu" role="menuitem">Ayu</button></li>
+</ul>
+</div>
+<h1 class="menu-title">privacy.noarch</h1>
+<div class="right-buttons">
+<a aria-label="Switch between Simplified and Traditional Chinese" class="icon-button" onclick="
+                        'use strict';
+
+                        const CN_CLEAR = 'privacy.n0ar.ch';
+                        const TW_CLEAR = 'privacy-tw.n0ar.ch';
+                        const CN_TOR = 'fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+                        const TW_TOR = 'tw.fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+
+                        switch (window.location.hostname) {
+                            case CN_CLEAR:
+                                window.location.hostname = TW_CLEAR;
+                                break;
+                            case TW_CLEAR:
+                                window.location.hostname = CN_CLEAR;
+                                break;
+                            case CN_TOR:
+                                window.location.hostname = TW_TOR;
+                                break;
+                            case TW_TOR:
+                                window.location.hostname = CN_TOR;
+                                break;
+                            default:
+                                window.alert('Error determining current site language.\nI\'m either being served locally, or running as a mirror.\n\nIf you are running a mirror, please change the hostnames on line ~166 in theme/index.hbs.');
+                                break;
+                        }
+                        " title="Switch between Simplified and Traditional Chinese">
+<strong>簡/繁</strong>
+</a>
+<a aria-label="Git repository" href="https://github.com/noarchwastaken/privacy" title="Git repository">
+<i class="fa fa-github" id="git-repository-button"></i>
+</a>
+</div>
+</div>
+<!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+<script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+<div class="content" id="content">
+<main>
+<!-- Page table of contents -->
+<div class="sidetoc"><nav class="pagetoc"></nav></div>
+<h1 id="bitwarden-網頁版"><a class="header" href="#bitwarden-網頁版">Bitwarden 網頁版</a></h1>
+<hr/>
+<img height="96" src="images/icon.svg"/>
+<p>Bitwarden 不怎麼特別，但它擁有一個密碼管理器應有的所有安全性和功能。It just Works.</p>
+<p>開發者：Bitwarden, Inc. | <a href="https://bitwarden.com">官方網站</a> | <a href="https://bitwarden.com/open-source/">原始碼</a><br/>
+客戶端 <a href="https://github.com/bitwarden/browser/blob/master/LICENSE.txt">GPLv3</a>, 服務端 <a href="https://github.com/bitwarden/server/blob/master/LICENSE_AGPL.txt">AGPLv3</a> 和 <a href="https://github.com/bitwarden/server/blob/master/LICENSE_BITWARDEN.txt">Bitwarden EULA</a> | <a href="https://bitwarden.com/terms/">服務條款</a> | <a href="https://bitwarden.com/privacy/">隱私政策</a></p>
+<hr/>
+<h2 id="回顧"><a class="header" href="#回顧">回顧</a></h2>
+<p><a href="../Passwords.html">上一章</a>中 <em>noarch</em> 定義了一個合格的密碼管理器，我們將要介紹的 Bitwarden 就是符合標準的一個。</p>
+<p>它使用 <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES-256</a> 加密你的密碼庫，並將你的主密碼使用加鹽的 <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2 SHA-256</a> 形式儲存，以保證密碼庫的<strong>零訪問</strong>。零訪問意味著你的密碼庫只在客戶端被解密，就連 Bitwarden 的員工或可能搜查 Bitwarden 的警方都無法通過正常方式獲取你的密碼。</p>
+<p>最重要的 - 它幾乎全由自由軟體組成。得益於此，如果你不信任 Bitwarden 官方雲，你甚至可以自己搭建 Bitwarden 伺服器，自己管理自己的資料；不過 <em>noarch</em> 不會在此教你如何自建 Bitwarden 伺服器。</p>
+<h2 id="可能的疑問"><a class="header" href="#可能的疑問">可能的疑問</a></h2>
+<p>本章要講述的是 Bitwarden 的網頁版密碼庫。</p>
+<p>你可能會好奇，既然是網頁，那麼為什麼 Bitwarden 說他們不能訪問你的密碼呢？</p>
+<p>答案是 <a href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a> 的力量。Javascript 是網頁在你瀏覽器中執行的“小程式”，瀏覽器會自動載入它們並執行。理論上，它們可以做任何需要“安裝”的程式可以做的事，而不需要讓你“安裝”。</p>
+<p>其實，<code>privacy.noarch</code> 就在使用 Javascript. 試著點選頁面左上角的 <i aria-hidden="true" class="fa fa-bars"></i> ，你可以看到本書選單的開啟和關閉。得益於 Javascript, 這個選單可以被顯示或隱藏，並且開關的行為會展示動畫。沒有 Javascript, 這個選單的開關動畫需要在 <code>privacy.noarch</code> 的伺服器中渲染並傳輸；對於 <code>privacy.noarch</code> 目前 (2020 年) 的瀏覽量而言可能可行，而對於 Google 等巨型服務，為數億使用者每人渲染視覺效果顯然不現實。</p>
+<p>Bitwarden 網頁版在開啟時會載入對應的 Javascript 程式，並且下載你的密碼庫。解鎖和操作這個密碼庫的行為完全被已經載入到本地的 Javascript 完成，因此你不需要擔心你的密碼庫未加密經過網際網路傳輸。</p>
+<h2 id="註冊帳號"><a class="header" href="#註冊帳號">註冊帳號</a></h2>
+<p>Bitwarden 的註冊非常簡單明瞭。首先我們開啟 Bitwarden 的官網 <a href="https://bitwarden.com">bitwarden.com</a>:</p>
+<blockquote>
+<p>如果你看到下方的 Cookie 提示，你可以直接點選“拒絕”。拒絕後 Bitwarden 網頁版不會留下跨站 Cookie.</p>
+</blockquote>
+<p><img alt="" loading="lazy" src="images/bw-frontpage.webp"/></p>
+<p>別被這個網頁上的英文嚇跑。雖然 Bitwarden 官網只有英文，但接下來我們操作的密碼庫具有中文翻譯。</p>
+<p>點選右上角的 <strong>Get Started</strong> 來註冊帳號，你會被帶到一個表格：</p>
+<p><img alt="" loading="lazy" src="images/bw-reg.webp"/></p>
+<p>就像註冊任何其它帳號一樣，填寫你的郵箱地址和名字。名字可以使用假名，就像這樣：</p>
+<img loading="lazy" src="images/bw-reg-filled.webp" width="450"/>
+<p>不過<strong>等一下</strong>。你可能現在就在犯一個錯誤：<strong>在密碼管理器上使用你之前用過的密碼。</strong></p>
+<p><strong><em>noarch</em> 強烈反對這種行為</strong>。</p>
+<p>請當場想出一個夠強的密碼，它最好有至少 15 位，擁有大小寫字母、數字和符號...</p>
+<blockquote>
+<p><em>到底怎麼做啊！我想不出來！</em></p>
+</blockquote>
+<h3 id="人腦密碼生成器"><a class="header" href="#人腦密碼生成器">人腦密碼生成器</a></h3>
+<p>在我們把生成密碼這件事交給密碼管理器前，請想想你之前用過的密碼。</p>
+<p><em>noarch</em> 就用過自己的名字首字母和生日；現在想起來最可怕的一個是直接使用使用者名稱，加上其中幾個字元用 <a href="https://en.wikipedia.org/wiki/Leet">Leet (1337)</a> 替換成對應的符號和數字。</p>
+<p>請別這樣做。如果你使用這些能聯絡到個人身份，或是關於你的，長久有效的資訊，例如 <del><code>n0@rcH1sn0tgaY</code></del>, 充分了解你的人將能猜出這個密碼，或黑客可以通過你的密碼獲取你的相關資訊。例如上面的密碼 <del><code>n0@rcH1sn0tgaY</code></del> 看起來很強，但瞭解 <em>noarch</em> 的人有一定的可能性會猜出它來。</p>
+<p>所以 <em>noarch</em> 想要分享一下自己的密碼“生成”思路，它用來“生成”你的密碼管理器主密碼：</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 這只是 <em>noarch</em> 的個人做法，提供給那些根本想不出來的讀者。如果你有更好的主意，<em>noarch</em> 將會非常感謝你的<a href="/CONTRIBUTING.html">貢獻</a>。</p>
+</blockquote>
+<ol start="0">
+<li>像 <em>noarch</em> 之前講的，避開任何自己的長期資訊。任何“最喜歡的”也要避開。</li>
+<li>想想自己<strong>最近</strong>做的事情、讀的書、看的電影或是玩過的遊戲。</li>
+<li>如果適用，你也可以想想這些書、遊戲或電影中發生的事。</li>
+<li>把它們寫下來。<em>noarch</em> 最近在讀 <a href="https://en.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a> 的傳記 <a href="https://en.wikipedia.org/wiki/Free_as_in_Freedom"><em>Free as in Freedom</em></a>.</li>
+<li>用 <a href="https://en.wikipedia.org/wiki/Leet">1337</a> 編碼它。這樣它就包含了數字和符號。</li>
+<li>加上一些非常易變的數字。比如你“生成”密碼時的時間，或是你現在在使用的某個軟體版本號。<em>noarch</em> 在“生成”這個密碼時的時間是下午 5:40.</li>
+<li>把它夾在第4步得出的內容中間某個位置。</li>
+</ol>
+<p>經過這樣一個步驟，<em>noarch</em> 寫出了一個這樣的密碼：</p>
+<p><img alt="" loading="lazy" src="images/bw-reg-pwd.webp"/></p>
+<p>如果你有任何其它主意，你還可以把它和 <em>noarch</em> 的方法結合在一起！例如你還可以把最後的 <code>Freed.m</code> 倒序成 <code>m.deerF</code>, 得出最終結果 <code>fR3e@s!n1740m.deerF</code>. 現在你就得到了一個基本沒人猜得出來，並且機器也難以爆破的主密碼，用於加密你的 Bitwarden 密碼庫。</p>
+<blockquote>
+<p>別擔心，<em>noarch</em> 當然不會將上述密碼進行實際使用，你也絕對不要真用上述的示例密碼。</p>
+</blockquote>
+<p>最後，你可以選擇提供一個密碼提示；當你真的忘記密碼時，你可以請求 Bitwarden 將它傳送到你的郵箱裡。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 密碼提示是明文儲存的，並且另一款密碼管理器 <a href="https://www.pcworld.com/article/2936621/the-lastpass-security-breach-what-you-need-to-know-do-and-watch-out-for.html">LastPass 曾經發生的資料洩露</a>中就包含密碼提示。因此，請不要在內填寫有關自己的資訊。例如 <em>noarch</em> 簡單地在這裡寫了 <code>GNU</code>, 因為 <code>GNU</code> 就是密碼中提到的“自由軟體”概念開創者之一。</p>
+</blockquote>
+<h3 id="記住密碼"><a class="header" href="#記住密碼">記住密碼</a></h3>
+<p>如果你從來沒有嘗試記憶過 <code>fR3e@s!n1740Freed.m</code> 這麼強的密碼，那麼你可能會在建立完帳號後一瞬間就忘掉你剛才建立的密碼。</p>
+<p>不過，既然我們使用的密碼是有規律的，那麼經過一定的練習，你一定可以記住。</p>
+<p>你現在可以將你的主密碼寫在一張紙上，然後放在一個安全的地方，就像你原來用小本子記密碼一樣。直到你能不假思索輸入這個密碼為止，你都會需要參考它，以防止你在這段學習期間內忘掉密碼。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 請確保<strong>這張紙</strong>可以被輕易摧毀。因此，也請避開你“不捨得”摧毀的記事本。嚴禁使用可擦筆，因為可擦筆即使擦掉後也會留下痕跡，或是被冰箱冷凍層的溫度復原。</p>
+</blockquote>
+<p>在記住後，請<strong>將紙張摧毀到至少纖維級別</strong>。常見的方法有燒燬或泡水搗碎。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-bomb"></i> 在學習區間內，嚴禁使用任何電子方式儲存你的主密碼。這樣做會使密碼管理器失去其意義。</p>
+</blockquote>
+<p>當你想好並寫下了密碼，你就可以<strong>閱讀並同意</strong> Bitwarden 的<a href="https://bitwarden.com/terms/">服務條款</a>和<a href="https://bitwarden.com/privacy/">隱私政策</a>了。</p>
+<p><img alt="" loading="lazy" src="images/bw-reg-eula.webp"/></p>
+<p>最後，點選“提交”來註冊。</p>
+<h2 id="登入驗證並和密碼保險箱說聲好"><a class="header" href="#登入驗證並和密碼保險箱說聲好">登入、驗證，並和密碼保險箱說聲好</a></h2>
+<p>在點選“提交”後，你會被帶到登入介面。你需要在這裡再次輸入你的密碼：</p>
+<p><img alt="" loading="lazy" src="images/bw-signin.webp"/></p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 因為密碼管理器的安全特性，Bitwarden 不像許多服務一樣可以“記住密碼”。你只能選擇“記住郵件”，並手工輸入密碼。如果你不想每次訪問密碼庫都輸入密碼，你可以安裝 <a href="">Bitwarden 客戶端或瀏覽器外掛</a>。</p>
+</blockquote>
+<p>登入後，你就進入了 Bitwarden 密碼庫。</p>
+<p><img alt="" loading="lazy" src="images/bw-vault.webp"/></p>
+<p>在我們開始將密碼放入 Bitwarden 之前，你可能注意到了右上角的“驗證電子郵件”提示。我們現在就來解決這個問題。</p>
+<p>開啟你用來註冊 Bitwarden 的電子郵件賬戶；你應該會看到一個“歡迎”郵件。</p>
+<p><img alt="" loading="lazy" src="images/bw-welcome-email.webp"/></p>
+<p>現在回到 Bitwarden 密碼庫，在“驗證電子郵件”裡點“傳送電子郵件”。</p>
+<p><img alt="" loading="lazy" src="images/bw-popup-email.webp"/></p>
+<p>然後你會在郵箱裡看到一封用於驗證的 "Verify Your Email" 郵件，其中包含一個 "Verify Email Address Now" 按鈕。</p>
+<p><img alt="" loading="lazy" src="images/bw-verify-email.webp"/></p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 取決於你的郵件客戶端安全設定，這封郵件可能會像上圖一樣無法正常載入。不用擔心，這個按鈕能在不載入遠端內容的情況下工作。</p>
+<p><em>noarch</em> 推薦像 <a href="">Thunderbird</a> 或 <a href="">Tutanota</a> 這樣<strong>攔截遠端內容</strong>的郵件客戶端 / 提供商，它們能幫你阻擋大部分來自郵件的惡意軟體，並防止郵件傳送者通過遠端請求追蹤你。</p>
+</blockquote>
+<p>在<strong>確認來源地址</strong>是 <code>no-reply@bitwarden.com</code> 後，點選這個按鈕，你會被帶到一個有提示的登入頁面。</p>
+<p><img alt="" loading="lazy" src="images/bw-popup-email-verified.webp"/></p>
+<p>在這裡再次登入，然後你就可以正式開始使用 Bitwarden 了。</p>
+<p><img alt="" loading="lazy" src="images/bw-vault-verified.webp"/></p>
+<h2 id="新增你的第一條密碼"><a class="header" href="#新增你的第一條密碼">新增你的第一條密碼</a></h2>
+<p>在 Bitwarden 儲存密碼同樣簡單明瞭。</p>
+<p>不過，如果你在密碼管理器儲存以前重複使用的密碼，它將失去意義。所以 <em>noarch</em> 將在這演示為 Tutanota 郵箱使用 Bitwarden 生成並儲存密碼。</p>
+<p>要讓 Bitwarden 為你儲存密碼，點選“新增專案”。</p>
+<p><img alt="" loading="lazy" src="images/bw-add-item.webp"/></p>
+<p>然後你可以在這填寫你的帳號名稱（服務）、使用者名稱/郵箱，以及登入時的網址 (URI)。</p>
+<p><img alt="" loading="lazy" src="images/bw-form.webp"/></p>
+<p>雖然 URI 是可選的，但 <em>noarch</em> 建議你填寫它。URI 有兩個用途：</p>
+<ol start="0">
+<li>用於獲取這個帳號的圖示，並展示在 Bitwarden 密碼庫內。</li>
+<li>用於自動填寫。這個會在你使用 <a href="">Bitwarden 瀏覽器外掛或手機應用</a>時有用。</li>
+</ol>
+<p>除了密碼之外的欄位填完後是這樣：</p>
+<p><img alt="" loading="lazy" src="images/bw-form-wo-pwd.webp"/></p>
+<p>接下來你就可以點選“密碼”欄位上方的 <i aria-hidden="true" class="fa fa-refresh"></i> 按鈕來生成密碼。生成的密碼會自動填寫到“密碼”欄位裡。</p>
+<p><img alt="" loading="lazy" src="images/bw-form-pwd.webp"/></p>
+<p>點選 <i aria-hidden="true" class="fa fa-eye"></i> 可以用明文檢視密碼，再次點選 <i aria-hidden="true" class="fa fa-eye-slash"></i> 可以將其恢復到隱藏狀態。</p>
+<p><img alt="" loading="lazy" src="images/bw-form-pwd-clear.webp"/></p>
+<p>點選 <i aria-hidden="true" class="fa fa-files-o"></i>，這個密碼就會被複制到剪貼簿。</p>
+<p><img alt="" loading="lazy" src="images/bw-popup-pwd-copied.webp"/></p>
+<p>接下來，你需要登入你要修改密碼的帳號，然後找到修改密碼的入口：</p>
+<p><img alt="" loading="lazy" src="images/tuta-pwdchange.webp"/></p>
+<p>輸入你的舊密碼，然後貼上新密碼。只是一個普通的密碼修改過程。</p>
+<p>修改完密碼後，回到 Bitwarden, 在密碼錶單點選“儲存”。你會被帶回“我的密碼庫”。</p>
+<p><img alt="" loading="lazy" src="images/bw-vault-w-item.webp"/></p>
+<h2 id="讀取密碼管理器中的密碼"><a class="header" href="#讀取密碼管理器中的密碼">讀取密碼管理器中的密碼</a></h2>
+<p>在“我的密碼庫”中點選對應帳號的專案，你就可以檢視剛剛在編輯的表單，在其中進行任何操作。</p>
+<p><img alt="" loading="lazy" src="images/bw-form-view.webp"/></p>
+<p>以登入賬戶為例，在“密碼”欄位點選 <i aria-hidden="true" class="fa fa-files-o"></i>，然後在要登入服務的密碼框貼上。</p>
+<p>如果你有太多賬戶，你可以使用左側的“篩選器”。使用篩選器後，只有符合搜尋結果的專案會顯示在右側。</p>
+<p><img alt="" loading="lazy" src="images/bw-filter.webp"/></p>
+<h3 id="登入-bitwarden"><a class="header" href="#登入-bitwarden">登入 Bitwarden</a></h3>
+<p>當你關閉瀏覽器、閒置一段時間，或是手動退出 Bitwarden, 你將需要重新登入密碼庫。</p>
+<h4 id="完全關閉瀏覽器"><a class="header" href="#完全關閉瀏覽器">完全關閉瀏覽器</a></h4>
+<p>如果你完全關閉瀏覽器，你需要重新登入 Bitwarden. 訪問 <a href="https://bitwarden.com">bitwarden.com</a>, 然後 "Log In":</p>
+<p><img alt="" loading="lazy" src="images/bw-signin.webp"/></p>
+<p>你就可以輸入你的主密碼，然後登入進入密碼庫了。</p>
+<h4 id="鎖定"><a class="header" href="#鎖定">鎖定</a></h4>
+<p>當你開啟 Bitwarden 網頁密碼庫<strong>一段時間閒置不用</strong>（預設 15 分鐘），Bitwarden 會自動“鎖定”：</p>
+<p><img alt="" loading="lazy" src="images/bw-locked.webp"/></p>
+<p>同樣，輸入密碼然後“<i aria-hidden="true" class="fa fa-unlock-alt"></i> 解鎖”就可以了。</p>
+<hr/>
+<h2 id="進階功能"><a class="header" href="#進階功能">進階功能</a></h2>
+<p>下面是一些 <em>noarch</em> 認為一般人可能不會用到的功能，但也會在這做介紹。</p>
+<h3 id="儲存信用卡身份以及筆記"><a class="header" href="#儲存信用卡身份以及筆記">儲存信用卡、身份、以及筆記</a></h3>
+<p>Bitwarden 還可以用來儲存信用卡和身份。搭配 <a href="">Bitwarden 瀏覽器外掛或手機應用</a>使用時，Bitwarden 可以幫你自動填寫這些表單。</p>
+<p>新增它們的方法和新增密碼類似，只不過需要填寫的資訊不同。你可以通過“這是什麼型別的專案？”在這些模式中切換。</p>
+<p><img alt="" loading="lazy" src="images/bw-form-types.webp"/></p>
+<p>作為例子，下面是 Bitwarden 儲存信用卡資訊的表單。</p>
+<p><img alt="" loading="lazy" src="images/bw-form-cards.webp"/></p>
+<p>這些其它型別的表單使用與密碼錶單相同的方式加密，因此 Bitwarden 無法將你儲存在內的信用卡或護照資訊作為它用。</p>
+<h3 id="修改密碼生成器強度"><a class="header" href="#修改密碼生成器強度">修改密碼生成器強度</a></h3>
+<p>當你在 Bitwarden 密碼錶單中點選 <i aria-hidden="true" class="fa fa-refresh"></i> , Bitwarden 預設生成長度為 14 位，包含數字與大小寫字母的密碼, 就像這樣：</p>
+<pre><code>WkRUdb6LRqF8sC
+</code></pre>
+<p>Bitwarden 這樣做是為了保證最大相容性，因為有些服務不支援密碼中包含符號。</p>
+<p>不過 <em>noarch</em> 以及一些其它密碼管理器，例如 KeepassXC 認為這樣生成的密碼強度不夠高。因此，如果你有需要，可以調節 Bitwarden 密碼生成器引數。</p>
+<p>在 Bitwarden 密碼庫頂欄點選 <code>工具 -&gt; 密碼生成器</code>，你應該能看見一個專門的密碼生成器：</p>
+<p><img alt="" loading="lazy" src="images/bw-pwdgen.webp"/></p>
+<p>在這裡你可以調節密碼型別、長度、包含的字符集以及每種字元最小個數。<em>noarch</em> 建議你將密碼生成器調成這樣。現在它長度為 24 位，包含完整的 <code>[A-Za-z0-9!@#$%^&amp;*]</code>.</p>
+<p><img alt="" loading="lazy" src="images/bw-pwdgen-rec.webp"/></p>
+<h3 id="匯入密碼庫"><a class="header" href="#匯入密碼庫">匯入密碼庫</a></h3>
+<p>如果你之前在使用其它“密碼管理器”，例如 Chrome 瀏覽器的“儲存密碼”功能，你可以將儲存在那裡的密碼匯入 Bitwarden.</p>
+<p><img alt="" loading="lazy" src="images/bw-import.webp"/></p>
+<p>在 Bitwarden 密碼庫 <code>工具 -&gt; 匯入資料</code>，你可以選擇對應的匯入來源。Bitwarden <del>貼心地</del> 為不同來源提供了英文教程。</p>
+<img loading="lazy" src="images/bw-import-selection.webp" width="450"/>
+<p>以 Chrome 為例，在選擇後，Bitwarden 會給你展示對應的教程連結。</p>
+<p><img alt="" loading="lazy" src="images/bw-import-chrome.webp"/></p>
+<p>跟隨 Bitwarden 提供的教程，你就可以從各大密碼管理器或“密碼管理器”無痛換到 Bitwarden 了。</p>
+<h3 id="匯出密碼庫"><a class="header" href="#匯出密碼庫">匯出密碼庫</a></h3>
+<p>如果你想從 Bitwarden 換到其它密碼管理器，你也可以這麼做：</p>
+<p><img alt="" loading="lazy" src="images/bw-export.webp"/></p>
+<p>Bitwarden 可以將你的密碼庫匯出為 <code>json</code> 或 <code>csv</code> 格式，它們可以進一步被匯入到 <a href="">KeepassXC</a> 或任何支援匯入這些格式的密碼管理器。</p>
+<h3 id="修改賬戶設定"><a class="header" href="#修改賬戶設定">修改賬戶設定</a></h3>
+<p>如果你不慎洩露了主密碼 (<em>noarch</em> 希望你絕對不要)，或你的郵箱被盜，在傷害發生前請立刻在 Bitwarden 內修改對應的設定。</p>
+<p>你可以進入 <code>設定 -&gt; 我的賬戶</code> 修改這些設定。無論是修改郵箱地址或是主密碼，你都需要確認當前的主密碼。</p>
+<p><img alt="" loading="lazy" src="images/bw-settings.webp"/></p>
+<h2 id="總結"><a class="header" href="#總結">總結</a></h2>
+<p>你現在應該能夠順利使用 Bitwarden 管理你的密碼了。</p>
+<p>雖然目前你的 Bitwarden 密碼庫內只存有一個帳號，不過你可以在之後使用某個沒有存入 Bitwarden 的帳號時下意識將它存入 Bitwarden 並<strong>通過上述方法改密碼</strong>。</p>
+<p><strong>密碼管理器的使用時間越久，它對你提供的便利和安全性越大</strong>；<em>noarch</em> 希望你不要被剛開始的麻煩嚇跑，因為它在長期使用後是你的得力助手。</p>
+</main>
+<nav aria-label="Page navigation" class="nav-wrapper">
+<!-- Mobile navigation buttons -->
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="mobile-nav-chapters previous" href="../../Passwords/PasswordManagers.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="mobile-nav-chapters next" href="../../WallBreak/WallBreak.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+<div style="clear: both"></div>
+</nav>
+</div>
+</div>
+<nav aria-label="Page navigation" class="nav-wide-wrapper">
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="nav-chapters previous" href="../../Passwords/PasswordManagers.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="nav-chapters next" href="../../WallBreak/WallBreak.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+</nav>
+</div>
+<script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+<script charset="utf-8" src="../../clipboard.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../highlight.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../book.js" type="text/javascript"></script>
+<!-- Custom JS scripts -->
+<script src="../../sidebar.js" type="text/javascript"></script>
+</body>
+</html>

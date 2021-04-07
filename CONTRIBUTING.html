@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+
+<html class="sidebar-visible no-js light" lang="zh-Hant">
+<head>
+<!-- Book generated using mdBook -->
+<meta charset="utf-8"/>
+<title>反饋與貢獻 - privacy.noarch</title>
+<!-- Custom HTML head -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="一本面向新手的隱私教程" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color">
+<link href="favicon.png" rel="shortcut icon"/>
+<link href="css/variables.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="css/variables.css" rel="stylesheet"/></noscript>
+<link href="css/general.css" rel="stylesheet"/>
+<link href="css/chrome.css" rel="stylesheet"/>
+<!-- Font Awesome 5.13 free content -->
+<link href="FontAwesome/css/all.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="FontAwesome/css/v4-shims.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="FontAwesome/css/all.css" rel="stylesheet"/>
+<link href="FontAwesome/css/v4-shims.css" rel="stylesheet"/>
+</noscript>
+<!-- Fonts -->
+<!-- Highlight.js Stylesheets -->
+<link href="highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="tomorrow-night.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="ayu-highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="highlight.css" rel="stylesheet"/>
+<link href="tomorrow-night.css" rel="stylesheet"/>
+<link href="ayu-highlight.css" rel="stylesheet"/>
+</noscript>
+<!-- Custom theme stylesheets -->
+<link href="sidebar.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="sidebar.css" rel="stylesheet"/></noscript>
+</meta></head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+<nav aria-label="Table of contents" class="sidebar" id="sidebar">
+<div class="sidebar-scrollbox">
+<ol class="chapter"><li class="chapter-item expanded affix"><a href="index.html">privacy.noarch</a></li><li class="chapter-item expanded affix"><a href="SUMMARY.html">目錄</a></li><li class="chapter-item expanded affix"><div>前言</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">1.</strong> 在開始前</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="Fundamentals/BasicOfTheBasics.html"><strong aria-hidden="true">1.1.</strong> 常見錯誤集合：線上安全基本原則</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.</strong> 從可信的來源安裝軟體</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">2.1.</strong> [Android] F-Droid</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.2.</strong> [Android] Aurora Store</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.</strong> 安全地使用瀏覽器上網</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="Browsers/Bromite/Bromite.html"><strong aria-hidden="true">3.1.</strong> [Android] Bromite</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.</strong> [Desktop/All] Firefox</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.1.</strong> 使用外掛來增強瀏覽體驗 ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.3.</strong> [Desktop/All]Tor Browser ^</div></li></ol></li><li class="chapter-item expanded"><a href="Input/Input.html"><strong aria-hidden="true">4.</strong> 自由打字，打字自由</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="Input/NoNetworkAccess/NoNetworkAccess.html"><strong aria-hidden="true">4.1.</strong> [Android] 禁止輸入法聯網</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">4.2.</strong> 同文輸入法 (TRIME) ^</div></li></ol></li><li class="chapter-item expanded"><a href="Passwords/Passwords.html"><strong aria-hidden="true">5.</strong> 帳號安全：保護，隔離，整理</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="Passwords/PasswordManagers.html"><strong aria-hidden="true">5.1.</strong> 讓密碼管理器幫你記住密碼</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.1.</strong> [Android] Bitwarden</div></li><li class="chapter-item expanded"><a href="Passwords/BitwardenWeb/BitwardenWeb.html"><strong aria-hidden="true">5.1.2.</strong> [Web] Bitwarden</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.3.</strong> [Desktop/All] KeePassXC ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.</strong> 二步驗證 - 增強帳號安全</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.1.</strong> [Android] andOTP</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.2.</strong> [Desktop/All] KeePassXC 的二步驗證功能</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="WallBreak/WallBreak.html"><strong aria-hidden="true">6.</strong> 突破網路長城</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.1.</strong> 代理提供商</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.</strong> 代理工具 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.1.</strong> V2Ray</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.2.</strong> Trojan</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.3.</strong> Shadowsocks*</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">7.</strong> 在享受自由言論之前：“分裂人格”的魅力</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="Identities/iYP_DID/iYP_DID.html"><strong aria-hidden="true">7.1.</strong> [轉載] 分身術完整指南：妥善管理您的線上身份並獲得安全的方法</a></li><li class="chapter-item expanded"><a href="Identities/WorldIsMine/WorldIsMine.html"><strong aria-hidden="true">7.2.</strong> [轉載] 一個網友的“個人網路身份整改方案”</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.</strong> 在網路圍牆外社交</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.</strong> 中心化</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.1.</strong> [All] Telegram</div></li><li class="chapter-item expanded"><a href="RTC/Signal/Signal.html"><strong aria-hidden="true">8.1.2.</strong> [Android] Signal</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.</strong> 去中心化 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.1.</strong> [Android/iOS] Matrix/Element</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.2.</strong> [Web] Matrix/Element</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.</strong> 私密地傳送和接收郵件</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.</strong> 郵件提供商</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.1.</strong> [Web] ProtonMail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.2.</strong> [Web] Tutanota</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.</strong> 郵件客戶端 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.1.</strong> [Android] K-9 Mail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.2.</strong> [Desktop/All] Thunderbird</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="Encryption/Encryption.html"><strong aria-hidden="true">10.</strong> 加密，加密一切</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="Encryption/Pubkey/Pubkey.html"><strong aria-hidden="true">10.1.</strong> [翻譯] 公鑰加密簡介</a></li><li class="chapter-item expanded"><a href="Encryption/OpenKeychain/OpenKeychain.html"><strong aria-hidden="true">10.2.</strong> [Android] PGP: OpenKeychain</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.</strong> Android 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.1.</strong> 系統設定</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.</strong> “刷機”基礎</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.1.</strong> 深入瞭解自己的裝置</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.2.</strong> 選擇第三方 ROM</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.3.</strong> Magisk</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.4.</strong> microG</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">12.</strong> Windows 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="Tricks-Windows/VHD/VHD.html"><strong aria-hidden="true">12.1.</strong> 使用 VHD(X) 部署原生多系統 ^</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">13.</strong> 類 Unix 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="Tricks-Unix/dos-donts/dos-donts.html"><strong aria-hidden="true">13.1.</strong> 網上教程不會告訴你的類 Unix 使用注意事項</a></li></ol></li><li class="chapter-item expanded"><div>後記</div></li><li class="chapter-item expanded affix"><a class="active" href="CONTRIBUTING.html">反饋與貢獻</a></li></ol>
+<!-- mods to the vanilla sidebar-->
+<hr/>
+<p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
+<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
+</div>
+<div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+</nav>
+<div class="page-wrapper" id="page-wrapper">
+<div class="page">
+<div id="menu-bar-hover-placeholder"></div>
+<div class="menu-bar sticky bordered" id="menu-bar">
+<div class="left-buttons">
+<button aria-controls="sidebar" aria-label="Toggle Table of Contents" class="icon-button" id="sidebar-toggle" title="Toggle Table of Contents" type="button">
+<i class="fa fa-bars"></i>
+</button>
+<button aria-controls="theme-list" aria-expanded="false" aria-haspopup="true" aria-label="Change theme" class="icon-button" id="theme-toggle" title="Change theme" type="button">
+<i class="fa fa-paint-brush"></i>
+</button>
+<ul aria-label="Themes" class="theme-popup" id="theme-list" role="menu">
+<li role="none"><button class="theme" id="light" role="menuitem">Light (default)</button></li>
+<li role="none"><button class="theme" id="rust" role="menuitem">Rust</button></li>
+<li role="none"><button class="theme" id="coal" role="menuitem">Coal</button></li>
+<li role="none"><button class="theme" id="navy" role="menuitem">Navy</button></li>
+<li role="none"><button class="theme" id="ayu" role="menuitem">Ayu</button></li>
+</ul>
+</div>
+<h1 class="menu-title">privacy.noarch</h1>
+<div class="right-buttons">
+<a aria-label="Switch between Simplified and Traditional Chinese" class="icon-button" onclick="
+                        'use strict';
+
+                        const CN_CLEAR = 'privacy.n0ar.ch';
+                        const TW_CLEAR = 'privacy-tw.n0ar.ch';
+                        const CN_TOR = 'fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+                        const TW_TOR = 'tw.fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+
+                        switch (window.location.hostname) {
+                            case CN_CLEAR:
+                                window.location.hostname = TW_CLEAR;
+                                break;
+                            case TW_CLEAR:
+                                window.location.hostname = CN_CLEAR;
+                                break;
+                            case CN_TOR:
+                                window.location.hostname = TW_TOR;
+                                break;
+                            case TW_TOR:
+                                window.location.hostname = CN_TOR;
+                                break;
+                            default:
+                                window.alert('Error determining current site language.\nI\'m either being served locally, or running as a mirror.\n\nIf you are running a mirror, please change the hostnames on line ~166 in theme/index.hbs.');
+                                break;
+                        }
+                        " title="Switch between Simplified and Traditional Chinese">
+<strong>簡/繁</strong>
+</a>
+<a aria-label="Git repository" href="https://github.com/noarchwastaken/privacy" title="Git repository">
+<i class="fa fa-github" id="git-repository-button"></i>
+</a>
+</div>
+</div>
+<!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+<script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+<div class="content" id="content">
+<main>
+<!-- Page table of contents -->
+<div class="sidetoc"><nav class="pagetoc"></nav></div>
+<h1 id="反饋與貢獻"><a class="header" href="#反饋與貢獻">反饋與貢獻</a></h1>
+<hr/>
+<h2 id="簡單的"><a class="header" href="#簡單的">簡單的</a></h2>
+<p>對 <code>privacy.noarch</code> 有意見嗎？想要協助編寫 <code>privacy.noarch</code> 嗎？</p>
+<p>加入我們的 <a href="https://t.me/chat_privacy_noarch"><i aria-hidden="true" class="fa fa-telegram"></i> Telegram 群組</a>!</p>
+<h2 id="直接的"><a class="header" href="#直接的">直接的</a></h2>
+<p>你也可以直接為 <code>privacy.noarch</code> 編寫文章！</p>
+<h3 id="與-git-和-github-互動"><a class="header" href="#與-git-和-github-互動">與 <code>git</code> 和 GitHub 互動</a></h3>
+<p><code>privacy.noarch</code> 主要使用 Markdown 編寫並用 <a href="https://github.com/rust-lang/mdBook">mdBook</a> 生成網頁。</p>
+<p>它還用 <code>git</code> 進行版本管理，並同時擁有<a href="https://git.n0ar.ch/privacy">自託管 cgit</a> 和 <a href="https://github.com/noarchwastaken/privacy"><i aria-hidden="true" class="fa fa-github"></i> GitHub</a> 兩個映象。</p>
+<p>除了加入 <code>privacy.noarch</code> 的 <a href="https://t.me/chat_privacy_noarch"><i aria-hidden="true" class="fa fa-telegram"></i> Telegram 群</a>，你可以在 GitHub 開 <a href="https://github.com/noarchwastaken/privacy/issues">Issues</a> 提意見。</p>
+<p>如果你想自己修正 <code>privacy.noarch</code> 的錯誤，或是為它寫一篇文章，自己修改然後開個 <a href="https://github.com/noarchwastaken/privacy/pulls">Pull request</a> 則是更直接的方法！</p>
+<h3 id="文字格式"><a class="header" href="#文字格式">文字格式</a></h3>
+<h4 id="markdown-語法"><a class="header" href="#markdown-語法">Markdown 語法</a></h4>
+<p>為了人類可讀性和編寫的便捷，Markdown 的語法很靈活：很多不同的語法可以帶來相同的結果。<em>noarch</em> 為了最大化文章的可讀性和格式的統一，擬定了一個 Markdown 語法使用規範：</p>
+<table><thead><tr><th>效果</th><th>格式</th></tr></thead><tbody>
+<tr><td>標題</td><td><code>#</code>, 僅在行首使用</td></tr>
+<tr><td><em>斜體</em></td><td><code>*</code></td></tr>
+<tr><td><strong>粗體</strong></td><td><code>**</code></td></tr>
+<tr><td><em><strong>加粗斜體</strong></em></td><td><code>***</code></td></tr>
+<tr><td>列表</td><td><code>-</code></td></tr>
+<tr><td><code>程式碼塊</code></td><td><code>```</code></td></tr>
+<tr><td>分割線</td><td><code>---</code></td></tr>
+</tbody></table>
+<h4 id="文法與語氣"><a class="header" href="#文法與語氣">文法與語氣</a></h4>
+<p><em>noarch</em> 原本想盡量接近“維基”的語氣和文法，但在寫作的過程中發現使用第二人稱、貼近日常生活的語氣更加親切。</p>
+<p>請不要大量使用幽默，或是使用可能帶來誤導的幽默，以保證讀者都能正確遵循指導。</p>
+<p>請僅在必要時使用第一人稱和第三人稱代詞，並用名字代替<em>它們</em>（這是一個必要的使用）；第二人稱使用“你”。</p>
+<h4 id="標點與空格"><a class="header" href="#標點與空格">標點與空格</a></h4>
+<ul>
+<li>標點的全 / 半形跟隨其前面的字元：
+<pre><code>This is an English semicolon; 這是中文的句號。
+</code></pre>
+</li>
+<li>雙對標點的全 / 半形跟隨其包含的字元，雙對標點的全 / 半形跟隨其第一個標點：
+<pre><code>括號 (bracket); bracket（括號）；(bracket / 括號).
+</code></pre>
+</li>
+<li>在中文裡使用半形標點需適當地加空格：
+<pre><code>標點 / 標點 / punctuations
+括號 (bracket)
+</code></pre>
+</li>
+<li>中西文混用，須在西文前後加空格（行中第一個字元除外）：
+<pre><code>在中文裡使用 English 需要在英文前後加空格。
+</code></pre>
+</li>
+<li>較大的數須按需加空格：
+<pre><code>2前後就不需要加空格；
+但 32768 需要。
+You also need to add spaces accordingly to 114514.
+</code></pre>
+</li>
+<li>使用 Font Awesome 時須在其前後加空格（行中第一個字元除外）：  <pre><code><i aria-hidden="true" class="fa fa-smile-o"></i> 微笑 <i aria-hidden="true" class="fa fa-smile-o"></i> 後面有一個空格！</code></pre>
+</li>
+</ul>
+<h4 id="圖片的嵌入"><a class="header" href="#圖片的嵌入">圖片的嵌入</a></h4>
+<p><strong>路徑</strong></p>
+<p>請在對應 Markdown 文字的相同資料夾建立 <code>images</code> 資料夾存放圖片，並使用相對路徑引用圖片：</p>
+<pre><code>![image](images/image.webp)
+</code></pre>
+<p>而不是：</p>
+<pre><code>![image](https://privacy.n0ar.ch/images/image.webp)
+</code></pre>
+<p>更不是：</p>
+<pre><code>![image](/home/noarch/.../images/image.webp)
+</code></pre>
+<p>如果圖片是在網上找到的，<strong>請下載</strong>並使用相同方法引用。請勿直接引用外部資源。</p>
+<p><strong>大小</strong></p>
+<p>請確保豎屏圖片不像這樣“吃掉”讀者的整個螢幕：</p>
+<p><img alt="" loading="lazy" src="Browsers/Bromite/images/bromite-org.webp"/></p>
+<p>Markdown 不具備調整圖片大小的能力，但你可以在 Markdown 裡用 HTML 嵌入圖片並限制大小：</p>
+<pre><code>&lt;img alt="bromite-org" src="images/bromite-org.webp" width=450&gt;
+</code></pre>
+<p>上方程式碼的執行效果是這樣：</p>
+<img alt="bromite-org" loading="lazy" src="Browsers/Bromite/images/bromite-org.webp" width="450"/>
+<h4 id="在程式碼塊中使用-font-awesome"><a class="header" href="#在程式碼塊中使用-font-awesome">在程式碼塊中使用 Font Awesome</a></h4>
+<p><em>noarch</em> 找不到好方法來讓 Font Awesome 的引用逃逸 Markdown 的程式碼段 / 塊 ; 於是只好用 <code>html</code> 的 <code>&lt;code&gt;</code> 塊來代替。下面是一個例子：</p>
+<pre><code>&lt;code&gt;&lt;i class="fa fa-smile-o" aria-hidden="true"&gt;&lt;/i&gt; 可以被正確顯示。&lt;/code&gt;
+</code></pre>
+<p>執行效果是： <code><i aria-hidden="true" class="fa fa-smile-o"></i> 可以被正確顯示。</code></p>
+<p>如果包含 Font Awesome 的是一個程式碼塊 <code>```</code> , 你需要在 <code>&lt;code&gt;</code> 前後加 <code>&lt;pre&gt;</code> . 例如：</p>
+<pre><code>&lt;pre&gt;&lt;code&gt;&lt;i class="fa fa-smile-o" aria-hidden="true"&gt;&lt;/i&gt; 可以被正確顯示。&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<p>執行效果是：</p>
+<pre><code><i aria-hidden="true" class="fa fa-smile-o"></i> 可以被正確顯示。</code></pre>
+<h3 id="媒體格式"><a class="header" href="#媒體格式">媒體格式</a></h3>
+<p>請使用<a href="https://en.wikipedia.org/wiki/List_of_open_formats">這個列表</a>中列出的開放格式。這樣可以保證讀者不需要為閱讀 <code>privacy.noarch</code> 付任何直接或間接的版權費。使用開放格式同時也是一種推廣它們的方式。</p>
+<p>點陣圖請儘量使用 WEBP 格式編碼，以加快頁面載入速度；如果轉載或擷取的原圖非 WEBP, <em>noarch</em> 建議你把它們轉換成無失真壓縮的 WEBP.</p>
+<p>下面是 <em>noarch</em> 在 GNU/Linux 上使用 <code>ImageMagick</code> 批量將 <code>.jpg</code> 和 <code>.png</code> 轉換成無損 <code>.webp</code> 的 one-liner:</p>
+<pre><code>$ mogrify -format webp -define webp:lossless=true *.png &amp;&amp; rm *.png &amp;&amp; mogrify -format webp -define webp:lossless=true *.jpg &amp;&amp; rm *.jpg
+</code></pre>
+<p>視訊請使用開放的 WEBM/VP9 格式編碼；這樣能在保證質量和播放效能的同時最大程度降低大小。</p>
+<p>請不要使用付費的 HEVC (H.265) 或 AVC (H.264) 格式編碼視訊。一些完全自由的瀏覽器將無法播放這些視訊。</p>
+<p>關於使用 <code>ffmpeg</code> 將視訊轉碼成 VP9, 請看<a href="https://trac.ffmpeg.org/wiki/Encode/VP9">FFmpeg 官方文件</a>。</p>
+<h3 id="版權和引用"><a class="header" href="#版權和引用">版權和引用</a></h3>
+<p>請在進行任何非原創引用時檢查來源的版權資訊，並註明來源。</p>
+<p>在引用維基百科條目解釋名詞時，除非中文版條目質量非常接近英文版，否則請引用英文版條目。<em>noarch</em> 很遺憾需要這麼做，因為中文版維基百科在隱私和計算機領域的條目可參考性還有很長一段路要走。</p>
+<p>不過，如果你為 <code>privacy.noarch</code> 翻譯了英文版維基百科的條目，請把它貢獻回中文版維基百科的對應條目，讓它們在艱難的環境下也能成長！</p>
+<h3 id="還有疑問"><a class="header" href="#還有疑問">還有疑問？</a></h3>
+<p>別猶豫，去 <code>privacy.noarch</code> 的 <a href="https://t.me/chat_privacy_noarch">Telegram 群組</a>提問！</p>
+</main>
+<nav aria-label="Page navigation" class="nav-wrapper">
+<!-- Mobile navigation buttons -->
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="mobile-nav-chapters previous" href="Tricks-Unix/dos-donts/dos-donts.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<div style="clear: both"></div>
+</nav>
+</div>
+</div>
+<nav aria-label="Page navigation" class="nav-wide-wrapper">
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="nav-chapters previous" href="Tricks-Unix/dos-donts/dos-donts.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+</nav>
+</div>
+<script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+<script charset="utf-8" src="clipboard.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="highlight.js" type="text/javascript"></script>
+<script charset="utf-8" src="book.js" type="text/javascript"></script>
+<!-- Custom JS scripts -->
+<script src="sidebar.js" type="text/javascript"></script>
+</body>
+</html>

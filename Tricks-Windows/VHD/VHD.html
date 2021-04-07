@@ -1,0 +1,588 @@
+<!DOCTYPE HTML>
+
+<html class="sidebar-visible no-js light" lang="zh-Hant">
+<head>
+<!-- Book generated using mdBook -->
+<meta charset="utf-8"/>
+<title>使用 VHD(X) 部署原生多系統 ^ - privacy.noarch</title>
+<!-- Custom HTML head -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="一本面向新手的隱私教程" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color">
+<link href="../../favicon.png" rel="shortcut icon"/>
+<link href="../../css/variables.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../css/variables.css" rel="stylesheet"/></noscript>
+<link href="../../css/general.css" rel="stylesheet"/>
+<link href="../../css/chrome.css" rel="stylesheet"/>
+<!-- Font Awesome 5.13 free content -->
+<link href="../../FontAwesome/css/all.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../FontAwesome/css/all.css" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" rel="stylesheet"/>
+</noscript>
+<!-- Fonts -->
+<!-- Highlight.js Stylesheets -->
+<link href="../../highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../highlight.css" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" rel="stylesheet"/>
+</noscript>
+<!-- Custom theme stylesheets -->
+<link href="../../sidebar.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../sidebar.css" rel="stylesheet"/></noscript>
+</meta></head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+<nav aria-label="Table of contents" class="sidebar" id="sidebar">
+<div class="sidebar-scrollbox">
+<ol class="chapter"><li class="chapter-item expanded affix"><a href="../../index.html">privacy.noarch</a></li><li class="chapter-item expanded affix"><a href="../../SUMMARY.html">目錄</a></li><li class="chapter-item expanded affix"><div>前言</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">1.</strong> 在開始前</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Fundamentals/BasicOfTheBasics.html"><strong aria-hidden="true">1.1.</strong> 常見錯誤集合：線上安全基本原則</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.</strong> 從可信的來源安裝軟體</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">2.1.</strong> [Android] F-Droid</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.2.</strong> [Android] Aurora Store</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.</strong> 安全地使用瀏覽器上網</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Browsers/Bromite/Bromite.html"><strong aria-hidden="true">3.1.</strong> [Android] Bromite</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.</strong> [Desktop/All] Firefox</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.1.</strong> 使用外掛來增強瀏覽體驗 ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.3.</strong> [Desktop/All]Tor Browser ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Input/Input.html"><strong aria-hidden="true">4.</strong> 自由打字，打字自由</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Input/NoNetworkAccess/NoNetworkAccess.html"><strong aria-hidden="true">4.1.</strong> [Android] 禁止輸入法聯網</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">4.2.</strong> 同文輸入法 (TRIME) ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Passwords/Passwords.html"><strong aria-hidden="true">5.</strong> 帳號安全：保護，隔離，整理</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Passwords/PasswordManagers.html"><strong aria-hidden="true">5.1.</strong> 讓密碼管理器幫你記住密碼</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.1.</strong> [Android] Bitwarden</div></li><li class="chapter-item expanded"><a href="../../Passwords/BitwardenWeb/BitwardenWeb.html"><strong aria-hidden="true">5.1.2.</strong> [Web] Bitwarden</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.3.</strong> [Desktop/All] KeePassXC ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.</strong> 二步驗證 - 增強帳號安全</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.1.</strong> [Android] andOTP</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.2.</strong> [Desktop/All] KeePassXC 的二步驗證功能</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../WallBreak/WallBreak.html"><strong aria-hidden="true">6.</strong> 突破網路長城</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.1.</strong> 代理提供商</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.</strong> 代理工具 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.1.</strong> V2Ray</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.2.</strong> Trojan</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.3.</strong> Shadowsocks*</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">7.</strong> 在享受自由言論之前：“分裂人格”的魅力</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Identities/iYP_DID/iYP_DID.html"><strong aria-hidden="true">7.1.</strong> [轉載] 分身術完整指南：妥善管理您的線上身份並獲得安全的方法</a></li><li class="chapter-item expanded"><a href="../../Identities/WorldIsMine/WorldIsMine.html"><strong aria-hidden="true">7.2.</strong> [轉載] 一個網友的“個人網路身份整改方案”</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.</strong> 在網路圍牆外社交</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.</strong> 中心化</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.1.</strong> [All] Telegram</div></li><li class="chapter-item expanded"><a href="../../RTC/Signal/Signal.html"><strong aria-hidden="true">8.1.2.</strong> [Android] Signal</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.</strong> 去中心化 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.1.</strong> [Android/iOS] Matrix/Element</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.2.</strong> [Web] Matrix/Element</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.</strong> 私密地傳送和接收郵件</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.</strong> 郵件提供商</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.1.</strong> [Web] ProtonMail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.2.</strong> [Web] Tutanota</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.</strong> 郵件客戶端 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.1.</strong> [Android] K-9 Mail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.2.</strong> [Desktop/All] Thunderbird</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../Encryption/Encryption.html"><strong aria-hidden="true">10.</strong> 加密，加密一切</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Encryption/Pubkey/Pubkey.html"><strong aria-hidden="true">10.1.</strong> [翻譯] 公鑰加密簡介</a></li><li class="chapter-item expanded"><a href="../../Encryption/OpenKeychain/OpenKeychain.html"><strong aria-hidden="true">10.2.</strong> [Android] PGP: OpenKeychain</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.</strong> Android 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.1.</strong> 系統設定</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.</strong> “刷機”基礎</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.1.</strong> 深入瞭解自己的裝置</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.2.</strong> 選擇第三方 ROM</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.3.</strong> Magisk</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.4.</strong> microG</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">12.</strong> Windows 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a class="active" href="../../Tricks-Windows/VHD/VHD.html"><strong aria-hidden="true">12.1.</strong> 使用 VHD(X) 部署原生多系統 ^</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">13.</strong> 類 Unix 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Unix/dos-donts/dos-donts.html"><strong aria-hidden="true">13.1.</strong> 網上教程不會告訴你的類 Unix 使用注意事項</a></li></ol></li><li class="chapter-item expanded"><div>後記</div></li><li class="chapter-item expanded affix"><a href="../../CONTRIBUTING.html">反饋與貢獻</a></li></ol>
+<!-- mods to the vanilla sidebar-->
+<hr/>
+<p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
+<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
+</div>
+<div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+</nav>
+<div class="page-wrapper" id="page-wrapper">
+<div class="page">
+<div id="menu-bar-hover-placeholder"></div>
+<div class="menu-bar sticky bordered" id="menu-bar">
+<div class="left-buttons">
+<button aria-controls="sidebar" aria-label="Toggle Table of Contents" class="icon-button" id="sidebar-toggle" title="Toggle Table of Contents" type="button">
+<i class="fa fa-bars"></i>
+</button>
+<button aria-controls="theme-list" aria-expanded="false" aria-haspopup="true" aria-label="Change theme" class="icon-button" id="theme-toggle" title="Change theme" type="button">
+<i class="fa fa-paint-brush"></i>
+</button>
+<ul aria-label="Themes" class="theme-popup" id="theme-list" role="menu">
+<li role="none"><button class="theme" id="light" role="menuitem">Light (default)</button></li>
+<li role="none"><button class="theme" id="rust" role="menuitem">Rust</button></li>
+<li role="none"><button class="theme" id="coal" role="menuitem">Coal</button></li>
+<li role="none"><button class="theme" id="navy" role="menuitem">Navy</button></li>
+<li role="none"><button class="theme" id="ayu" role="menuitem">Ayu</button></li>
+</ul>
+</div>
+<h1 class="menu-title">privacy.noarch</h1>
+<div class="right-buttons">
+<a aria-label="Switch between Simplified and Traditional Chinese" class="icon-button" onclick="
+                        'use strict';
+
+                        const CN_CLEAR = 'privacy.n0ar.ch';
+                        const TW_CLEAR = 'privacy-tw.n0ar.ch';
+                        const CN_TOR = 'fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+                        const TW_TOR = 'tw.fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+
+                        switch (window.location.hostname) {
+                            case CN_CLEAR:
+                                window.location.hostname = TW_CLEAR;
+                                break;
+                            case TW_CLEAR:
+                                window.location.hostname = CN_CLEAR;
+                                break;
+                            case CN_TOR:
+                                window.location.hostname = TW_TOR;
+                                break;
+                            case TW_TOR:
+                                window.location.hostname = CN_TOR;
+                                break;
+                            default:
+                                window.alert('Error determining current site language.\nI\'m either being served locally, or running as a mirror.\n\nIf you are running a mirror, please change the hostnames on line ~166 in theme/index.hbs.');
+                                break;
+                        }
+                        " title="Switch between Simplified and Traditional Chinese">
+<strong>簡/繁</strong>
+</a>
+<a aria-label="Git repository" href="https://github.com/noarchwastaken/privacy" title="Git repository">
+<i class="fa fa-github" id="git-repository-button"></i>
+</a>
+</div>
+</div>
+<!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+<script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+<div class="content" id="content">
+<main>
+<!-- Page table of contents -->
+<div class="sidetoc"><nav class="pagetoc"></nav></div>
+<h1 id="使用-vhdx-部署原生多系統-"><a class="header" href="#使用-vhdx-部署原生多系統-">使用 VHD(X) 部署原生多系統 ^</a></h1>
+<hr/>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> <strong>這是一篇進階文章。</strong> 為了保證簡潔，本文會講解更少的基礎操作，而更注重細節和原理；儘管如此，<em>noarch</em> 也會盡量解釋清楚每一個必要的步驟。<br/>
+在閱讀本文之前，你應該已經瞭解了<a href="https://www.cipcourses.com/resources/how-does-online-proctoring-work/">監考軟體</a>，<a href="https://zh.wikipedia.org/zh-cn/%E8%99%9B%E6%93%AC%E6%A9%9F%E5%99%A8">虛擬機器</a>，<a href="https://zh.wikipedia.org/wiki/%E7%A3%81%E7%9B%98%E6%98%A0%E5%83%8F">虛擬磁碟</a>以及 <a href="https://www.thewindowsclub.com/how-does-windows-10-boot">Windows 啟動</a>的基本概念，並且熟悉 <a href="https://www.youtube.com/watch?v=92lpSazVmA4">Windows 命令列的基本操作</a>。如果你還沒有，點選前面的連結來了解。</p>
+</blockquote>
+<h2 id="noarch-的碎碎念"><a class="header" href="#noarch-的碎碎念"><em>noarch</em> 的碎碎念</a></h2>
+<p>這篇文章開始編寫時 (2020-10), 北美的 COVID-19 疫情依然水深火熱：美國依然以每天 5w+ 確診病例 穩 步 增 長 ，加拿大部分省份則見明顯反彈。</p>
+<p>你可能會疑惑：為什麼 <em>noarch</em> 要在一篇 IT 文章上講 COVID-19? </p>
+<p>原因是 COVID-19 “使得間諜軟體合法化，並且學校強迫讓學生安裝他們” (<a href="https://www.forbes.com/sites/seanlawson/2020/04/24/are-schools-forcing-students-to-install-spyware-that-invades-their-privacy-as-a-result-of-the-coronavirus-lockdown/">Forbes</a>, <a href="https://www.eff.org/deeplinks/2020/09/students-are-pushing-back-against-proctoring-surveillance-apps">EFF</a>).</p>
+<p>簡單來說：因為 COVID-19 疫情，學生需要完全上網課，同時也要在網上考試；而“為了防止考試作弊”，學校強制學生在考試時安裝“監考軟體”。</p>
+<p>幸運的是，<em>noarch</em> 所在的高中依然部分開放，考試照常在學校進行，不需要面對監考軟體。然而最近有大學的朋友給我發了這張圖：</p>
+<p><img alt="virtual-machine-detection" loading="lazy" src="images/virtual-machine-detection.webp"/></p>
+<p>這張圖裡，她嘗試在 VMware Fusion 虛擬機器裡執行監考軟體；意料之中的是，監考軟體檢測到了虛擬機器的存在並且拒絕啟動。</p>
+<p>如果你不知道對客戶機隱藏虛擬化狀態的方法，或是 <em>noarch</em> 將要介紹的使用 VHD 原生啟動 Windows, 在 due date 的催促下，你可能就高掛白旗，在日常使用的系統乖乖裝上了監考軟體。</p>
+<h2 id="目標和限制"><a class="header" href="#目標和限制">目標和限制</a></h2>
+<p>軟體可以通過多種方法檢測自己是否在虛擬機器內執行。</p>
+<p>例如 <a href="https://github.com/LordNoteworthy/al-khaser"><code>al-khaser</code></a> 就是一個檢測虛擬機器 / 偵錯程式的 demo. 這個 demo 會通過檢測 CPU 是否虛擬，檢測虛擬裝置及其驅動的存在等方法判斷虛擬機器的存在。</p>
+<p>要繞過所有這些虛擬機器檢測非常複雜；因此人們也用多系統來隔離自己的軟體，身份和資料。</p>
+<p>傳統的多系統雖然不是很複雜，但非常麻煩，也不夠靈活：你需要給磁碟分割槽；根據你啟動方式的不同，你需要用不同方法配置啟動引導器...</p>
+<p>微軟在 Windows 7 及以後提供的<a href="https://docs.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/deploy-windows-on-a-vhd--native-boot">虛擬磁碟啟動</a>功能則是在虛擬機器和多系統之間的一個詭異“縫合怪”。<strong>它有著虛擬磁碟的便利性（快照功能）以及原生多系統的效能優勢，並且不常被檢測為虛擬機器。</strong></p>
+<p>使用虛擬磁碟啟動時，Windows 啟動引導器會掛載虛擬磁碟並啟動虛擬磁碟內的 Windows; 除此之外，虛擬磁碟內的 Windows 會直接使用所有物理硬體。 如果你接觸過傳統多系統，下面是虛擬磁碟啟動和傳統多系統的一些區別：</p>
+<h3 id="相比傳統多系統"><a class="header" href="#相比傳統多系統">相比傳統多系統</a></h3>
+<ul>
+<li><i aria-hidden="true" class="fa fa-plus-circle"></i> 因為基於虛擬磁碟，能像虛擬機器一樣建立“快照”</li>
+<li><i aria-hidden="true" class="fa fa-minus-circle"></i> 無法“休眠”（暫停到磁碟）
+<ul>
+<li>但“睡眠”（暫停到記憶體）依然可用</li>
+</ul>
+</li>
+<li><i aria-hidden="true" class="fa fa-minus-circle"></i> 無法更新 Windows 的大版本（例如 Windows 10 1909 升級到 2004）</li>
+<li><i aria-hidden="true" class="fa fa-minus-circle"></i> 位於虛擬磁碟內的 Windows 必須是專業版以上（專業版(N)，企業版(N)，教育版(N)...）</li>
+</ul>
+<h3 id="相比虛擬機器"><a class="header" href="#相比虛擬機器">相比虛擬機器</a></h3>
+<ul>
+<li><i aria-hidden="true" class="fa fa-plus-circle"></i> 能直接利用物理硬體，效能損失少</li>
+<li><i aria-hidden="true" class="fa fa-plus-circle"></i> 較少被檢測為“虛擬機器”</li>
+<li><strong><i aria-hidden="true" class="fa fa-minus-circle"></i> <i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 無法控制軟體對硬體的訪問</strong></li>
+<li><strong><i aria-hidden="true" class="fa fa-minus-circle"></i> <i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 無法完全控制軟體對你“主系統”資料的訪問</strong></li>
+</ul>
+<h3 id="其它限制"><a class="header" href="#其它限制">其它限制</a></h3>
+<ul>
+<li><i aria-hidden="true" class="fa fa-info-circle"></i> 用來啟動的虛擬磁碟，以及儲存這個虛擬磁碟檔案的物理磁碟不能使用“動態分割槽”（一個微軟專有的分割槽表格式）</li>
+<li><i aria-hidden="true" class="fa fa-info-circle"></i> 虛擬磁碟檔案不能位於一個 Samba 分享（網路卷）上</li>
+<li><i aria-hidden="true" class="fa fa-info-circle"></i> 儲存這個虛擬磁碟檔案的物理卷不能使用 BitLocker 加密</li>
+<li><i aria-hidden="true" class="fa fa-info-circle"></i> 儲存這個虛擬磁碟檔案的物理卷必須是 NTFS 或 exFAT (Windows 10 1809+) 格式</li>
+</ul>
+<p>別怕，如果你沒有聽說過上述的功能，那麼你大概率不需要這些功能，因此虛擬磁碟多系統非常適合你；如果你是上述功能的使用者，你知道如何應對 ;)</p>
+<h2 id="先決條件"><a class="header" href="#先決條件">先決條件</a></h2>
+<p>你需要準備：</p>
+<ul>
+<li>一個執行著 Windows 10 的 PC
+<ul>
+<li><strong><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> Windows 10 on ARM 和 Windows 10 S 不支援多啟動</strong></li>
+</ul>
+</li>
+<li>至少 20GiB 的磁碟空閒空間，<em>noarch</em> 建議至少保留 60 GiB 以便安裝應用</li>
+<li>不按流量計費的網路，因為你將要下載約 5GiB 的 Windows 安裝映象</li>
+<li>該 PC 的“管理員” (Administrators) 許可權</li>
+<li>約 20 分鐘的空閒時間</li>
+</ul>
+<p><strong>我們開始吧！</strong></p>
+<h2 id="下載-windows-安裝映象"><a class="header" href="#下載-windows-安裝映象">下載 Windows 安裝映象</a></h2>
+<p>在虛擬磁盤裡安裝 Windows 就像在虛擬機器裡安裝 Windows. 首先你需要準備一個 <code>iso</code> 格式的 Windows 安裝映象。</p>
+<p>你可以通過多種方法向微軟獲得 Windows 安裝映象，例如“媒體建立工具”：</p>
+<p><img alt="windows-image-creation-tool" loading="lazy" src="images/windows-image-creation-tool.webp"/></p>
+<p>或者只為非 Windows 電腦開放的直接 <code>iso</code> 下載。</p>
+<p><img alt="windows10iso-actual" loading="lazy" src="images/windows10iso-actual.webp"/></p>
+<p>這兩種方式 <em>noarch</em> 就不在此贅述；你可以在等待下載的同時進行下一步。</p>
+<h2 id="建立虛擬磁碟檔案"><a class="header" href="#建立虛擬磁碟檔案">建立虛擬磁碟檔案</a></h2>
+<p>接下來你需要建立一個虛擬磁碟 <code>vhdx</code> 檔案。</p>
+<p>右鍵點選 <i aria-hidden="true" class="fa fa-windows"></i> 鍵，或是按<code><i aria-hidden="true" class="fa fa-windows"></i> + X</code>，在彈出的選單中選擇“磁碟管理”：</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 如果你當前在使用一個標準賬戶，你需要以管理員開啟 <code>PowerShell</code> / <code>CMD</code> 然後從那執行 <code>diskmgmt</code>.</p>
+</blockquote>
+<p><img alt="diskmgmt" loading="lazy" src="images/diskmgmt.webp"/></p>
+<p>要建立一個虛擬磁碟，點選選單欄的“操作”- “建立 VHD”：</p>
+<p><img alt="diskmgmt-actions" loading="lazy" src="images/diskmgmt-actions.webp"/></p>
+<p>然後在彈出的窗口裡選擇 <code>VHDX - 動態擴充套件</code>，指定 VHD 的最大大小，然後選擇虛擬磁碟檔案的儲存位置。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> <code>VHD</code> 的最大大小不能超過物理磁碟當前可用的空間大小。</p>
+</blockquote>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 如果你打算在虛擬磁盤裡安裝的是 Windows 7, 因為 Windows 7 無法從 <code>VHDX</code> 啟動，你應該使用 <code>VHD</code> 作為虛擬磁碟格式。</p>
+</blockquote>
+<img alt="diskmgmt-newvhd" loading="lazy" src="images/diskmgmt-newvhd.webp" width="370"/>
+<img alt="diskmgmt-newvhd-done" loading="lazy" src="images/diskmgmt-newvhd-done.webp" width="370"/>
+<p>填寫完成後點選“確定”，你就可以在“磁碟管理”中看到新新增的虛擬磁碟了：</p>
+<p><img alt="diskmgmt-vhd-online" loading="lazy" src="images/diskmgmt-vhd-online.webp"/></p>
+<p>就像物理磁碟一樣，你也需要初始化一個虛擬磁碟：為其建立一個分割槽表，然後建立一個分割槽。</p>
+<p>右擊左側的“沒有初始化”，選擇“初始化磁碟”；然後在彈出的視窗點選“確定”。</p>
+<p><img alt="diskmgmt-vhd-init" loading="lazy" src="images/diskmgmt-vhd-init.webp"><br/>
+<img alt="diskmgmt-vhd-parttable" loading="lazy" src="images/diskmgmt-vhd-parttable.webp"/></img></p>
+<p>這步做完後你就得到了一個準備被分割槽的磁碟：</p>
+<p><img alt="diskmgmt-vhd-init-finished" loading="lazy" src="images/diskmgmt-vhd-init-finished.webp"/></p>
+<p>接下來你就可以按照正常的方法給這個虛擬磁碟分割槽。<em>noarch</em> 在這裡只給虛擬磁碟建立一個 NTFS 分割槽：</p>
+<p><img alt="diskmgmt-vhd-newpart-menu" loading="lazy" src="images/diskmgmt-vhd-newpart-menu.webp"/>
+<img alt="diskmgmt-vhd-newpart-dialog" loading="lazy" src="images/diskmgmt-vhd-newpart-dialog.webp"/></p>
+<p>在“新建簡單卷嚮導”裡一路點選“下一步”，你就得到了一個可用的虛擬磁碟分割槽。</p>
+<p><img alt="diskmgmt-vhd-newvolume-done" loading="lazy" src="images/diskmgmt-vhd-newvolume-done.webp"/></p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 虛擬磁碟的最大大小不能超過當前磁碟可用空間的大小。這是因為虛擬磁碟內的 Windows 在啟動時會為了防止磁碟寫入錯誤，將自己擴充套件到虛擬磁碟的最大大小，並在關機時將自己縮小到實際資料量的大小。</p>
+</blockquote>
+<h2 id="解壓-windows"><a class="header" href="#解壓-windows">“解壓” Windows</a></h2>
+<p>接下來是本文最重要的一步：將 Windows 解壓到虛擬磁盤裡。</p>
+<p>這是 <em>noarch</em> 想要寫這篇文章的主要原因：<em>noarch</em> 找到的描述在虛擬磁盤裡安裝 Windows 的現有中文文章，均使用某種第三方工具或指令碼將 Windows “解壓”到目標虛擬磁碟。這些工具多數只為對應的教程所寫，沒有被長期維護，不夠可靠。</p>
+<p>實際上你可以使用 Windows 自帶的工具 <code>DISM</code> 簡單地“解壓” Windows 安裝映象。</p>
+<p>首先，在檔案資源管理器裡裝載你剛剛下載的 Windows 安裝光碟：</p>
+<img alt="mount-windows-iso" loading="lazy" src="images/mount-windows-iso.webp" width="450"/>
+<p>然後你就可以在“此電腦”裡看到“一個新光碟的插入”。</p>
+<p><img alt="windows-iso-mounted" loading="lazy" src="images/windows-iso-mounted.webp"/></p>
+<p>你可以右擊然後“開啟”（不是“從媒體安裝或執行程式”）剛剛裝載的 <code>iso</code> 映象。</p>
+<p>如果你是直接下載的 <code>iso</code>, 你可以在裝載的“光碟”裡找到 <code>sources\install.wim</code>.</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 如果你是使用“媒體建立工具”建立的 <code>iso</code>, 這個檔案則會是 <code>install.esd</code> 而不是 <code>install.wim</code>.</p>
+<p>如果你的是 <code>install.esd</code>, 請將下面所有命令中 <code>install.wim</code> 替換成 <code>install.esd</code>.</p>
+</blockquote>
+<img alt="install-wim" loading="lazy" src="images/install-wim.webp" width="450"/>
+<p><code><i aria-hidden="true" class="fa fa-windows"></i> + X</code>, 用管理員許可權開啟 <code>Windows PowerShell</code> 或 <code>CMD</code>:</p>
+<img alt="win-x-powershell" loading="lazy" src="images/win-x-powershell.webp" width="450"/>
+<p><img alt="powershell" loading="lazy" src="images/powershell.webp"/></p>
+<p>我們接下來會用 <code>DISM</code> 來檢視和“解壓”這個映象。</p>
+<p><code>install.wim</code> 是一個 <code>WinImage</code> 映象；<code>WinImage</code> 是微軟在 Windows Vista 釋出時推出的一個映象格式。</p>
+<p>其一個重要特性是可以在一個映象中差分多個子映象，而不顯著增加主映象的大小。因此，它取代了 Windows XP 及之前的檔案複製，專門用來包裝 Windows, 使得多個不同的 Windows 版本 (edition) 可以被包裝在一個安裝光盤裡。</p>
+<p>同樣地，我們下載的 Windows 10 安裝映象中的 <code>WinImage</code> 映象也包含多個版本；你在“解壓”時需要選擇一個 Windows 版本，在 <code>PowerShell</code> 裡執行這個命令來列出 <code>install.wim</code> 的所有子映象：</p>
+<pre><code>dism /Get-ImageInfo /ImageFile:[你的 install.wim 位置]
+</code></pre>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 你需要將上方的 <code>[你的 install.wim 位置]</code> 替換成你 <code>install.wim</code> 的實際位置。同樣你也需要替換所有後續使用方括號 <code>[]</code> 引用的數值。</p>
+</blockquote>
+<p>這是 <em>noarch</em> 的執行結果：</p>
+<pre><code>PS C:\Windows\system32&gt; dism /Get-ImageInfo /ImageFile:D:\sources\install.wim
+
+部署映像服務和管理工具
+版本: 10.0.19041.329
+
+映像詳細資訊: D:\sources\install.wim
+
+索引: 1
+名稱: Windows 10 家庭版
+描述: Windows 10 家庭版
+大小: 14,691,877,788 位元組
+
+索引: 2
+名稱: Windows 10 家庭單語言版
+描述: Windows 10 家庭單語言版
+大小: 14,691,375,165 位元組
+
+索引: 3
+名稱: Windows 10 教育版
+描述: Windows 10 教育版
+大小: 14,935,497,806 位元組
+
+索引: 4
+名稱: Windows 10 專業版
+描述: Windows 10 專業版
+大小: 14,935,765,881 位元組
+
+索引: 5
+名稱: Windows 10 專業教育版
+描述: Windows 10 專業教育版
+大小: 14,935,436,224 位元組
+
+索引: 6
+名稱: Windows 10 專業工作站版
+描述: Windows 10 專業工作站版
+大小: 14,935,467,015 位元組
+
+操作成功完成。
+</code></pre>
+<p>在執行完上述命令後請選擇 <del>困難</del> 一個 Windows 版本，並記住它的“索引”號。</p>
+<p><em>noarch</em> 在這裡選擇 “Windows 10 專業工作站版”子映象，其“索引”是6.</p>
+<p>關於 Windows 10 各個版本 (edition) 的區別，請見 <a href="https://www.microsoft.com/zh-cn/WindowsForBusiness/Compare">https://www.microsoft.com/zh-cn/WindowsForBusiness/Compare</a>.</p>
+<p>記住索引後，你可以用一行命令將 Windows “解壓”到虛擬磁碟內：</p>
+<pre><code>dism /Apply-Image /ImageFile:[你的 install.wim 位置] /Index:[你選擇的版本“索引”] /ApplyDir:[你虛擬磁碟的碟符] /Verify /Check-Integrity
+</code></pre>
+<p>上方命令選項的含義：</p>
+<ul>
+<li><code>/Apply-Image</code> : 應用（“解壓”）指定的映象
+<ul>
+<li><code>/ImageFile:</code> : 指定要處理的映象位置
+<ul>
+<li><code>/Index:</code> : 指定子映象的索引</li>
+</ul>
+</li>
+<li><code>/ApplyDir:</code> : 指定“解壓”的目標目錄</li>
+<li><code>/Verify</code> : 在複製後驗證結果正確</li>
+<li><code>/Check-Integrity</code> : 驗證映象的完整性</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 在上方的 <code>DISM</code> 命令裡，許多選項具有從屬關係。例如你不能將 <code>/Index:</code> 移動到 <code>/ApplyDir</code> 後面，因為 <code>/Index:</code> 從屬於 <code>/ImageFile:</code>. 如果你執行時出錯了，建議你檢查一下選項的順序。</p>
+</blockquote>
+<p>在 <em>noarch</em> 的例子裡，是執行這個命令：</p>
+<pre><code>dism /Apply-Image /ImageFile:D:\sources\install.wim /Index:6 /ApplyDir:E: /Verify /Check-Integrity
+</code></pre>
+<p>執行這行命令，稍等片刻，<code>DISM</code> 就會開始將 Windows “解壓”到虛擬磁碟：</p>
+<pre><code>PS C:\Windows\system32&gt; DISM /Apply-Image /ImageFile:D:\sources\install.wim /Index:6 /ApplyDir:E: /Verify /Check-Integrity
+
+部署映像服務和管理工具
+版本: 10.0.19041.572
+
+正在應用映像
+[================           28.0%                          ]
+</code></pre>
+<p>根據你的 PC 配置，“解壓”的過程會消耗 5 ~ 20 分鐘。<code>DISM</code> 會在完成後返回：</p>
+<pre><code>部署映像服務和管理工具
+版本: 10.0.19041.572
+
+正在應用映像
+[==========================100.0%==========================]
+操作成功完成。
+</code></pre>
+<p>到此，我們安裝 Windows 的過程已經完成大半了。下面我們將要為新安裝的 Windows 新增一個啟動項，並且重啟進入新的 Windows 安裝進行配置。</p>
+<h2 id="配置啟動項"><a class="header" href="#配置啟動項">配置啟動項</a></h2>
+<p>同樣在管理員許可權的 <code>PowerShell</code> 裡，執行：</p>
+<pre><code>bcdboot [你虛擬磁碟的碟符:]\Windows
+</code></pre>
+<p>上方命令選項的含義：</p>
+<ul>
+<li><code>/d</code> : 保留目前的預設啟動項，不將新啟動項設定為預設；這會保證 Windows 啟動引導器依然由安裝在物理磁碟的 Windows 提供。</li>
+<li><code>/l zh-CN</code> : 設定新新增的啟動引導器語言為簡體中文。<code>bcdboot</code> 命令新增的啟動項預設語言是美式英語 <code>en-us</code>.
+<ul>
+<li>如果你在安裝一個繁體中文 Windows, 請使用 <code>/l zh-TW</code>.</li>
+</ul>
+</li>
+</ul>
+<p>例如 <em>noarch</em> 的虛擬磁碟碟符為 <code>E:</code> , 這是我的執行結果：</p>
+<pre><code>PS C:\Windows\system32&gt; bcdboot /d /l zh-CN E:\Windows
+已成功建立啟動檔案。
+</code></pre>
+<p>這一步會將你在虛擬磁碟內的 Windows 新增到 <a href="https://www.thewindowsclub.com/how-does-windows-10-boot"><code>BOOTMGR</code></a> 的啟動選項裡。從現在起，你在開機時將需要選擇進入安裝在物理磁碟上的 Windows 或是虛擬磁碟上的 Windows. </p>
+<p>理論上，這一步做完後，你就可以重啟，然後選擇新的 Windows 了；在啟動時你會看到“選擇作業系統”介面，其中含有 <code>VHD</code> 的就是你安裝在虛擬磁碟內的 Windows.</p>
+<p><img alt="bootmgr-initial" loading="lazy" src="images/bootmgr-initial.webp"/></p>
+<h3 id="重新命名啟動項"><a class="header" href="#重新命名啟動項">重新命名啟動項</a></h3>
+<p>為了更好地區分虛擬和物理磁碟中的作業系統，你可能想給剛剛新增的啟動項取一個不同的名字。要給啟動項改名，你需要用到 <code>bcdedit</code>.</p>
+<p>在 <code>BOOTMGR</code> 的啟動項資料庫裡，每個啟動項都有一個唯一的 <code>UUID</code>; 要對一個特定的啟動項進行修改，你需要先獲取它們的 <code>UUID</code>.</p>
+<p>不新增任何選項執行 <code>bcdedit</code> 將會獲取目前所有啟動項的資訊：</p>
+<pre><code>PS C:\Windows\system32&gt; bcdedit
+
+Windows 啟動管理器
+--------------------
+識別符號                  {bootmgr}
+device                  partition=\Device\HarddiskVolume1
+path                    \EFI\Microsoft\Boot\bootmgfw.efi
+description             Windows Boot Manager
+locale                  zh-CN
+inherit                 {globalsettings}
+default                 {current}
+resumeobject            {edd55b4c-0bc1-11eb-8106-a0043c6d1b90}
+displayorder            {edd55b4d-0bc1-11eb-8106-a0043c6d1b90}
+                        {current}
+toolsdisplayorder       {memdiag}
+timeout                 30
+
+Windows 啟動載入器
+-------------------
+識別符號                  {edd55b4d-0bc1-11eb-8106-a0043c6d1b90}
+device                  partition=E:
+path                    \Windows\system32\winload.efi
+description             Windows 10
+locale                  zh-CN
+inherit                 {bootloadersettings}
+isolatedcontext         Yes
+allowedinmemorysettings 0x15000075
+osdevice                partition=E:
+systemroot              \Windows
+resumeobject            {edd55b4c-0bc1-11eb-8106-a0043c6d1b90}
+nx                      OptIn
+bootmenupolicy          Standard
+
+Windows 啟動載入器
+-------------------
+識別符號                  {current}
+device                  partition=C:
+path                    \Windows\system32\winload.efi
+description             Windows 10
+locale                  zh-CN
+inherit                 {bootloadersettings}
+recoverysequence        {edd55b42-0bc1-11eb-8106-a0043c6d1b90}
+displaymessageoverride  Recovery
+recoveryenabled         Yes
+isolatedcontext         Yes
+allowedinmemorysettings 0x15000075
+osdevice                partition=C:
+systemroot              \Windows
+resumeobject            {edd55b40-0bc1-11eb-8106-a0043c6d1b90}
+nx                      OptIn
+bootmenupolicy          Standard
+</code></pre>
+<p>在每個 "Windows 啟動載入器" 下的 <code>識別符號</code> 就是我們要用的 <code>UUID</code>.</p>
+<p><code>device</code> 行代表啟動項所使用的裝置；目前我們的虛擬磁碟依然在掛載狀態，所以 <code>device</code> 會返回當前虛擬磁碟被掛載到的碟符。在 <em>noarch</em> 的例子裡，它是 <code>E:</code>, 對應的 <code>UUID</code> 是 <code>{edd55b4d-0bc1-11eb-8106-a0043c6d1b90}</code>.</p>
+<p>選中然後右擊滑鼠複製這個識別符號，然後執行：</p>
+<pre><code>bcdedit /set "[你的啟動項 UUID]" description "[啟動項描述]"
+</code></pre>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 因為 <code>PowerShell</code> 與 <code>CMD</code> 對待字串的方式不同， 在 <code>PowerShell</code> 裡，啟動項 <code>UUID</code> 以及描述需要用雙引號 <code>"</code> 或單引號 <code>'</code> 括起來。</p>
+</blockquote>
+<p>在 <em>noarch</em> 的例子裡，這是我執行的實際命令以及結果：</p>
+<pre><code>PS C:\Windows\system32&gt; bcdedit /set "{edd55b4d-0bc1-11eb-8106-a0043c6d1b90}" description "位於 VHDX 內的 Windows 10 專業工作站版"
+操作成功完成。
+</code></pre>
+<p>操作完成後，你就可以重啟進入新安裝的 Windows 了。</p>
+<p><img alt="bootmgr-renamed" loading="lazy" src="images/bootmgr-renamed.webp"/></p>
+<h2 id="配置新安裝的-windows"><a class="header" href="#配置新安裝的-windows">配置新安裝的 Windows</a></h2>
+<p>重啟選擇新安裝的 Windows 後，Windows 可能會多重啟幾次；而這些重啟依然會通過原系統的啟動引導器進行，因此你需要在電腦前 <del>坐和放寬</del> 並且準備在啟動選單中選擇虛擬磁碟內的 Windows 安裝。</p>
+<p><em>noarch</em> 將不在此贅述 <code>OOBE</code>（開箱體驗），詳細的過程請看 <a href="">OOBE 注意事項（未完成）。</a></p>
+<h3 id="啟用"><a class="header" href="#啟用">啟用</a></h3>
+<p>如果你在一臺預裝了正版 Windows 的機器上安裝對應版本的 Windows（通常為 Windows 家庭單語言版），Windows 會讀取主機板韌體內的數字證書自動啟用。如果 Windows 沒有自動啟用，你需要購買一個 Windows 的授權。</p>
+<p>因為法律原因（沒錯，求生欲挺強），<em>noarch</em> 將不描述<a href="https://kms.cangshui.net" style="color:#333333">使用 KMS 伺服器啟用的方法。</a></p>
+<p><del>使用微軟®軟體正版授權 安全 穩定 聲譽</del></p>
+<h3 id="安裝驅動"><a class="header" href="#安裝驅動">安裝驅動</a></h3>
+<p>進入 <code>Windows 設定 -&gt; 更新和安全 -&gt; Windows 更新</code>, 手動檢查更新。Windows 會通過 Windows Update 自動安裝關鍵的硬體驅動。</p>
+<p>如果你要手動安裝驅動，虛擬磁碟內的 Windows 在驅動安裝上和直接在物理磁碟內安裝基本無異。</p>
+<h3 id="解除安裝-unmount-物理磁碟"><a class="header" href="#解除安裝-unmount-物理磁碟">解除安裝 (unmount) 物理磁碟</a></h3>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-bomb"></i> <strong>永遠加密和備份高敏感性和珍貴的資料。</strong> 下面的方法只能避免常見的檔案操作，並不能阻止專門為了盜取或摧毀已解除安裝磁碟內資料的惡意軟體。</p>
+</blockquote>
+<p>你應該不想這個系統內的應用讀取你直接儲存在物理磁碟內的檔案。然而 Windows 會自動掛載所有檢測到的磁碟和分割槽，使得所有的應用都能訪問其中的內容：</p>
+<p><img alt="explorer-vhd" loading="lazy" src="images/explorer-vhd.webp"/></p>
+<p>要解除安裝 (unmount, 取消裝載，而不是移除) 物理磁碟，你同樣需要使用磁碟管理 <code>diskmgmt</code>.</p>
+<p><img alt="diskmgmt-in-vhd" loading="lazy" src="images/diskmgmt-in-vhd.webp"/></p>
+<p>右擊你要解除安裝的分割槽，選擇“更改驅動器號和路徑”：</p>
+<p><img alt="diskmgmt-change-drive-letter-menu" loading="lazy" src="images/diskmgmt-change-drive-letter-menu.webp"/></p>
+<p>在彈出的窗口裡選中當前的驅動器號，然後“刪除”。同時你需要兩次確認操作：</p>
+<p><img alt="diskmgmt-change-drive-letter-window" loading="lazy" src="images/diskmgmt-change-drive-letter-window.webp"/></p>
+<p><img alt="diskmgmt-unmount-confirm" loading="lazy" src="images/diskmgmt-unmount-confirm.webp"/></p>
+<p><img alt="diskmgmt-unmount-confirm2" loading="lazy" src="images/diskmgmt-unmount-confirm2.webp"/></p>
+<p>對所有自動裝載的物理分割槽重複上述操作，你就能解除安裝所有想隔離的物理分割槽了。你甚至可以解除安裝包含著當前虛擬磁碟檔案的物理分割槽，而 Windows 依然能訪問這個虛擬磁碟檔案。</p>
+<p><img alt="diskmgmt-in-vhd-unmounted" loading="lazy" src="images/diskmgmt-in-vhd-unmounted.webp"/></p>
+<h3 id="虛擬記憶體"><a class="header" href="#虛擬記憶體">虛擬記憶體</a></h3>
+<p><a href="https://social.technet.microsoft.com/Forums/windows/en-US/dd78df78-7025-4ed7-ac47-2310e814c68f/native-vhd-boot-and-swapfile?forum=w7itprovirt">Windows 不支援在虛擬磁碟存放虛擬記憶體分頁檔案；</a>因此你需要將分頁檔案直接儲存在物理磁碟上。</p>
+<p>如果你解除安裝了所有物理磁碟和分割槽，Windows 將無處存放分頁檔案，並會在開機時彈出“效能選項”，提示你分配一個分頁檔案：</p>
+<img alt="pagefile-not-found" loading="lazy" src="images/pagefile-not-found.webp" width="450"/>
+<p>很抱歉 <del>(<em>noarch</em> 又跟微軟沒關係我道什麼歉啊)</del> 你需要每次開機都面對這個提示。</p>
+<p>沒有物理分割槽存放虛擬記憶體，Windows 會在沒有虛擬記憶體的情況下執行。如果你 PC 的記憶體較少 ( &lt;=4GiB ), 你可能需要注意記憶體的使用，以免記憶體不足，應用無法啟動或正常執行。</p>
+<h2 id="在另一個-windows-中訪問虛擬磁碟"><a class="header" href="#在另一個-windows-中訪問虛擬磁碟">在另一個 Windows 中訪問虛擬磁碟</a></h2>
+<p>安裝完成之後，要在另一個 Windows 中訪問這個虛擬磁碟內的檔案，你需要手動掛載該虛擬磁碟。</p>
+<p>開啟磁碟管理 <code>diskmgmt</code>, 在頂部選單點選 <code>操作 -&gt; 附加 VHD</code>: </p>
+<p><img alt="diskmgmt-attach-vhd" loading="lazy" src="images/diskmgmt-attach-vhd.webp"/></p>
+<p><img alt="diskmgmt-attach-vhd-empty" loading="lazy" src="images/diskmgmt-attach-vhd-empty.webp"/></p>
+<p>選擇你之前建立的 <code>vhdx</code>, 點選“確定”。</p>
+<p><img alt="diskmgmt-attach-vhd-file-selection" loading="lazy" src="images/diskmgmt-attach-vhd-file-selection.webp"/></p>
+<p><img alt="diskmgmt-attach-vhd-filled" loading="lazy" src="images/diskmgmt-attach-vhd-filled.webp"/></p>
+<p>你就可以在檔案資源管理器中訪問這個虛擬磁碟了。</p>
+<p>這個虛擬磁碟會在重啟時被解除安裝；你也可以在訪問完後手動解除安裝該虛擬磁碟。</p>
+<p>在磁碟管理中右擊掛載過的虛擬磁碟，選擇“分離 VHD”：</p>
+<p><img alt="diskmgmt-detach-vhd" loading="lazy" src="images/diskmgmt-detach-vhd.webp"/></p>
+<p>然後確認。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 如果 Windows 提示該磁碟正在被佔用，關閉所有檔案資源管理器的視窗，再試一次。</p>
+</blockquote>
+<p><img alt="diskmgmt-detach-vhd-confirm" loading="lazy" src="images/diskmgmt-detach-vhd-confirm.webp"/></p>
+<h2 id="操作差分虛擬磁碟--快照"><a class="header" href="#操作差分虛擬磁碟--快照">操作差分虛擬磁碟 / 快照</a></h2>
+<h3 id="建立"><a class="header" href="#建立">建立</a></h3>
+<p>就像其它的虛擬地盤格式，你也可以通過差分 <code>VHD</code> 來為虛擬磁碟內的系統建立“快照”。</p>
+<p>你需要用到 Windows 的命令列磁碟管理工具 <code>diskpart</code>.</p>
+<p>以管理員許可權開啟 <code>PowerShell</code>, 啟動 <code>diskpart</code>:</p>
+<pre><code>PS C:\Windows\system32&gt; diskpart
+
+Microsoft DiskPart 版本 10.0.19041.1
+
+Copyright (C) Microsoft Corporation.
+在計算機上: DESKTOP-JPN5V0H
+
+DISKPART&gt;
+</code></pre>
+<p>在 <code>diskpart</code> 裡建立一個拆分 <code>vhd</code>: </p>
+<pre><code>DISKPART&gt; create vdisk file=[你要建立的拆分 VHD 位置] parent=[原 VHDX 位置]
+</code></pre>
+<p>例如：</p>
+<pre><code>DISKPART&gt; create vdisk file=C:\vhds\w10vhdx-diff.vhdx parent=C:\vhds\w10vhdx.vhdx
+
+  100 百分比已完成
+
+DiskPart 已成功建立虛擬磁碟檔案。
+</code></pre>
+<p>然後你需要按照<a href="#%E5%9C%A8%E5%8F%A6%E4%B8%80%E4%B8%AA-windows-%E4%B8%AD%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E7%A3%81%E7%9B%98">在另一個 Windows 中訪問虛擬磁碟</a>中的步驟掛載此差分虛擬磁碟。</p>
+<p>建立完成後，你需要重複<a href="#%E9%85%8D%E7%BD%AE%E5%90%AF%E5%8A%A8%E9%A1%B9">配置啟動項</a>和<a href="#%E9%87%8D%E5%91%BD%E5%90%8D%E5%90%AF%E5%8A%A8%E9%A1%B9">重新命名啟動項</a>中的步驟，並將這些步驟中的虛擬磁碟檔案換成你剛剛建立的拆分虛擬磁碟。</p>
+<p>將拆分虛擬磁碟新增到啟動項後，你在啟動到虛擬磁碟時，需要選擇拆分虛擬磁碟，而不是源虛擬磁碟：</p>
+<p><img alt="diff-vhd-boot" loading="lazy" src="images/diff-vhd-boot.webp"/></p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-bomb"></i> 如果你在這時從源虛擬磁碟啟動，你由此建立的<strong>所有</strong>差分磁碟將會失效。</p>
+</blockquote>
+<h3 id="恢復"><a class="header" href="#恢復">恢復</a></h3>
+<p>要恢復“快照”，只需要刪除你在“建立快照”時使用的差分磁碟，然後刪除其啟動項：</p>
+<pre><code>bcdedit /delete "[你的啟動項 UUID]"
+</code></pre>
+<p>例如：</p>
+<pre><code>bcdedit /delete "{6e430704-1163-11eb-b935-d3152726ad7a}"
+</code></pre>
+<p>最後再次按照<a href="#%E5%88%9B%E5%BB%BA">建立</a>中的步驟建立新的拆分磁碟。</p>
+<h2 id="總結"><a class="header" href="#總結">總結</a></h2>
+<p>最後 <em>noarch</em> 再次提醒，<strong>VHD 以及其它雙系統手段不能作為對惡意軟體的防護</strong>。</p>
+<p>它能做到的，是提升軟體訪問你資料的門檻，以及防止軟體註冊後臺服務實時監控你的行為。</p>
+<p>光看不做沒用，如果你面對監考軟體或“不想用卻必須要用”軟體的威脅，現在就去試試吧。</p>
+</main>
+<nav aria-label="Page navigation" class="nav-wrapper">
+<!-- Mobile navigation buttons -->
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="mobile-nav-chapters previous" href="../../Encryption/OpenKeychain/OpenKeychain.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="mobile-nav-chapters next" href="../../Tricks-Unix/dos-donts/dos-donts.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+<div style="clear: both"></div>
+</nav>
+</div>
+</div>
+<nav aria-label="Page navigation" class="nav-wide-wrapper">
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="nav-chapters previous" href="../../Encryption/OpenKeychain/OpenKeychain.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="nav-chapters next" href="../../Tricks-Unix/dos-donts/dos-donts.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+</nav>
+</div>
+<script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+<script charset="utf-8" src="../../clipboard.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../highlight.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../book.js" type="text/javascript"></script>
+<!-- Custom JS scripts -->
+<script src="../../sidebar.js" type="text/javascript"></script>
+</body>
+</html>

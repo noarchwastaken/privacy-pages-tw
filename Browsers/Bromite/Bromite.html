@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+
+<html class="sidebar-visible no-js light" lang="zh-Hant">
+<head>
+<!-- Book generated using mdBook -->
+<meta charset="utf-8"/>
+<title>[Android] Bromite - privacy.noarch</title>
+<!-- Custom HTML head -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="一本面向新手的隱私教程" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color">
+<link href="../../favicon.png" rel="shortcut icon"/>
+<link href="../../css/variables.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../css/variables.css" rel="stylesheet"/></noscript>
+<link href="../../css/general.css" rel="stylesheet"/>
+<link href="../../css/chrome.css" rel="stylesheet"/>
+<!-- Font Awesome 5.13 free content -->
+<link href="../../FontAwesome/css/all.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../FontAwesome/css/all.css" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" rel="stylesheet"/>
+</noscript>
+<!-- Fonts -->
+<!-- Highlight.js Stylesheets -->
+<link href="../../highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../highlight.css" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" rel="stylesheet"/>
+</noscript>
+<!-- Custom theme stylesheets -->
+<link href="../../sidebar.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../sidebar.css" rel="stylesheet"/></noscript>
+</meta></head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+<nav aria-label="Table of contents" class="sidebar" id="sidebar">
+<div class="sidebar-scrollbox">
+<ol class="chapter"><li class="chapter-item expanded affix"><a href="../../index.html">privacy.noarch</a></li><li class="chapter-item expanded affix"><a href="../../SUMMARY.html">目錄</a></li><li class="chapter-item expanded affix"><div>前言</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">1.</strong> 在開始前</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Fundamentals/BasicOfTheBasics.html"><strong aria-hidden="true">1.1.</strong> 常見錯誤集合：線上安全基本原則</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.</strong> 從可信的來源安裝軟體</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">2.1.</strong> [Android] F-Droid</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.2.</strong> [Android] Aurora Store</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.</strong> 安全地使用瀏覽器上網</div></li><li><ol class="section"><li class="chapter-item expanded"><a class="active" href="../../Browsers/Bromite/Bromite.html"><strong aria-hidden="true">3.1.</strong> [Android] Bromite</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.</strong> [Desktop/All] Firefox</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.1.</strong> 使用外掛來增強瀏覽體驗 ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.3.</strong> [Desktop/All]Tor Browser ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Input/Input.html"><strong aria-hidden="true">4.</strong> 自由打字，打字自由</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Input/NoNetworkAccess/NoNetworkAccess.html"><strong aria-hidden="true">4.1.</strong> [Android] 禁止輸入法聯網</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">4.2.</strong> 同文輸入法 (TRIME) ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Passwords/Passwords.html"><strong aria-hidden="true">5.</strong> 帳號安全：保護，隔離，整理</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Passwords/PasswordManagers.html"><strong aria-hidden="true">5.1.</strong> 讓密碼管理器幫你記住密碼</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.1.</strong> [Android] Bitwarden</div></li><li class="chapter-item expanded"><a href="../../Passwords/BitwardenWeb/BitwardenWeb.html"><strong aria-hidden="true">5.1.2.</strong> [Web] Bitwarden</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.3.</strong> [Desktop/All] KeePassXC ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.</strong> 二步驗證 - 增強帳號安全</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.1.</strong> [Android] andOTP</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.2.</strong> [Desktop/All] KeePassXC 的二步驗證功能</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../WallBreak/WallBreak.html"><strong aria-hidden="true">6.</strong> 突破網路長城</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.1.</strong> 代理提供商</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.</strong> 代理工具 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.1.</strong> V2Ray</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.2.</strong> Trojan</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.3.</strong> Shadowsocks*</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">7.</strong> 在享受自由言論之前：“分裂人格”的魅力</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Identities/iYP_DID/iYP_DID.html"><strong aria-hidden="true">7.1.</strong> [轉載] 分身術完整指南：妥善管理您的線上身份並獲得安全的方法</a></li><li class="chapter-item expanded"><a href="../../Identities/WorldIsMine/WorldIsMine.html"><strong aria-hidden="true">7.2.</strong> [轉載] 一個網友的“個人網路身份整改方案”</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.</strong> 在網路圍牆外社交</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.</strong> 中心化</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.1.</strong> [All] Telegram</div></li><li class="chapter-item expanded"><a href="../../RTC/Signal/Signal.html"><strong aria-hidden="true">8.1.2.</strong> [Android] Signal</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.</strong> 去中心化 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.1.</strong> [Android/iOS] Matrix/Element</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.2.</strong> [Web] Matrix/Element</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.</strong> 私密地傳送和接收郵件</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.</strong> 郵件提供商</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.1.</strong> [Web] ProtonMail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.2.</strong> [Web] Tutanota</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.</strong> 郵件客戶端 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.1.</strong> [Android] K-9 Mail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.2.</strong> [Desktop/All] Thunderbird</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../Encryption/Encryption.html"><strong aria-hidden="true">10.</strong> 加密，加密一切</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Encryption/Pubkey/Pubkey.html"><strong aria-hidden="true">10.1.</strong> [翻譯] 公鑰加密簡介</a></li><li class="chapter-item expanded"><a href="../../Encryption/OpenKeychain/OpenKeychain.html"><strong aria-hidden="true">10.2.</strong> [Android] PGP: OpenKeychain</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.</strong> Android 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.1.</strong> 系統設定</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.</strong> “刷機”基礎</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.1.</strong> 深入瞭解自己的裝置</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.2.</strong> 選擇第三方 ROM</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.3.</strong> Magisk</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.4.</strong> microG</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">12.</strong> Windows 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Windows/VHD/VHD.html"><strong aria-hidden="true">12.1.</strong> 使用 VHD(X) 部署原生多系統 ^</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">13.</strong> 類 Unix 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Unix/dos-donts/dos-donts.html"><strong aria-hidden="true">13.1.</strong> 網上教程不會告訴你的類 Unix 使用注意事項</a></li></ol></li><li class="chapter-item expanded"><div>後記</div></li><li class="chapter-item expanded affix"><a href="../../CONTRIBUTING.html">反饋與貢獻</a></li></ol>
+<!-- mods to the vanilla sidebar-->
+<hr/>
+<p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
+<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
+</div>
+<div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+</nav>
+<div class="page-wrapper" id="page-wrapper">
+<div class="page">
+<div id="menu-bar-hover-placeholder"></div>
+<div class="menu-bar sticky bordered" id="menu-bar">
+<div class="left-buttons">
+<button aria-controls="sidebar" aria-label="Toggle Table of Contents" class="icon-button" id="sidebar-toggle" title="Toggle Table of Contents" type="button">
+<i class="fa fa-bars"></i>
+</button>
+<button aria-controls="theme-list" aria-expanded="false" aria-haspopup="true" aria-label="Change theme" class="icon-button" id="theme-toggle" title="Change theme" type="button">
+<i class="fa fa-paint-brush"></i>
+</button>
+<ul aria-label="Themes" class="theme-popup" id="theme-list" role="menu">
+<li role="none"><button class="theme" id="light" role="menuitem">Light (default)</button></li>
+<li role="none"><button class="theme" id="rust" role="menuitem">Rust</button></li>
+<li role="none"><button class="theme" id="coal" role="menuitem">Coal</button></li>
+<li role="none"><button class="theme" id="navy" role="menuitem">Navy</button></li>
+<li role="none"><button class="theme" id="ayu" role="menuitem">Ayu</button></li>
+</ul>
+</div>
+<h1 class="menu-title">privacy.noarch</h1>
+<div class="right-buttons">
+<a aria-label="Switch between Simplified and Traditional Chinese" class="icon-button" onclick="
+                        'use strict';
+
+                        const CN_CLEAR = 'privacy.n0ar.ch';
+                        const TW_CLEAR = 'privacy-tw.n0ar.ch';
+                        const CN_TOR = 'fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+                        const TW_TOR = 'tw.fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+
+                        switch (window.location.hostname) {
+                            case CN_CLEAR:
+                                window.location.hostname = TW_CLEAR;
+                                break;
+                            case TW_CLEAR:
+                                window.location.hostname = CN_CLEAR;
+                                break;
+                            case CN_TOR:
+                                window.location.hostname = TW_TOR;
+                                break;
+                            case TW_TOR:
+                                window.location.hostname = CN_TOR;
+                                break;
+                            default:
+                                window.alert('Error determining current site language.\nI\'m either being served locally, or running as a mirror.\n\nIf you are running a mirror, please change the hostnames on line ~166 in theme/index.hbs.');
+                                break;
+                        }
+                        " title="Switch between Simplified and Traditional Chinese">
+<strong>簡/繁</strong>
+</a>
+<a aria-label="Git repository" href="https://github.com/noarchwastaken/privacy" title="Git repository">
+<i class="fa fa-github" id="git-repository-button"></i>
+</a>
+</div>
+</div>
+<!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+<script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+<div class="content" id="content">
+<main>
+<!-- Page table of contents -->
+<div class="sidetoc"><nav class="pagetoc"></nav></div>
+<h1 id="bromite"><a class="header" href="#bromite">Bromite</a></h1>
+<hr/>
+<p><img alt="bromite-logo" loading="lazy" src="images/bromite-logo.webp"> <em><a href="https://www.bromite.org/">來源</a></em></img></p>
+<p>Bromite - 你的瀏覽器應該由你掌控。<br/>
+一個注重隱私，並且自帶廣告遮蔽器的 Chromium 修改版</p>
+<p>開發者：<a href="https://github.com/csagan5">csagan5</a> (Bromite Project)<br/>
+<a href="https://www.bromite.org/">官方網站</a> | <a href="https://github.com/bromite/bromite">原始碼 (GitHub)</a> | <a href="https://github.com/bromite/bromite/blob/master/LICENSE">開源協議 (GPL3)</a></p>
+<hr/>
+<h2 id="簡介"><a class="header" href="#簡介">簡介</a></h2>
+<p>當你看到上面的描述時，你可能會疑問：<em>“Chromium 是什麼？我為什麼從來都沒有聽說有人用過 Chromium? ”</em></p>
+<p>我們來換種方式描述 Chromium 吧，一句話來說：Chromium 是 Google Chrome（谷歌瀏覽器）的<strong>母專案</strong>。Google 在維護 Chromium 這個開源專案的同時，會將它的原始碼進行修改，並且貼上不同的商標發行。在功能和使用上，兩個瀏覽器幾乎相同。</p>
+<p>假如你無法理解上面的概念也沒關係，只要把 Bromite ，我們這次要介紹的瀏覽器，看成 <strong>Google Chrome 的修改版</strong>就行了。</p>
+<p>當我們最終安裝完成並且開啟這個瀏覽器的時候，假如你用過 Android 版 Chrome ，你會覺得 Bromite 的介面與操作和 Chrome 相差無幾。</p>
+<h3 id="為什麼用-bromite-而不用正統的-chrome"><a class="header" href="#為什麼用-bromite-而不用正統的-chrome">為什麼用 Bromite ，而不用正統的 Chrome?</a></h3>
+<p>簡短的答案：<strong>你在使用 Chrome 的時候，也在使用 Google 的服務。</strong></p>
+<p>你可能依然不理解這個答案，那我們來舉個例子吧：當你使用 Chrome 訪問一個外語網頁時（比如，你的手機設定為中文語言，訪問英文的網站），介面下方會彈出一個提示：</p>
+<p><img alt="chrome-translator" loading="lazy" src="images/chrome-translator.webp"/></p>
+<p>注意到左下角的 <img alt="google-translate" height="16" loading="lazy" src="images/google-translate.webp"/> 圖示了嗎？這代表著當你點下翻譯（在這個特定的例子裡，點選“中文（簡體）”）的時候，Chrome 會連線 Google 翻譯伺服器並且讓 Google 翻譯來翻譯頁面的內容。</p>
+<p>從隱私角度來講，因為 Google 翻譯並不是一個開放的服務，所以我們並不知道網頁的內容在被送達到 Google 翻譯之後發生了什麼。Chrome 整合的 Google 服務還包括但不限於 <a href="https://support.google.com/chrome/answer/165139">書籤同步</a>，<a href="https://support.google.com/chrome/answer/2392284">“精簡模式”</a> 以及 <a href="https://news.google.com">Google 新聞</a>。這些服務都由 Google 提供，而其中涉及的所有資料都經 Google 處理。</p>
+<p>因此，Bromite 在 Chromium （Chrome的母專案）基礎上，移除了上述來自 Google 的服務。</p>
+<p>如果你想要一個 Chromium 核心的 Android 網頁瀏覽器，卻不想讓自己的資料被商業公司處理，那麼 Bromite 是你的絕佳選擇。</p>
+<h2 id="下載和安裝"><a class="header" href="#下載和安裝">下載和安裝</a></h2>
+<h3 id="通過官網安裝-bromite"><a class="header" href="#通過官網安裝-bromite">通過官網安裝 Bromite</a></h3>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-check-circle"></i> 如果你的裝置上有 F-Droid 客戶端，建議檢視下方“通過 F-Droid 安裝 Bromite”的指導。</p>
+</blockquote>
+<p>點選，或是在你常用瀏覽器的位址列中輸入 <a href="https://bromite.org">bromite.org</a> :</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 如果你在正在微信內閱讀本文，請不要直接點選上方的連結；微信會對下載連結作出不可預測的行為。</p>
+</blockquote>
+<img alt="bromite-org" loading="lazy" src="images/bromite-org.webp" width="450"/>
+<p>你可能在開啟這個網頁後非常疑惑：<em>為什麼我看不到下載按鈕？</em></p>
+<p>因為不同 Android 裝置不同的硬體架構，不同的裝置適用不同的安裝包。要下載 Bromite, <strong>滾動到這個頁面的最底部</strong>：</p>
+<img alt="bromite-org-download" loading="lazy" src="images/bromite-org-download.webp" width="450"/>
+<p>在上述的 "Download Bromite" 表格中，左側的 "Architecture" 列代表你將要下載的安裝包的<strong>處理器架構</strong>；一般情況下，你的裝置的對應架構會被綠色高亮。在這個例子裡，我使用的是一個執行在電腦上的 Android 模擬器，所以 "X86" 架構被高亮。右側的 "Android Version" 列代表安裝包對應的 Android 版本；目前 Bromite 只提供一個 Android 版本選項。</p>
+<h4 id="在當前使用的裝置上安裝"><a class="header" href="#在當前使用的裝置上安裝">在當前使用的裝置上安裝</a></h4>
+<p>要為你正在使用的裝置下載和安裝 Bromite ，選中<strong>綠色高亮</strong>的 "Architecture"，然後<strong>點選 "Download Bromite ..."</strong></p>
+<p>你的瀏覽器可能會詢問是否保留該檔案，<strong>點選“確定”</strong>。下載完成後，<strong>點選“開啟”來安裝</strong>。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 假如你之前沒有從目前使用的瀏覽器安裝過應用，你需要進行一個額外的步驟允許應用安裝。下面的視訊展示了 Bromite 的安裝以及允許未知來源應用的步驟。</p>
+</blockquote>
+<h4 id="為其它裝置安裝或者你的處理器架構沒有被高亮"><a class="header" href="#為其它裝置安裝或者你的處理器架構沒有被高亮">為其它裝置安裝，或者你的處理器架構沒有被高亮</a></h4>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 下面描述的是為其它裝置下載 Bromite 安裝包的方式。如果你不清楚你在做什麼，請省略這一步。</p>
+</blockquote>
+<p>如果你的處理器架構並沒有被高亮，或者你要為其它裝置下載和安裝 Bromite, 你需要<strong>選擇這個裝置對應的處理器架構</strong>，然後<strong>點選 "Download Bromite ..."</strong></p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> “處理器架構”可以理解為裝置所使用的處理器的“內部語言”。不同的處理器“語言”之間並不互相相容。</p>
+</blockquote>
+<p>如果你正在為其它裝置下載和安裝 Bromite, 下載完成後，你需要將安裝包傳輸到你的目標裝置上，並且在目標裝置上安裝。在為其它裝置下載 Bromite 的同時，你應該已經知道了在裝置間傳輸檔案的方式，在此不再贅述。</p>
+<p>下方的表格列舉了一般情況下，裝置型別，釋出年份以及處理器架構的關係。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 下表對處理器架構的推測並非 100% 準確，僅供參考。</p>
+</blockquote>
+<table><thead><tr><th>裝置型別 / 釋出年份</th><th align="right">處理器架構</th></tr></thead><tbody>
+<tr><td>Android 手機、平板（2017年及以後釋出）</td><td align="right">ARM64</td></tr>
+<tr><td>Android 手機、平板（2017年及以前釋出），或者你不清楚需要下載什麼，或者 ARM64 的安裝包安裝失敗了</td><td align="right">ARM</td></tr>
+<tr><td>Android 模擬器，雙系統平板，Android-X86 電腦（Remix OS、鳳凰 OS、Prime OS、Bliss OS X86 ...）</td><td align="right">X86</td></tr>
+</tbody></table>
+<h3 id="通過-f-droid-安裝-bromite"><a class="header" href="#通過-f-droid-安裝-bromite">通過 F-Droid 安裝 Bromite</a></h3>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 如果你已經跟著上一步通過官網安裝了 Bromite，可以省略這一步。但你也可以為了後續更新的方便在 F-Droid 上新增 Bromite 的儲存庫。</p>
+</blockquote>
+<p>F-Droid 的官方倉庫並沒有提供 Bromite，但是 Bromite Project 提供了可以新增到 F-Droid 客戶端的倉庫，讓使用者能更方便地更新 Bromite.</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-check-circle"></i> 在進行下面的步驟之前，請確保你已經在裝置上安裝了 F-Droid 客戶端。關於安裝 F-Droid 的指導，請<a href="../../AppStores/F-Droid/F-Droid.html">點選這裡</a>。</p>
+</blockquote>
+<p>要將 Bromite 的倉庫新增到 F-Droid 客戶端，<strong>長按下方二維碼</strong>並<strong>點選“複製連結”</strong>，或者儲存並識別下面的二維碼：</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 請勿使用微信識別二維碼。微信會對識別的連結作出不可預測的行為。</p>
+</blockquote>
+<p><img alt="bromite-fdroid-repo-qr" height="200" loading="lazy" src="images/bromite-fdroid-repo-qr.webp"/> <em><a href="https://www.bromite.org/fdroid">來源</a></em></p>
+<p><strong>複製連結之後</strong>， <strong>開啟 F-Droid 客戶端，點選底欄的“設定”</strong> 進入設定介面。在設定介面，<strong>點選“儲存庫”</strong>：</p>
+<img alt="fdroid-settings" loading="lazy" src="images/fdroid-settings.webp" width="450"/>
+<p>進入“儲存庫”之後，<strong>點選右上角的 <i aria-hidden="true" class="fa fa-plus"></i> 號</strong>：</p>
+<img alt="fdroid-repos" loading="lazy" src="images/fdroid-repos.webp" width="450"/>
+<p>因為 F-Droid 會自動識別已經複製的內容，彈出的“新增新的儲存庫”對話方塊內應該已經填寫了 Bromite F-Droid 儲存庫的資訊。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 如果對話方塊內的文字是空的，你應該回到這部分的開頭，重新複製或者識別二維碼所包含的連結。</p>
+</blockquote>
+<img alt="bromite-add-fdroid-repo" loading="lazy" src="images/bromite-add-fdroid-repo.webp" width="450"/>
+<p>當你確認對話方塊內的資訊無誤，<strong>點選“新增”</strong> 來把 Bromite 的儲存庫新增到 F-Droid 裡。當你點選完“新增”，“儲存庫”列表最底端會出現一個“未驗證”的儲存庫。稍等片刻，F-Droid 客戶端會自動驗證該儲存庫，並且最終的儲存庫名為 <strong>"Bromite official F-Droid repository"</strong>.</p>
+<img alt="bromite-fdroid-repo-unauthorized" loading="lazy" src="images/bromite-fdroid-repo-unauthorized.webp" width="370"/>
+<img alt="bromite-fdroid-repo-unauthorized" loading="lazy" src="images/bromite-fdroid-repo-authorized.webp" width="370"/>
+<p>回到“設定”介面，<strong>點選底欄的“最新”</strong>，你就可以看到右下角的 <i aria-hidden="true" class="fa fa-search"></i> 按鈕了。在“搜尋”介面裡<strong>搜尋 "Bromite"</strong>, 然後在下方<strong>點選 "Bromite"</strong> 行來檢視 Bromite 的詳細資訊。在此你可以<strong>點選“安裝”來安裝 Bromite</strong>. 關於在 F-Droid 裡搜尋和安裝應用的詳細指導，請<a href="../../AppStores/F-Droid/F-Droid.html">點選這裡</a>。</p>
+<img alt="bromite-fdroid-search" loading="lazy" src="images/bromite-fdroid-search.webp" width="370"/>
+<img alt="bromite-fdroid-desc" loading="lazy" src="images/bromite-fdroid-desc.webp" width="370"/>
+<h2 id="使用-bromite"><a class="header" href="#使用-bromite">使用 Bromite</a></h2>
+<p>如果你之前在 Android 上使用過 Chrome, 那麼當你開啟 Bromite 的時候會感覺無比親切：<strong>它看起來和 Chrome 幾乎一模一樣！</strong></p>
+<p>正因如此，這裡不會贅述 Bromite (Chrome) 的基本使用，而是<strong>著重描述一些 Bromite 和 Chrome 的區別</strong>，以及一些隱私相關的注意事項。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 因為 Bromite 的更新，本文可能不會隨時保持最新。如果你有任何的疑惑，請參考 <a href="https://github.com/bromite/bromite/wiki">Bromite Wiki</a>.</p>
+</blockquote>
+<h3 id="dns-over-https"><a class="header" href="#dns-over-https">DNS over HTTPS</a></h3>
+<p><a href="https://www.zhihu.com/question/23197534">中國聯通</a>、<a href="https://www.privateinternetaccess.com/blog/comcast-still-uses-mitm-javascript-injection-serve-unwanted-ads-messages/">Comcast</a> 等網路運營商被證實進行過多種中間人攻擊；使用運營商提供的 DNS 存在被 <a href="https://en.wikipedia.org/wiki/DNS_spoofing">DNS 汙染</a>的風險。根據政府要求，中國所有網路運營商提供的 DNS 都被汙染以配合<a href="https://en.wikipedia.org/wiki/Great_Firewall">防火長城</a>的運作。未來不排除網路運營商通過中間人攻擊進行 DNS 劫持（即便使用了未被汙染的 DNS 伺服器，查詢結果也因為中間人攻擊而被汙染）的可能。</p>
+<p><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS"><strong>DNS over HTTPS</strong></a> 是一個將 <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> 請求進行加密的方案。其意義在於 <strong>將 DNS 請求使用 <a href="https://en.wikipedia.org/wiki/HTTPS">HTTPS</a> 協議加密，來防止可能的<a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">中間人攻擊</a></strong> 汙染 DNS 查詢結果。通過在瀏覽器內使用 DNS over HTTPS, 你可以指定一個 DNS 伺服器列表並且與它們進行加密的 DNS 查詢。</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 下述 DoH 為 DNS over HTTPS 的簡稱。</p>
+</blockquote>
+<p>Bromite 可以使用 DoH, 但這個功能預設關閉。要啟用 DoH, 我們首先要選擇一個 DoH 提供商。</p>
+<p>網路上有很多 DoH 提供商。你可以基於個人喜好，地理位置和網路情況，以及他們的隱私條款來選擇 DoH 提供商。下面是一個 DoH 提供商的簡表，你可以根據下表來選擇自己的 DoH 模板地址，也可以參照 <a href="https://www.privacytools.io/providers/dns/">privacytools.io</a> 的列表來選擇。</p>
+<table><thead><tr><th>提供商</th><th>DoH 模板連結</th></tr></thead><tbody>
+<tr><td><a href="https://adguard.com/en/adguard-dns/overview.html#instruction">AdGuard</a></td><td><a href="https://dns.adguard.com/dns-query">https://dns.adguard.com/dns-query</a></td></tr>
+<tr><td><a href="https://support.mozilla.org/en-US/kb/firefox-dns-over-https">Cloudflare</a></td><td><a href="https://cloudflare-dns.com/dns-query">https://cloudflare-dns.com/dns-query</a></td></tr>
+<tr><td><a href="https://developers.cloudflare.com/1.1.1.1/dns-over-https/request-structure/">Cloudflare （與 Mozilla 合作，更嚴格的隱私條款）</a></td><td><a href="https://mozilla.cloudflare-dns.com/dns-query">https://mozilla.cloudflare-dns.com/dns-query</a></td></tr>
+<tr><td><a href="https://quad9.net/">Quad9</a></td><td><a href="https://dns.quad9.net/dns-query">https://dns.quad9.net/dns-query</a></td></tr>
+</tbody></table>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 下面的步驟將使用 Cloudflare 與 Mozilla 合作的 DoH 服務作為示例。如果你想要使用一個不同的 DoH 提供商，請將步驟中的 <a href="https://mozilla.cloudflare-dns.com/dns-query">https://mozilla.cloudflare-dns.com/dns-query</a> 連結替換成你的 DoH 模板連結。</p>
+</blockquote>
+<p>在上表長按然後複製你想要的 DoH 模板連結， 在這個例子中，<a href="https://mozilla.cloudflare-dns.com/dns-query">https://mozilla.cloudflare-dns.com/dns-query</a>. <strong>在長按彈出的對話方塊中，點選“複製連結地址”</strong>。</p>
+<img alt="bromite-doh-mozilla-cloudflare" loading="lazy" src="images/bromite-doh-mozilla-cloudflare.webp" width="450"/>
+<p>複製之後，<strong>點選 Bromite 右上角的 <i aria-hidden="true" class="fa fa-ellipsis-v"></i> <strong>，然後</strong>點選“設定”</strong>：</p>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 如果你看不到位址列和 <i aria-hidden="true" class="fa fa-ellipsis-v"></i> ，請向上滾動（手指向下移動）一下頁面。</p>
+</blockquote>
+<img alt="bromite-dropdown" loading="lazy" src="images/bromite-dropdown.webp" width="370"/>
+<img alt="bromite-settings" loading="lazy" src="images/bromite-settings.webp" width="370"/>
+<p>在“設定”介面，<strong>向下滑動</strong>直到你能看到“隱私權”，<strong>點選“隱私權”</strong>。在“隱私權”介面，<strong>點選“安全 DNS”</strong>：</p>
+<img alt="bromite-settings-privacy" loading="lazy" src="images/bromite-settings-privacy.webp" width="370"/>
+<img alt="bromite-doh-off" loading="lazy" src="images/bromite-doh-off.webp" width="370"/>
+<p>在“安全 DNS”介面，點選“關閉”右側的開關來<strong>開啟安全 DNS</strong>。現在你應該能看到一個“啟用”以及一個開啟的開關。</p>
+<img alt="bromite-doh-on" loading="lazy" src="images/bromite-doh-on.webp" width="450"/>
+<p>步驟到此還沒結束，我們還需要<strong>點選 "DoH 模板地址"</strong> 並且 <strong>輸入剛才複製的地址</strong> ：</p>
+<img alt="bromite-doh-input-none" loading="lazy" src="images/bromite-doh-input-none.webp" width="370"/>
+<img alt="bromite-doh-input-cf" loading="lazy" src="images/bromite-doh-input-cf.webp" width="370"/>
+<p>輸入完成後<strong>點選“儲存”</strong>。在此 DoH 配置完成，你可以點幾次返回來回到瀏覽狀態。</p>
+<h3 id="新增和設定搜尋引擎"><a class="header" href="#新增和設定搜尋引擎">新增和設定搜尋引擎</a></h3>
+<p>儘管 Bromite 是一個“反 Google”的專案，它的預設搜尋引擎依然是 Google. 無可否認，Google 在某些標準上是目前“最好用”的搜尋引擎。但從隱私角度出發，它也有著一些致命的缺陷。其中的例子有：<a href="https://policies.google.com/privacy">你的搜尋請求被用於精準推廣用途</a>；<a href="https://www.v2ex.com/t/663593">多次被內容農場汙染搜尋結果</a>...</p>
+<p>你可能想把 Google 替換成例如 <a href="https://duckduckgo.com/">DuckDuckGo</a> 等更尊重隱私的搜尋引擎。</p>
+<p>DuckDuckGo 的隱私條款請見<a href="https://duckduckgo.com/privacy">https://duckduckgo.com/privacy</a>。</p>
+<p>位於 <strong><i aria-hidden="true" class="fa fa-ellipsis-v"></i> -&gt; 設定 -&gt; 搜尋引擎</strong>，根據你設定的系統語言和地區，Bromite 預置了原版 Chrome 預置的所有搜尋引擎：</p>
+<img alt="bromite-search-engines" loading="lazy" src="images/bromite-search-engines.webp" width="370"/>
+<img alt="bromite-search-engines-en" loading="lazy" src="images/bromite-search-engines-en.webp" width="370"/>
+<p>如果你是一箇中文的 DuckDuckGo 使用者，你可能會疑惑：<em>為什麼我找不到 DuckDuckGo 作為我的搜尋引擎？</em></p>
+<p>DuckDuckGo 確實沒有被內建到中文的 Chrome 當中。有一個解決方法：<strong>訪問一下 <a href="https://duckduckgo.com/">DuckDuckGo</a></strong> , 然後<strong>再次訪問“搜尋引擎”選單</strong>，你就能在“最近用過的搜尋引擎”下找到 DuckDuckGo 了。在“搜尋引擎”選單選中 DuckDuckGo, 現在 DuckDuckGo 就是你的預設搜尋引擎了。</p>
+<img alt="bromite-search-engines-duckduckgo" loading="lazy" src="images/bromite-search-engines-duckduckgo.webp" width="450"/>
+<p>然而，在 <em>noarch</em> 的測試當中，這個方法並不 100% 有效... 下面的視訊展示了另一個有效的方法。如果讓 Bromite 自動新增 DuckDuckGo 的方法失敗了，你可以嘗試下面的方法。</p>
+<p>下面的視訊使用類原生 Android 作為示例。不同手機廠商系統的操作可能會有差別。</p>
+<h3 id="廣告攔截"><a class="header" href="#廣告攔截">廣告攔截</a></h3>
+<p>Bromite 自帶廣告攔截功能，並且<strong>廣告攔截功能預設開啟。</strong></p>
+<p>如果廣告攔截破壞了某些網頁的正常使用，你可以在<strong>訪問它們之前關閉廣告攔截，然後在訪問結束後開啟</strong>：</p>
+<p>在 <strong><i aria-hidden="true" class="fa fa-ellipsis-v"></i> -&gt; 設定 -&gt; 廣告攔截設定</strong>，你可以開關廣告攔截以及自定義廣告攔截規則列表。<strong>點選“啟用”右側的開關將其“關閉”</strong>，就可以關閉廣告攔截。</p>
+<img alt="bromite-adblock-on" loading="lazy" src="images/bromite-adblock-on.webp" width="370"/>
+<img alt="bromite-adblock-off" loading="lazy" src="images/bromite-adblock-off.webp" width="370"/>
+<p>關於自定義廣告攔截的指導，請見<a href="https://www.bromite.org/custom-filters">https://www.bromite.org/custom-filters</a> .</p>
+<h3 id="不在退出後保留標籤頁"><a class="header" href="#不在退出後保留標籤頁">不在退出後保留標籤頁</a></h3>
+<p>在 Bromite 和 Chrome 的預設設定中，開啟 Bromite 的時候會自動恢復上一次瀏覽時的標籤頁（網頁）。你可能不想讓它恢復上一次的標籤頁，那麼你可以進入 <strong><i aria-hidden="true" class="fa fa-ellipsis-v"></i> -&gt; 設定 -&gt; 隱私權</strong>，並且<strong>選中“退出時關閉所有開啟的標籤頁”</strong>。</p>
+<img alt="bromite-close-tabs-on-exit" loading="lazy" src="images/bromite-close-tabs-on-exit.webp" width="450"/>
+<blockquote>
+<p><i aria-hidden="true" class="fa fa-check-circle"></i> 彩蛋：如果你在 Bromite 或 Chrome 打開了超過 99 個標籤頁，它依然會保持微笑！</p>
+</blockquote>
+<p><img alt="bromite-99plustabs" loading="lazy" src="images/bromite-99plustabs.webp"/></p>
+</main>
+<nav aria-label="Page navigation" class="nav-wrapper">
+<!-- Mobile navigation buttons -->
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="mobile-nav-chapters previous" href="../../Fundamentals/BasicOfTheBasics.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="mobile-nav-chapters next" href="../../Input/Input.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+<div style="clear: both"></div>
+</nav>
+</div>
+</div>
+<nav aria-label="Page navigation" class="nav-wide-wrapper">
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="nav-chapters previous" href="../../Fundamentals/BasicOfTheBasics.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="nav-chapters next" href="../../Input/Input.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+</nav>
+</div>
+<script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+<script charset="utf-8" src="../../clipboard.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../highlight.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../book.js" type="text/javascript"></script>
+<!-- Custom JS scripts -->
+<script src="../../sidebar.js" type="text/javascript"></script>
+</body>
+</html>

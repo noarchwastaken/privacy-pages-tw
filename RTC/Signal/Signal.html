@@ -1,0 +1,468 @@
+<!DOCTYPE HTML>
+
+<html class="sidebar-visible no-js light" lang="zh-Hant">
+<head>
+<!-- Book generated using mdBook -->
+<meta charset="utf-8"/>
+<title>[Android] Signal - privacy.noarch</title>
+<!-- Custom HTML head -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="一本面向新手的隱私教程" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color">
+<link href="../../favicon.png" rel="shortcut icon"/>
+<link href="../../css/variables.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../css/variables.css" rel="stylesheet"/></noscript>
+<link href="../../css/general.css" rel="stylesheet"/>
+<link href="../../css/chrome.css" rel="stylesheet"/>
+<!-- Font Awesome 5.13 free content -->
+<link href="../../FontAwesome/css/all.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../FontAwesome/css/all.css" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" rel="stylesheet"/>
+</noscript>
+<!-- Fonts -->
+<!-- Highlight.js Stylesheets -->
+<link href="../../highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../highlight.css" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" rel="stylesheet"/>
+</noscript>
+<!-- Custom theme stylesheets -->
+<link href="../../sidebar.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../sidebar.css" rel="stylesheet"/></noscript>
+</meta></head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+<nav aria-label="Table of contents" class="sidebar" id="sidebar">
+<div class="sidebar-scrollbox">
+<ol class="chapter"><li class="chapter-item expanded affix"><a href="../../index.html">privacy.noarch</a></li><li class="chapter-item expanded affix"><a href="../../SUMMARY.html">目錄</a></li><li class="chapter-item expanded affix"><div>前言</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">1.</strong> 在開始前</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Fundamentals/BasicOfTheBasics.html"><strong aria-hidden="true">1.1.</strong> 常見錯誤集合：線上安全基本原則</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.</strong> 從可信的來源安裝軟體</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">2.1.</strong> [Android] F-Droid</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.2.</strong> [Android] Aurora Store</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.</strong> 安全地使用瀏覽器上網</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Browsers/Bromite/Bromite.html"><strong aria-hidden="true">3.1.</strong> [Android] Bromite</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.</strong> [Desktop/All] Firefox</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.1.</strong> 使用外掛來增強瀏覽體驗 ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.3.</strong> [Desktop/All]Tor Browser ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Input/Input.html"><strong aria-hidden="true">4.</strong> 自由打字，打字自由</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Input/NoNetworkAccess/NoNetworkAccess.html"><strong aria-hidden="true">4.1.</strong> [Android] 禁止輸入法聯網</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">4.2.</strong> 同文輸入法 (TRIME) ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Passwords/Passwords.html"><strong aria-hidden="true">5.</strong> 帳號安全：保護，隔離，整理</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Passwords/PasswordManagers.html"><strong aria-hidden="true">5.1.</strong> 讓密碼管理器幫你記住密碼</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.1.</strong> [Android] Bitwarden</div></li><li class="chapter-item expanded"><a href="../../Passwords/BitwardenWeb/BitwardenWeb.html"><strong aria-hidden="true">5.1.2.</strong> [Web] Bitwarden</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.3.</strong> [Desktop/All] KeePassXC ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.</strong> 二步驗證 - 增強帳號安全</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.1.</strong> [Android] andOTP</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.2.</strong> [Desktop/All] KeePassXC 的二步驗證功能</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../WallBreak/WallBreak.html"><strong aria-hidden="true">6.</strong> 突破網路長城</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.1.</strong> 代理提供商</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.</strong> 代理工具 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.1.</strong> V2Ray</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.2.</strong> Trojan</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.3.</strong> Shadowsocks*</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">7.</strong> 在享受自由言論之前：“分裂人格”的魅力</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Identities/iYP_DID/iYP_DID.html"><strong aria-hidden="true">7.1.</strong> [轉載] 分身術完整指南：妥善管理您的線上身份並獲得安全的方法</a></li><li class="chapter-item expanded"><a href="../../Identities/WorldIsMine/WorldIsMine.html"><strong aria-hidden="true">7.2.</strong> [轉載] 一個網友的“個人網路身份整改方案”</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.</strong> 在網路圍牆外社交</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.</strong> 中心化</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.1.</strong> [All] Telegram</div></li><li class="chapter-item expanded"><a class="active" href="../../RTC/Signal/Signal.html"><strong aria-hidden="true">8.1.2.</strong> [Android] Signal</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.</strong> 去中心化 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.1.</strong> [Android/iOS] Matrix/Element</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.2.</strong> [Web] Matrix/Element</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.</strong> 私密地傳送和接收郵件</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.</strong> 郵件提供商</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.1.</strong> [Web] ProtonMail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.2.</strong> [Web] Tutanota</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.</strong> 郵件客戶端 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.1.</strong> [Android] K-9 Mail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.2.</strong> [Desktop/All] Thunderbird</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../Encryption/Encryption.html"><strong aria-hidden="true">10.</strong> 加密，加密一切</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Encryption/Pubkey/Pubkey.html"><strong aria-hidden="true">10.1.</strong> [翻譯] 公鑰加密簡介</a></li><li class="chapter-item expanded"><a href="../../Encryption/OpenKeychain/OpenKeychain.html"><strong aria-hidden="true">10.2.</strong> [Android] PGP: OpenKeychain</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.</strong> Android 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.1.</strong> 系統設定</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.</strong> “刷機”基礎</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.1.</strong> 深入瞭解自己的裝置</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.2.</strong> 選擇第三方 ROM</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.3.</strong> Magisk</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.4.</strong> microG</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">12.</strong> Windows 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Windows/VHD/VHD.html"><strong aria-hidden="true">12.1.</strong> 使用 VHD(X) 部署原生多系統 ^</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">13.</strong> 類 Unix 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Unix/dos-donts/dos-donts.html"><strong aria-hidden="true">13.1.</strong> 網上教程不會告訴你的類 Unix 使用注意事項</a></li></ol></li><li class="chapter-item expanded"><div>後記</div></li><li class="chapter-item expanded affix"><a href="../../CONTRIBUTING.html">反饋與貢獻</a></li></ol>
+<!-- mods to the vanilla sidebar-->
+<hr/>
+<p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
+<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
+</div>
+<div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+</nav>
+<div class="page-wrapper" id="page-wrapper">
+<div class="page">
+<div id="menu-bar-hover-placeholder"></div>
+<div class="menu-bar sticky bordered" id="menu-bar">
+<div class="left-buttons">
+<button aria-controls="sidebar" aria-label="Toggle Table of Contents" class="icon-button" id="sidebar-toggle" title="Toggle Table of Contents" type="button">
+<i class="fa fa-bars"></i>
+</button>
+<button aria-controls="theme-list" aria-expanded="false" aria-haspopup="true" aria-label="Change theme" class="icon-button" id="theme-toggle" title="Change theme" type="button">
+<i class="fa fa-paint-brush"></i>
+</button>
+<ul aria-label="Themes" class="theme-popup" id="theme-list" role="menu">
+<li role="none"><button class="theme" id="light" role="menuitem">Light (default)</button></li>
+<li role="none"><button class="theme" id="rust" role="menuitem">Rust</button></li>
+<li role="none"><button class="theme" id="coal" role="menuitem">Coal</button></li>
+<li role="none"><button class="theme" id="navy" role="menuitem">Navy</button></li>
+<li role="none"><button class="theme" id="ayu" role="menuitem">Ayu</button></li>
+</ul>
+</div>
+<h1 class="menu-title">privacy.noarch</h1>
+<div class="right-buttons">
+<a aria-label="Switch between Simplified and Traditional Chinese" class="icon-button" onclick="
+                        'use strict';
+
+                        const CN_CLEAR = 'privacy.n0ar.ch';
+                        const TW_CLEAR = 'privacy-tw.n0ar.ch';
+                        const CN_TOR = 'fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+                        const TW_TOR = 'tw.fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+
+                        switch (window.location.hostname) {
+                            case CN_CLEAR:
+                                window.location.hostname = TW_CLEAR;
+                                break;
+                            case TW_CLEAR:
+                                window.location.hostname = CN_CLEAR;
+                                break;
+                            case CN_TOR:
+                                window.location.hostname = TW_TOR;
+                                break;
+                            case TW_TOR:
+                                window.location.hostname = CN_TOR;
+                                break;
+                            default:
+                                window.alert('Error determining current site language.\nI\'m either being served locally, or running as a mirror.\n\nIf you are running a mirror, please change the hostnames on line ~166 in theme/index.hbs.');
+                                break;
+                        }
+                        " title="Switch between Simplified and Traditional Chinese">
+<strong>簡/繁</strong>
+</a>
+<a aria-label="Git repository" href="https://github.com/noarchwastaken/privacy" title="Git repository">
+<i class="fa fa-github" id="git-repository-button"></i>
+</a>
+</div>
+</div>
+<!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+<script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+<div class="content" id="content">
+<main>
+<!-- Page table of contents -->
+<div class="sidetoc"><nav class="pagetoc"></nav></div>
+<h1 id="android-signal"><a class="header" href="#android-signal">[Android] Signal</a></h1>
+<hr/>
+<p><img alt="Signal Logo" height="96" src="images/Signal-Logo.svg"/> <a href="https://en.wikipedia.org/wiki/File:Signal-Logo.svg">來源</a></p>
+<p>Signal - <em>暢所欲言。</em></p>
+<p>一款強制端到端加密，以手機號作為識別碼的<strong>非匿名</strong>即時通訊。</p>
+<p>開發者：<a href="https://en.wikipedia.org/wiki/Signal_Foundation">Signal Foundation</a> | <a href="https://signal.org">官方網站</a> | <a href="https://github.com/signalapp">原始碼</a><br/>
+客戶端 <a href="https://github.com/signalapp/Signal-Android/blob/master/LICENSE">GPLv3</a>, 服務端 <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPLv3</a> | <a href="https://signal.org/legal/">服務條款與隱私政策</a></p>
+<hr/>
+<h2 id="簡介"><a class="header" href="#簡介">簡介</a></h2>
+<p>你用過蘋果裝置嗎？</p>
+<p>如果用過，你應該熟悉蘋果的 <a href="https://support.apple.com/explore/messages">iMessage</a>. 或者如果你沒聽說過 iMessage, 你應該注意到了，在給同樣使用蘋果裝置的朋友發簡訊時，能使用一些有趣的功能。</p>
+<p>不過 <em>noarch</em> 要介紹的不是 iMessage, 而是想與 iMessage 競爭，並且使用體驗可以和 iMessage 很像的 <strong>Signal</strong>.</p>
+<p>與 iMessage 不同的是，Signal 不需要一臺蘋果裝置，並且<a href="/Encryption/Pubkey/Pubkey.html">端到端加密</a>。</p>
+<p>除此之外，它的客戶端和服務端都完全自由，沒有廣告和追蹤器，最重要的是 - 它永久免費，並且全靠捐款運作。</p>
+<h3 id="手機號即是帳號"><a class="header" href="#手機號即是帳號">手機號即是帳號</a></h3>
+<p>如果你在手機流行之前用過 QQ, 那麼你應該對“交換 QQ 號”這件事印象深刻。在那時，QQ 只是一個獨立的網上身份，在技術上不與你的任何其他身份相關聯。</p>
+<p>雖然 QQ 現在註冊需要實名手機號，但它的背後工作原理依然需要一個獨立的 QQ 號。<em>noarch</em> 認為這是大多數中國人對“即時通訊”概念的認識。</p>
+<p>如果你是 <em>noarch</em> 上述的“大多數”，在使用 Signal 前，你需要完全拋棄以前對即時通訊的認識。</p>
+<p>Signal 致力於提供一個像簡訊一樣的使用體驗，這也意味著<strong>你的手機號是唯一識別碼</strong>：除非你專門遮蔽，否則任何知道你手機號的人都可給你發訊息；你也無法在更換手機號時遷移你的帳號。</p>
+<h3 id="威脅模型"><a class="header" href="#威脅模型">威脅模型</a></h3>
+<p><em>noarch</em> 在最上方的一覽中提到了 Signal 目前不提供匿名功能，任何與你聊天的人將能看到你的手機號。</p>
+<p>這也註定了 Signal 無法被當作 Telegram 或 Matrix 等更加匿名的即時通訊使用 - 在中國，你需要更多的是匿名性；而 Signal 完全沒有提供匿名性。看到你的中國手機號意味著能直接看到你的真實身份：警察可以直接通過手機號查出你的戶籍，而其他人則可以通過賄賂警察或使用洩露的資料庫達到此效果。</p>
+<p>所以，為什麼還使用 Signal 呢？</p>
+<ul>
+<li>
+<p>首先，雖然 Signal 不匿名，但你依然可以用它和<strong>已經認識</strong>且非常親密的人通訊。</p>
+<ul>
+<li>家人，以及現實中的朋友已經知道你的真實身份，所以你也不需要在線上為他們隱藏你的身份。</li>
+</ul>
+</li>
+<li>
+<p>其次，如果你不在中國大陸或其它限制匿名上網的國家，那麼 Signal 不匿名這點應該對你沒啥影響。</p>
+<ul>
+<li>這是因為你的手機號實名性不強 - 敵人通過你的手機號找出你真實身份將沒有那麼容易。</li>
+</ul>
+</li>
+<li>
+<p>最後，Signal 的易用性無法比擬。</p>
+<ul>
+<li><em>noarch</em> 認為 Signal 的設計目標是<strong>取代傳統簡訊</strong>，沒有複雜功能，這使得它非常簡單易用。</li>
+<li>包括以手機號識別身份這點，Signal 的諸多操作邏輯都與傳統短彩信一樣。</li>
+</ul>
+</li>
+</ul>
+<h3 id="關於-signal-中國直連"><a class="header" href="#關於-signal-中國直連">關於 Signal 中國直連</a></h3>
+<p>你在閱讀本章之前可能聽說了 Signal 沒有被防火長城遮蔽，並將此看作一個 Signal 的優點。</p>
+<p>雖然 Signal 可以直連，但 <em>noarch</em> 不推薦這麼做，因為防火長城會記錄所有向牆外的連線，連線 Signal <strong>可能</strong>會使你成為“重點監控物件”。</p>
+<p>因此，<em>noarch</em> 依然建議<a href="/WallBreak/WallBreak.html">使用代理</a>連線 Signal, 並只在絕對必要的情況下（例如代理失效）直連。</p>
+<h3 id="signal-與-google-服務"><a class="header" href="#signal-與-google-服務">Signal 與 Google 服務</a></h3>
+<p><em>noarch</em> 注意到了 Signal 的 Android 版依賴 Google 服務框架進行推送通知。</p>
+<p>Signal 在其開發初期需要 Google 服務框架才能執行。這是因為嚴格上 Android 應用需要 Google 框架來推送通知，及時送達訊息。沒有了 Google 服務框架提供的<a href="https://en.wikipedia.org/wiki/Google_Cloud_Messaging">推送通知服務</a>，Signal 需要長期保持後臺執行並維持一個 <a href="https://en.wikipedia.org/wiki/WebSocket">WebSocket</a> 開放以推送訊息，而 Android 是禁止這麼做的。</p>
+<p><a href="https://github.com/signalapp/Signal-Android/commit/1669731329bcc32c84e33035a67a2fc22444c24b">從2017年2月起</a>，Signal 不再要求 Google 服務框架才能啟動；在此之後，如果你沒有 Google 服務框架，Signal 會向你傳送通知，告訴你如果沒有 Google 服務框架 Signal 可能會被殺死後臺而無法及時接收訊息。</p>
+<p>關於 Google 服務框架及其替代，<a href="">請看這裡</a>。</p>
+<h3 id="準備好了嗎"><a class="header" href="#準備好了嗎">準備好了嗎？</a></h3>
+<p>除了上述弊端，Signal 在 <em>noarch</em> 看來是目前最容易上手的端到端加密通訊工具。</p>
+<p>瞭解了上面的弊端和威脅模型，並將其牢記在心後，你就可以和 <em>noarch</em> 一起開始使用 Signal 了！</p>
+<h2 id="安裝"><a class="header" href="#安裝">安裝</a></h2>
+<p>Signal 和其它 Android 應用的安裝沒啥區別：Signal 官方提供了兩個渠道，其中一個是 Google Play, 另一個則是直接通過 <code>apk</code> 安裝。</p>
+<p>如果你有 Google Play, 你可以直接去那裡安裝，然後跳到<a href="#%E6%B3%A8%E5%86%8C%E5%B8%90%E5%8F%B7">下一步</a>；下面 <em>noarch</em> 將假設你沒有 Google Play, 並且使用 <code>apk</code> 安裝。</p>
+<p>首先，在瀏覽器內開啟 Signal 的 <code>apk</code> 下載頁 <a href="https://signal.org/android/apk/">https://signal.org/android/apk/</a>.</p>
+<p>滑動到下方，你可以看到 <em>Danger Zone</em> 以及一個 "Download" 按鈕。</p>
+<blockquote>
+<p><i class="fas fa-exclamation-triangle"></i> 與從 Google Play 安裝應用不同，直接從 Signal 官網下載 <code>apk</code> 雖然經過 HTTPS 傳輸，但沒有簽名驗證；這也是 Signal 不建議你直接安裝 <code>apk</code> 的原因。</p>
+<p><em>noarch</em> 在此為了簡潔，不驗證 Signal <code>apk</code> 簽名。如果你覺得基礎設施攻擊是你的威脅之一，你可以選擇從 Google Play 安裝或手動驗證簽名。</p>
+<p>更多關於簽名驗證的知識，請看<a href="https://www.qubes-os.org/security/verifying-signatures/">這篇來自 Qubes OS 的文章</a>。</p>
+</blockquote>
+<img alt="Signal APK 下載按鈕" loading="lazy" src="images/signal-apk-dl-button.webp" width="450"/>
+<p>點選 "Download", 瀏覽器提示你下載或直接開始下載 Signal <code>apk</code>. 下載完成之後安裝：</p>
+<img alt="Signal APK 安裝" loading="lazy" src="images/signal-install.webp" width="450"/>
+<blockquote>
+<p><i class="fas fa-info-circle"></i> 如果你的裝置提示“出於安全考慮，已禁止您的裝置安裝來自此來源的未知應用”，請點選“設定”並允許來自你瀏覽器的未知來源應用安裝。</p>
+<p>請在允許未知來源之前確認要安裝的應用是否的確是你要的！在 <em>noarch</em> 的例子裡，請確認來源是 <em>Bromite</em>（瀏覽器），並且要安裝的應用是 <em>Signal</em>.</p>
+<img alt="未知來源安裝請求" loading="lazy" src="images/unknown-source.webp" width="450"/>
+<img alt="允許來自瀏覽器的應用安裝" loading="lazy" src="images/allow-unknown-source.webp" width="450"/>
+</blockquote>
+<p>等待片刻，安裝完成後“開啟”。</p>
+<img alt="Signal APK 安裝完成" loading="lazy" src="images/signal-installed.webp" width="450"/>
+<h2 id="註冊帳號"><a class="header" href="#註冊帳號">註冊帳號</a></h2>
+<p>你現在進入了 Signal 的歡迎頁：</p>
+<img alt="Signal 歡迎頁" loading="lazy" src="images/signal-setup.webp" width="450"/>
+<p>點選“繼續”，Signal 會向你請求 <i class="fas fa-address-book"></i> 通訊錄許可權。</p>
+<blockquote>
+<p><i class="fas fa-info-circle"></i> Signal 不會以任何形式上傳你的通訊錄，但會使用它在本地識別聯絡人；允許 Signal 讀取通訊錄與否，取決於你要不要將 Signal 替代裝置自帶簡訊應用。</p>
+</blockquote>
+<p><em>noarch</em> 在本章裡不將 Signal 替換裝置自帶簡訊應用，因此 <em>noarch</em> 點選“稍後再說”拒絕了 Signal 的通訊錄請求。</p>
+<img alt="Signal 請求通訊錄許可權" loading="lazy" src="images/signal-setup-contact-request.webp" width="450"/>
+<p>現在 Signal 需要你的手機號以註冊帳號。<em>noarch</em> 在這裡使用的是虛擬手機號，但你也可以使用真實手機號。</p>
+<blockquote>
+<p><i class="fas fa-exclamation-triangle"></i> 如果你使用真實的 +86 手機號，請絕對只和最親密的人使用 Signal.</p>
+</blockquote>
+<img alt="Signal 請求手機號" loading="lazy" src="images/signal-setup-phone.webp" width="450"/>
+<p>下一步，Signal 會向你傳送一條簡訊驗證碼。</p>
+<blockquote>
+<p><i class="fas fa-info-circle"></i> 如果你收不到簡訊驗證碼，你可以等一段時間，然後向 Signal 請求電話驗證碼。</p>
+</blockquote>
+<img alt="Signal 簡訊驗證" loading="lazy" src="images/signal-setup-sms.webp" width="450"/>
+<img alt="Signal 簡訊驗證完成" loading="lazy" src="images/signal-setup-sms-complete.webp" width="450"/>
+<p>驗證完成後，就是填寫個人資訊的時間了。必填項只有“名字”，但你也可以選個頭像和“姓氏”。</p>
+<blockquote>
+<p><i class="fas fa-exclamation-triangle"></i> <em>noarch</em> 注意到眾多中國使用者在牆內及時通訊使用假名，卻在牆外使用真名；這和例如 Signal 的牆外及時通訊在輸入框內指示“名字”和“姓氏”不無關係。</p>
+<p>儘管 Signal 叫你這麼填，但你依然可以只填寫一個假名。<em>noarch</em> 也建議你使用<strong>牆內從未使用過的</strong>假名，並且不用自己的臉做頭像。</p>
+</blockquote>
+<img alt="Signal 填寫個人資訊" loading="lazy" src="images/signal-setup-profile.webp" width="450"/>
+<p>配置 Signal 的最後一步是設一個 PIN. 它用來加密 Signal 的本地儲存，防止裝置落入竊賊或警察手中時 Signal 訊息被輕易讀取。</p>
+<blockquote>
+<p><i class="fas fa-exclamation-triangle"></i> 絕對不要忘記這個 PIN! 如果你忘了它，所有歷史訊息將無法找回。</p>
+</blockquote>
+<img alt="Signal PIN 設定" loading="lazy" src="images/signal-setup-pin.webp" width="450"/>
+<blockquote>
+<p><i class="fas fa-exclamation-triangle"></i> 如果你：</p>
+<ul>
+<li>獲取了裝置 <code>root</code> 許可權</li>
+<li>被迫使用華為，或任何具有 <code>/data</code> 訪問後門的裝置</li>
+<li>大概率會被取證工具檢查裝置</li>
+</ul>
+<p><strong>請“建立字母數字 PIN”</strong>，並結合密碼管理器生成的強密碼使用 Signal. 這能更有效防止儲存在本地的 Signal 訊息被暴力破解。</p>
+</blockquote>
+<p>建立完 PIN, 點選“下一步”，一個全新的聊天體驗在等著你。</p>
+<img alt="Signal 主介面" loading="lazy" src="images/signal-main.webp" width="450"/>
+<h2 id="額外配置"><a class="header" href="#額外配置">額外配置</a></h2>
+<p>Signal 主要為傳統的簡訊使用習慣而設計，然而這些設計可能不符合你的使用習慣。</p>
+<p>因此，<em>noarch</em> 總結了一些你可以在進入 Signal 後進行的隱私和使用習慣配置：</p>
+<h3 id="不將-signal-設定為預設簡訊應用"><a class="header" href="#不將-signal-設定為預設簡訊應用">不將 Signal 設定為預設簡訊應用</a></h3>
+<p>點 <i class="fas fa-times"></i> 關掉主介面“設定為預設簡訊應用”橫幅即可。</p>
+<h3 id="禁用-pin-碼提醒"><a class="header" href="#禁用-pin-碼提醒">禁用 PIN 碼提醒</a></h3>
+<p>Signal 會定期提醒你輸入 PIN 碼以防你忘記。</p>
+<p>如果你使用了密碼管理器 + 混合密碼，“提醒”你輸入密碼就完全沒意義了；因此你可以將 PIN 提醒關掉。</p>
+<p>從主介面開始，進入 <code><i class="fas fa-ellipsis-v"></i> -&gt; 設定 -&gt; 隱私</code>，在底部取消選擇 "PIN 提醒"，再確認一次 PIN 就可以關掉這個提醒。</p>
+<img alt="Signal 禁用 PIN 提醒" loading="lazy" src="images/signal-settings-disable-pin-reminder.webp" width="450"/>
+<h3 id="其它隱私設定"><a class="header" href="#其它隱私設定">其它隱私設定</a></h3>
+<p>在 Signal <code><i class="fas fa-ellipsis-v"></i> -&gt; 設定 -&gt; 隱私</code> 裡，還有一些選項你可能想要修改：</p>
+<ul>
+<li>
+<p>鎖屏：開</p>
+<p>類似諸多“應用鎖”，用於在手機解鎖時都鎖定 Signal</p>
+</li>
+<li>
+<p>隱身鍵盤：開</p>
+<p>禁用鍵盤“雲輸入”以及自動學習，類似密碼輸入模式</p>
+</li>
+<li>
+<p>總是轉發通話：開</p>
+<p>防止在通話時洩露真實 IP 地址</p>
+</li>
+<li>
+<p>已讀回執：關</p>
+<p>關閉後，對方的訊息只會在你回訊息時被標記為“已讀”，類似大多數中國即時通訊</p>
+</li>
+<li>
+<p>註冊鎖定：開</p>
+<p>如果你的裝置被沒收或被盜，開啟這個選項可以給你更多時間通知朋友“不要再往該帳號發訊息”</p>
+</li>
+</ul>
+<p>當你 <del>將 Signal 變成你的形狀</del> 後，就來找一個朋友換到 Signal 聊天吧！</p>
+<h2 id="邀請第一個朋友上-signal"><a class="header" href="#邀請第一個朋友上-signal">邀請第一個朋友上 Signal</a></h2>
+<p>現在，你可以把本章節轉發給你的朋友，讓他們也開始使用 Signal 了。當他們也開始使用 Signal, 下面 <em>noarch</em> 將教你如何開始一個聊天。</p>
+<p><em>noarch</em> 前面提到了 Signal 的操作邏輯和簡訊類似；這點從開始聊天時就能體驗到。</p>
+<p>例如，如果你要和一個人開始聊天，你只需要輸入它們的手機號，然後傳送訊息即可；對方在收到你第一條訊息後可以選擇是否遮蔽你，但全程沒有獨立的“好友驗證”過程。</p>
+<p>要找一個朋友開始聊天，在主介面點選右下角的 <i class="fas fa-pencil"></i>，你會進入像簡訊一樣的“選擇收件人”介面。</p>
+<blockquote>
+<p><i class="fas fa-info-circle"></i> Signal 在這裡又會向你請求通訊錄許可權；<em>noarch</em> 在這裡選擇拒絕。</p>
+<img alt="Signal 再次請求聯絡人許可權" loading="lazy" src="images/signal-perm-contacts.webp" width="450"/>
+</blockquote>
+<img alt="Signal 選擇收件人" loading="lazy" src="images/signal-contact-search.webp" width="450"/>
+<p>如果你沒有允許 Signal 讀取聯絡人，你需要輸入對方的完整手機號。在你輸入的同時，輸入框下方的列表中會出現“新訊息至...”，點選它即可進入聊天介面。</p>
+<blockquote>
+<p><i class="fas fa-info-circle"></i> 如果對方的手機號不屬於美國或加拿大，你還需要手動加上區號，例如 <code>+86 17727378899</code></p>
+</blockquote>
+<img alt="Signal 聊天介面，未開始聊天" loading="lazy" src="images/signal-chat-grey.webp" width="450"/>
+<p>現在這個聊天介面是灰色的，代表你們以前沒有用 Signal 通訊過；當你發出第一條訊息，它會變成彩色。在 <em>noarch</em> 的例子裡，當我發出第一條訊息，聊天介面變成了粉色 (yay!)</p>
+<img alt="Signal 聊天介面" loading="lazy" src="images/signal-chat-pink.webp" width="450"/>
+<p>作為一個模仿簡訊體驗的即時通訊，你發出的第一條訊息就是“好友請求”。對方在收到你的第一條訊息之後，可以像其它及時通訊的好友請求一樣允許，忽略（刪除）和拒絕（拉黑）：</p>
+<img alt="Signal “好友請求”" loading="lazy" src="images/signal-chat-request.webp" width="450"/>
+<p>在對方點選“接受”之後，你們就可以像其它及時通訊一樣聊天了！</p>
+<p>如果你在理解圖示上有困難，下面是 Signal 聊天介面各種圖示的解釋：</p>
+<img alt="Signal 聊天介面解釋" loading="lazy" src="images/signal-chat-overview.webp" width="450"/>
+<h3 id="發語音"><a class="header" href="#發語音">發語音</a></h3>
+<p>在 Signal 聊天介面，按住 <i class="fas fa-microphone"></i> 可以發語音。</p>
+<img alt="Signal 傳送語音" loading="lazy" src="images/signal-chat-voice.webp" width="450"/>
+<p>如果你口誤了，可以原地向左滑動取消語音錄製；</p>
+<p>如果你想錄一首鋼琴曲，原地上劃可以鎖定語音錄製狀態，然後把手機放到鋼琴上即可，不用一直按著錄製鍵；</p>
+<p>錄完之後，鬆手即可傳送；或者如果你在鎖定模式，點選 <i class="fas fa-paper-plane"></i> 來發送。</p>
+<h3 id="傳送媒體檔案"><a class="header" href="#傳送媒體檔案">傳送媒體檔案</a></h3>
+<p>Signal 作為一個及時通訊，同樣可以傳送視訊和圖片。</p>
+<p>你可以點選訊息框右側的 <i class="fas fa-plus"></i> 來開啟媒體選擇選單：</p>
+<blockquote>
+<p><i class="fas fa-info-circle"></i> 第一次開啟時，Signal 會請求儲存許可權；點選“給予許可權”並在彈出的許可權請求中允許即可。</p>
+</blockquote>
+<img alt="Signal 媒體選擇器" loading="lazy" src="images/signal-image-select.webp" width="450"/>
+<p>點選你要傳送的媒體（可以是圖片、GIF 或是視訊），會根據對應媒體格式進入編輯器。</p>
+<p>在圖片編輯器裡，你可以給剪裁圖片、加文字、寫寫畫畫、打碼甚至貼上貼紙；在視訊編輯器裡你可以粗略地剪輯視訊。</p>
+<img alt="Signal 圖片編輯器" loading="lazy" src="images/signal-image-editor-cat.webp" width="450"/>
+<p>剪輯完成後點選右下角的 <i class="fas fa-paper-plane"></i> 來發送。</p>
+<img alt="Signal 圖片訊息" loading="lazy" src="images/signal-chat-cat.webp" width="450"/>
+<h4 id="多選媒體"><a class="header" href="#多選媒體">多選媒體</a></h4>
+<p>點選 <i class="fas fa-plus"></i> 號調出的圖片選擇器只能選擇一張圖片併發送。如果你要一次性發一堆照片，剛才的方法就很麻煩。</p>
+<p>還好 Signal 提供了照片多選功能。</p>
+<p>在 <i class="fas fa-plus"></i> 號圖片選擇器中點選“相簿”，你會進入一個資料夾檢視：</p>
+<blockquote>
+<p><i class="fas fa-info-circle"></i> 你也可以點選圖片編輯器下方圖片列表最右側的 <i class="fas fa-plus"></i> 號進入資料夾檢視。</p>
+</blockquote>
+<img alt="Signal 媒體選擇，資料夾檢視" loading="lazy" src="images/signal-image-select-big.webp" width="450"/>
+<p>進入你要傳送的圖片所在資料夾（或是直接進入“全部媒體”），然後點選對應圖片來選擇。</p>
+<img alt="Signal 多選媒體" loading="lazy" src="images/signal-image-select-big-2.webp" width="450"/>
+<p>選中的圖片會以一個帶數字的圓圈表示，數字代表圖片傳送順序。</p>
+<p>選擇完之後，點選 <i class="fas fa-chevron-right"></i> 就能進入你熟悉的圖片編輯器；在圖片編輯器裡點相同位置的 <i class="fas fa-paper-plane"></i> 就可以一次性發送多個媒體。</p>
+<h4 id="發原圖或檔案"><a class="header" href="#發原圖或檔案">發原圖（或檔案）</a></h4>
+<blockquote>
+<p><i class="fas fa-bomb"></i> Signal 傳送原圖不會去除圖片中可能敏感的 EXIF 資訊。不知道這麼做的風險可能使你洩露自己的地理位置、裝置型號，還有更多資訊。</p>
+</blockquote>
+<p>Signal 預設壓縮傳送的圖片，並會去除圖片中可能洩露隱私的 <a href="https://en.wikipedia.org/wiki/Exif">EXIF</a> 資訊。</p>
+<p>但有時候你需要傳送原圖，以保證傳送圖片的質量。</p>
+<p>Signal 沒有專門的“發原圖”功能，但你可以將圖片以“檔案”形式傳送，這樣 Signal 就不會以任何形式處理圖片。</p>
+<p>在聊天介面 <i class="fas fa-plus"></i> 號選單點選 <i class="fas fa-file-o"></i> 檔案，你會被帶到熟悉的 Android 檔案選擇器。</p>
+<blockquote>
+<p><i class="fas fa-info-circle"></i> 如果你安裝了多個檔案管理器，Android 會問你要使用哪個。</p>
+</blockquote>
+<img alt="Android 檔案選擇器" loading="lazy" src="images/file-select.webp" width="450"/>
+<p>在檔案管理器裡選擇你要傳送的檔案（只能選擇一個），然後點選“選擇”回到 Signal 聊天介面。</p>
+<img alt="Android 檔案選擇器，選中檔案" loading="lazy" src="images/file-selected.webp" width="450"/>
+<p>在聊天介面下方，你會看到剛才選中的檔案，讓你確認即將傳送的檔案；確認無誤後即可傳送。</p>
+<img alt="Signal 傳送檔案" loading="lazy" src="images/signal-chat-send-file.webp" width="450"/>
+<blockquote>
+<p><i class="fas fa-check-circle"></i> 有趣的是，儘管 Signal 不提供方便的無損圖片傳送，你卻能預覽傳送出去和收到的無損圖片。</p>
+</blockquote>
+<img alt="Signal 原圖已傳送" loading="lazy" src="images/signal-chat-sent-as-file.webp" width="450"/>
+<h2 id="群聊"><a class="header" href="#群聊">群聊</a></h2>
+<p>如果你要把一家人都拉進 Signal, 那麼群聊則是你的首選。雖然 Signal 群聊在社交功能上不及一些其它社交為主的即時通訊，但作為只與緊密朋友聯絡的工具，Signal 群聊做得也不錯。</p>
+<p>建立群聊和開始新對話的入口一致，都是主介面右下角的 <i class="fas fa-plus"></i> 號。不同的是，在進入新建對話介面後你點選“ <i class="fas fa-user-friends"></i> 新建群組”：</p>
+<img alt="Signal 新建群組" loading="lazy" src="images/signal-newgroup.webp" width="450"/>
+<p>然後選擇，或是挨個新增想要拉到群裡的人，按 <i class="fas fa-arrow-right"></i> 繼續然後輸入群資訊：</p>
+<img alt="Signal 新建群組 輸入資訊" loading="lazy" src="images/signal-newgroup-name.webp" width="450"/>
+<p>最後“建立”就建立了一個新群。</p>
+<img alt="Signal 群組聊天介面" loading="lazy" src="images/signal-group.webp" width="450"/>
+<h3 id="-重要通知"><a class="header" href="#-重要通知">@ 重要通知</a></h3>
+<p>像很多其它即時通訊一樣，Signal 沒有專門的 <code>@</code> 按鈕；</p>
+<p>如果你要 @ 一個人，直接用鍵盤輸入 <code>@</code>, Signal 就會彈出一個搜尋選單。</p>
+<img alt="Signal 群組 @ 搜尋" loading="lazy" src="images/signal-group-at-search.webp" width="450"/>
+<p>繼續輸入你要 @ 的使用者名稱，找到目標，點選就可以將特別通知新增到訊息裡。</p>
+<img alt="Signal 群組 @" loading="lazy" src="images/signal-group-at.webp" width="450"/>
+<hr/>
+<p>到此，<em>noarch</em> 已經介紹了 Signal 的所有核心功能和你一定要進行的隱私設定，剩下的功能你可以自己探索！</p>
+<h2 id="附加功能"><a class="header" href="#附加功能">附加功能</a></h2>
+<p>如果你懶得自己探索所有 Signal 的好玩功能，那麼 <em>noarch</em> 在這裡列出一些給你吧。</p>
+<h3 id="回覆訊息"><a class="header" href="#回覆訊息">“回覆”訊息</a></h3>
+<p>在一個訊息身上向右滑動可以“回覆”。它在群裡尤其有用，“回覆”一個訊息和 @ 一樣可以特別提醒一個人。</p>
+<img alt="Signal 回覆訊息" loading="lazy" src="images/signal-replyto.webp" width="450"/>
+<p>除了充當 @ 的功能之外，“回覆”還可以幫你和朋友緊貼話題，避免出現誤解。</p>
+<h3 id="端到端加密通話"><a class="header" href="#端到端加密通話">端到端加密通話</a></h3>
+<p>還記得 <em>noarch</em> 在章節開頭叫你設定的“總是轉發通話”嗎？沒錯，你可以用 Signal 打電話。</p>
+<p>除了不消耗通話分鐘數以外，Signal 在其網路電話中也使用了端到端加密，意味著你的通話<strong>幾乎不可能被竊聽</strong>。</p>
+<p>在聊天介面點選 <i class="fas fa-phone-alt"></i> 打電話，你會被帶到通話介面。</p>
+<p>Signal 的通話介面長這樣：</p>
+<img alt="Signal 通話中" loading="lazy" src="images/signal-incall.webp" width="450"/>
+<p>在聊天介面點選 <i class="fas fa-video"></i> 則可以直接打視訊電話，不過你可以隨意在視訊和語音電話之間切換。</p>
+<p>除此之外，Signal 還可以打群電話；打群電話的操作流程和私聊電話相似。不過，因為 Signal 的群通話不會通知成員，在開始群通話之前你需要事先通知群成員。</p>
+<h3 id="閱後即焚"><a class="header" href="#閱後即焚">閱後即焚</a></h3>
+<blockquote>
+<p><i class="fas fa-bomb"></i> 請不要依賴 Signal 閱後即焚功能說出可能會後悔的話。雖然訊息本身閱後即焚，但聊天另一方可以通過其它方式記錄訊息。</p>
+</blockquote>
+<p>得益於端到端加密，Signal 的訊息可以定時自毀。</p>
+<p>點選聊天介面右上角的 <i class="fas fa-ellipsis-v"></i>，然後選擇“閱後即焚”；或者點選對方頭像進入個人資訊頁，那裡也有“閱後即焚”選項。</p>
+<p>Signal 會彈出一個定時器，你可以在這設定訊息在閱讀後多久自動消失。</p>
+<img alt="Signal 閱後即焚定時器" loading="lazy" src="images/signal-self-destruct-timer.webp" width="450"/>
+<p>設定定時器後，對方頭像下方的狀態會顯示閱後即焚定時器。如果你這時發一條訊息，它會在定時器過後消失。</p>
+<img alt="Signal 閱後即焚狀態" loading="lazy" src="images/signal-self-destruct-status.webp" width="450"/>
+<p>你可以重複上述步驟，進入閱後即焚定時器，將其設定為“關閉”來回到“正常”模式。</p>
+<h3 id="驗證安全碼"><a class="header" href="#驗證安全碼">驗證安全碼</a></h3>
+<p>如果你看過 <code>privacy.noarch</code> 的<a href="/Encryption/Pubkey/Pubkey.html">“公鑰加密簡介”</a>章節，你看到這應該一直有一個疑惑：“作為一個端到端加密聊天工具，為什麼 Signal 不需要驗證公鑰指紋？”</p>
+<p>答案是，你其實可以手動驗證公鑰指紋。</p>
+<p>在聊天介面點選對方頭像檢視對方個人資訊，然後滑動到底部，“檢視安全碼”。</p>
+<img alt="Signal 驗證安全碼" loading="lazy" src="images/signal-verify.webp" width="450"/>
+<p>熟悉的公鑰驗證步驟來了：你現在可以和對方面對面驗證安全碼，或是用一個不同方式與對方核對安全碼。</p>
+<h2 id="總結"><a class="header" href="#總結">總結</a></h2>
+<p>上面 <em>noarch</em> 介紹了 Signal 的常見用法。現在，即使你不太會用其它及時通訊，也應該對 Signal 的操作比較熟悉了。</p>
+<p>光看無用，現在去把自己的三次元朋友拉到 Signal 上吧！</p>
+<p>記住，與你加密通訊的人越多，你的隱私在巨集觀上就越安全。</p>
+</main>
+<nav aria-label="Page navigation" class="nav-wrapper">
+<!-- Mobile navigation buttons -->
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="mobile-nav-chapters previous" href="../../Identities/WorldIsMine/WorldIsMine.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="mobile-nav-chapters next" href="../../Encryption/Encryption.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+<div style="clear: both"></div>
+</nav>
+</div>
+</div>
+<nav aria-label="Page navigation" class="nav-wide-wrapper">
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="nav-chapters previous" href="../../Identities/WorldIsMine/WorldIsMine.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="nav-chapters next" href="../../Encryption/Encryption.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+</nav>
+</div>
+<script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+<script charset="utf-8" src="../../clipboard.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../highlight.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../book.js" type="text/javascript"></script>
+<!-- Custom JS scripts -->
+<script src="../../sidebar.js" type="text/javascript"></script>
+</body>
+</html>

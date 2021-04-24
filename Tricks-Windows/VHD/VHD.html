@@ -472,7 +472,7 @@ bootmenupolicy          Standard
 <h3 id="安裝驅動"><a class="header" href="#安裝驅動">安裝驅動</a></h3>
 <p>進入 <code>Windows 設定 -&gt; 更新和安全 -&gt; Windows 更新</code>, 手動檢查更新。Windows 會通過 Windows Update 自動安裝關鍵的硬體驅動。</p>
 <p>如果你要手動安裝驅動，虛擬磁碟內的 Windows 在驅動安裝上和直接在物理磁碟內安裝基本無異。</p>
-<h3 id="解除安裝-unmount-物理磁碟"><a class="header" href="#解除安裝-unmount-物理磁碟">解除安裝 (unmount) 物理磁碟</a></h3>
+<h3 id="解除安裝-unmount-物理分割槽"><a class="header" href="#解除安裝-unmount-物理分割槽">解除安裝 (unmount) 物理分割槽</a></h3>
 <blockquote>
 <p><i aria-hidden="true" class="fa fa-bomb"></i> <strong>永遠加密和備份高敏感性和珍貴的資料。</strong> 下面的方法只能避免常見的檔案操作，並不能阻止專門為了盜取或摧毀已解除安裝磁碟內資料的惡意軟體。</p>
 </blockquote>
@@ -489,11 +489,11 @@ bootmenupolicy          Standard
 <p>對所有自動裝載的物理分割槽重複上述操作，你就能解除安裝所有想隔離的物理分割槽了。你甚至可以解除安裝包含著當前虛擬磁碟檔案的物理分割槽，而 Windows 依然能訪問這個虛擬磁碟檔案。</p>
 <p><img alt="diskmgmt-in-vhd-unmounted" loading="lazy" src="images/diskmgmt-in-vhd-unmounted.webp"/></p>
 <h3 id="虛擬記憶體"><a class="header" href="#虛擬記憶體">虛擬記憶體</a></h3>
-<p><a href="https://social.technet.microsoft.com/Forums/windows/en-US/dd78df78-7025-4ed7-ac47-2310e814c68f/native-vhd-boot-and-swapfile?forum=w7itprovirt">Windows 不支援在虛擬磁碟存放虛擬記憶體分頁檔案；</a>因此你需要將分頁檔案直接儲存在物理磁碟上。</p>
-<p>如果你解除安裝了所有物理磁碟和分割槽，Windows 將無處存放分頁檔案，並會在開機時彈出“效能選項”，提示你分配一個分頁檔案：</p>
-<img alt="pagefile-not-found" loading="lazy" src="images/pagefile-not-found.webp" width="450"/>
-<p>很抱歉 <del>(<em>noarch</em> 又跟微軟沒關係我道什麼歉啊)</del> 你需要每次開機都面對這個提示。</p>
-<p>沒有物理分割槽存放虛擬記憶體，Windows 會在沒有虛擬記憶體的情況下執行。如果你 PC 的記憶體較少 ( &lt;=4GiB ), 你可能需要注意記憶體的使用，以免記憶體不足，應用無法啟動或正常執行。</p>
+<p>如果你在上一步遇到了問題，原因很可能是 Windows 在你要解除安裝的物理捲上啟用了虛擬記憶體。要順利解除安裝，你需要先在禁止 Windo𥥈ws 在它們上面儲存虛擬記憶體分頁檔案。</p>
+<p>在 <code>效能選項（<i class="fa fa-windows"></i> + R -&gt; SystemPropertiesPerformance.exe）-&gt; 高階 -&gt; 虛擬記憶體 -&gt; 更改</code> ，取消選擇“自動管理所有驅動器的分頁檔案大小”。然後挨個選擇你要解除安裝的分割槽，然後選擇“無分頁檔案”：</p>
+<img alt="disabling-pagefiles" loading="lazy" src="images/disabling-pagefiles.webp" width="450"/>
+<p><a href="https://social.technet.microsoft.com/Forums/windows/en-US/dd78df78-7025-4ed7-ac47-2310e814c68f/native-vhd-boot-and-swapfile?forum=w7itprovirt">Windows 不支援在虛擬磁碟存放虛擬記憶體分頁檔案；</a>因此，如果你需要使用虛擬記憶體，請至少保留一個物理卷的掛載。</p>
+<p>沒有物理卷存放虛擬記憶體，Windows 會在沒有虛擬記憶體的情況下執行。如果你 PC 的記憶體較少 ( &lt;=4GiB ), 你可能需要注意記憶體的使用，以免記憶體不足，應用無法啟動或正常執行。</p>
 <h2 id="在另一個-windows-中訪問虛擬磁碟"><a class="header" href="#在另一個-windows-中訪問虛擬磁碟">在另一個 Windows 中訪問虛擬磁碟</a></h2>
 <p>安裝完成之後，要在另一個 Windows 中訪問這個虛擬磁碟內的檔案，你需要手動掛載該虛擬磁碟。</p>
 <p>開啟磁碟管理 <code>diskmgmt</code>, 在頂部選單點選 <code>操作 -&gt; 附加 VHD</code>: </p>

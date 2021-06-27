@@ -85,8 +85,9 @@
 <!-- mods to the vanilla sidebar-->
 <hr/>
 <p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><b>無廣告，無追蹤，無跨站請求，可退出的 CDN.</b> privacy.noarch 致力於維持網際網路該有的樣子。</p>
 <p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
-<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://github.com/noarchwastaken/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
 <p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
 </div>
 <div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
@@ -161,7 +162,7 @@
 <hr/>
 <p>你在網際網路上傳輸的資料不會像魔法一樣從世界一端直接跳到世界另一端。</p>
 <p>它需要經過一系列的路由，如果你所在的地方有防火牆的話它還需要經過防火牆的審查，甚至可能經由長達數萬公里的海底光纜，才能到達你的目標。</p>
-<p>比如 <em>noarch</em> 要訪問自己的網站 <a href="https://privacy.n0ar.ch"><code>privacy.n0ar.ch</code></a>, 其中網站的資料會經過這些地方：</p>
+<p>比如 noarch 要訪問自己的網站 <a href="https://privacy.n0ar.ch"><code>privacy.n0ar.ch</code></a>, 其中網站的資料會經過這些地方：</p>
 <pre><code>[noarch@fedora ~]$ traceroute privacy.n0ar.ch
 
 # 到 privacy.n0ar.ch 的路由追蹤：
@@ -185,8 +186,8 @@ traceroute to privacy.n0ar.ch (104.24.98.152), 30 hops max, 60 byte packets
 # 實際上資料還會經由 Cloudflare 返回 noarch 的伺服器，但 traceroute 只能追蹤到這裡
 </code></pre>
 <p>這途中任何一個節點都可以擷取你傳輸的資訊。更可怕的是，它們甚至可以修改其中的資訊，將你重定向到惡意網頁，或是向你呈現釣魚內容...</p>
-<p>試想一下你在訪問 <code>privacy.noarch</code> 時，所有 <em>noarch</em> 想要傳達給你的資訊都被一個攻擊者替換，引誘你做一些暴露自己隱私的事情。這聽起來真的可怕...</p>
-<p>所以 <em>noarch</em> 在 <code>privacy.noarch</code> 上應用了<strong>加密</strong>。它將你現在閱讀的明文編碼成無法理解的亂碼，並且通過一些方式，只允許你能夠讀取其中的意義。</p>
+<p>試想一下你在訪問 <code>privacy.noarch</code> 時，所有 noarch 想要傳達給你的資訊都被一個攻擊者替換，引誘你做一些暴露自己隱私的事情。這聽起來真的可怕...</p>
+<p>所以 noarch 在 <code>privacy.noarch</code> 上應用了<strong>加密</strong>。它將你現在閱讀的明文編碼成無法理解的亂碼，並且通過一些方式，只允許你能夠讀取其中的意義。</p>
 <h2 id="更詳細一點加密是什麼"><a class="header" href="#更詳細一點加密是什麼">更詳細一點，加密是什麼？</a></h2>
 <p>引用維基百科上的 <a href="https://en.wikipedia.org/wiki/Encryption">"Encryption"</a> 條目：</p>
 <blockquote>
@@ -204,14 +205,14 @@ traceroute to privacy.n0ar.ch (104.24.98.152), 30 hops max, 60 byte packets
 <p><i aria-hidden="true" class="fa fa-info-circle"></i> 下述“雲服務”和“雲端”包括網盤，E-Mail 以及即時通訊等<strong>遠端儲存你隱私資料</strong>的服務。</p>
 </blockquote>
 <p>在本文寫成時（2020 年），網際網路上的資訊傳輸和儲存同時比你想象得安全，和危險。</p>
-<p>關於它，<em>noarch</em> 有一個好訊息和一個壞訊息要告訴你：</p>
+<p>關於它，noarch 有一個好訊息和一個壞訊息要告訴你：</p>
 <ul>
 <li>
 <p>好訊息是，得益於 <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS</a> 的廣泛使用，在網際網路資訊傳輸過程中你的傳送和接收的資訊一般是安全的。</p>
 <ul>
 <li>比如你在瀏覽網頁時，只要網頁啟用了 <a href="https://en.wikipedia.org/wiki/HTTPS">HTTPS</a>, 你就不需要擔心你的學校或公司看到你搜索 <em><del>bbq sauce on titties</del></em>. 它們唯一可能知道的是，你在進行搜尋。</li>
 <li>不過如果你跟隨搜尋結果的連結進入 PornHub, 它們也會知道你在訪問 PornHub, 但不知道你具體觀看了什麼視訊。</li>
-<li>前面 <em>noarch</em> 提到的 <code>privacy.noarch</code> 使用的加密就是 HTTPS。</li>
+<li>前面 noarch 提到的 <code>privacy.noarch</code> 使用的加密就是 HTTPS。</li>
 </ul>
 </li>
 <li>
@@ -257,7 +258,7 @@ traceroute to privacy.n0ar.ch (104.24.98.152), 30 hops max, 60 byte packets
 <p>2.0. 你可能覺得這沒什麼問題，畢竟你的護照就是警察發的，並且你本身就在實名過安檢。</p>
 <p>2.1. <strong>但如果你在非法持有多國籍呢？</strong> 現在警察知道了你的雙 / 多重國籍，並且這可能標記著你非法多國籍生涯的終結。</p>
 <blockquote>
-<p><strong><em>noarch</em> 反對任何非法持有多國籍的做法。</strong></p>
+<p><strong>noarch 反對任何非法持有多國籍的做法。</strong></p>
 </blockquote>
 </li>
 <li>
@@ -270,7 +271,7 @@ traceroute to privacy.n0ar.ch (104.24.98.152), 30 hops max, 60 byte packets
 <p>在閱讀本文之前，你可能以為，只有第0條會發生。然而在這個雲端儲存越來越流行的時代，你的資料往往會被無意識地洩露。</p>
 <p>除了拒絕使用各類“雲”服務之外，一個有效保障資料安全的方式就是<strong>自己管理加密事宜</strong>。這樣，在特定情況下，敵人想要訪問你資料時，得到的只會是一堆加密過，並且幾乎無法被破解的垃圾。</p>
 <h2 id="如何自己管理資料加密"><a class="header" href="#如何自己管理資料加密">如何自己管理資料加密？</a></h2>
-<p>現代的加密方式種類繁多。根據你要加密的資料型別，<em>noarch</em> 會主要介紹兩種加密方式：</p>
+<p>現代的加密方式種類繁多。根據你要加密的資料型別，noarch 會主要介紹兩種加密方式：</p>
 <ul>
 <li>
 <p>PGP (Pretty Good Privacy, 在隱私方面相當好), 飽經考驗的非對稱（公鑰）加密，主要用於加密電子郵件，聊天和單個檔案</p>

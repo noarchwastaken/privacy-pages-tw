@@ -85,8 +85,9 @@
 <!-- mods to the vanilla sidebar-->
 <hr/>
 <p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><b>無廣告，無追蹤，無跨站請求，可退出的 CDN.</b> privacy.noarch 致力於維持網際網路該有的樣子。</p>
 <p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
-<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://github.com/noarchwastaken/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
 <p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
 </div>
 <div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
@@ -162,7 +163,7 @@
 <p>在繼續使用當前商業輸入法的前提下，禁止它聯網是你保護輸入隱私的終極辦法了。</p>
 <p>當你聽到斷網這個方法時，你可能會覺得它很簡單粗暴；但實際上，很多問題是人們自己帶來的，並且這些習慣形成了思維定勢。你需要學會“為生活做減法”。</p>
 <p>比如你要保持一個電腦上的檔案不被網際網路上的病毒竊取。你花了很多功夫為它進行加固，還配置了防毒軟體和嚴格的防火牆，並且對這個檔案進行了加密。然而在這種情況下，你面對的對手僅僅是來自網際網路的病毒；實際上你只需要將其斷網，並專門分配一個儲存介質用於傳輸檔案即可。</p>
-<p>下面 <em>noarch</em> 就教你如何禁止輸入法（或任何其它應用）聯網，防止它上傳任何資訊到其伺服器上。</p>
+<p>下面 noarch 就教你如何禁止輸入法（或任何其它應用）聯網，防止它上傳任何資訊到其伺服器上。</p>
 <blockquote>
 <p><i aria-hidden="true" class="fa fa-info-circle"></i> 一些 AOSP 以及廠商系統沒有此功能。如果你發現下面的步驟不適用於自己，請改用<a href="">同文輸入法</a>等不聯網的輸入法。</p>
 </blockquote>
@@ -186,7 +187,7 @@
 <img alt="settings-all-apps-search-sogou" loading="lazy" src="images/settings-all-apps-search-sogou.webp" width="370"/>
 <p>點選對應的應用來進入 <code>應用資訊</code>，這裡你可以看到解除安裝，停止以及對應用通知，許可權，儲存空間以及聯網的設定。</p>
 <img alt="settings-app-info-sogou" loading="lazy" src="images/settings-app-info-sogou.webp" width="400"/>
-<p>在 <em>noarch</em> 使用的 LineageOS 中，對應用的聯網控制選項稱為 <code>移動資料和 WLAN</code>; 其中的聯網總開關稱為 <code>允許網路訪問</code>。</p>
+<p>在 noarch 使用的 LineageOS 中，對應用的聯網控制選項稱為 <code>移動資料和 WLAN</code>; 其中的聯網總開關稱為 <code>允許網路訪問</code>。</p>
 <img alt="settings-sogou-network-enabled" loading="lazy" src="images/settings-sogou-network-enabled.webp" width="370"/>
 <img alt="settings-sogou-network-disabled" loading="lazy" src="images/settings-sogou-network-disabled.webp" width="370"/>
 <p>不同廠商系統的 <code>應用資訊</code> 介面不盡相同，有些沒有提供一個總開關，而是分別提供了 Wi-Fi(WLAN) 和移動資料的開關；將它們都關閉（禁止）即可。</p>
@@ -194,7 +195,7 @@
 <img alt="oneplus-gboard-network-enabled" loading="lazy" src="images/oneplus-gboard-network-enabled.webp" width="245"/>
 <img alt="oneplus-gboard-network-disabled" loading="lazy" src="images/oneplus-gboard-network-disabled.webp" width="245"/>
 <h2 id="控制權限"><a class="header" href="#控制權限">控制權限</a></h2>
-<p><em>noarch</em> 還建議你在 <code>應用資訊 - 許可權</code> 內拒絕該輸入法的所有許可權請求，<strong>尤其是儲存許可權。</strong></p>
+<p>noarch 還建議你在 <code>應用資訊 - 許可權</code> 內拒絕該輸入法的所有許可權請求，<strong>尤其是儲存許可權。</strong></p>
 <p>這樣能防止輸入法將收集的資料儲存在內部儲存裡，供其它沒有被禁止聯網的追蹤應用讀取並且上傳。</p>
 <p>以搜狗輸入法為例，它能在在不被允許任何許可權的情況下正常執行。</p>
 <img alt="sogou-permissions" loading="lazy" src="images/sogou-permissions.webp" width="400"/>

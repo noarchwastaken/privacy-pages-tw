@@ -85,8 +85,9 @@
 <!-- mods to the vanilla sidebar-->
 <hr/>
 <p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><b>無廣告，無追蹤，無跨站請求，可退出的 CDN.</b> privacy.noarch 致力於維持網際網路該有的樣子。</p>
 <p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
-<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://github.com/noarchwastaken/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
 <p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
 </div>
 <div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
@@ -165,9 +166,9 @@
 客戶端 <a href="https://github.com/bitwarden/browser/blob/master/LICENSE.txt">GPLv3</a>, 服務端 <a href="https://github.com/bitwarden/server/blob/master/LICENSE_AGPL.txt">AGPLv3</a> 和 <a href="https://github.com/bitwarden/server/blob/master/LICENSE_BITWARDEN.txt">Bitwarden EULA</a> | <a href="https://bitwarden.com/terms/">服務條款</a> | <a href="https://bitwarden.com/privacy/">隱私政策</a></p>
 <hr/>
 <h2 id="回顧"><a class="header" href="#回顧">回顧</a></h2>
-<p><a href="../Passwords.html">上一章</a>中 <em>noarch</em> 定義了一個合格的密碼管理器，我們將要介紹的 Bitwarden 就是符合標準的一個。</p>
+<p><a href="../Passwords.html">上一章</a>中 noarch 定義了一個合格的密碼管理器，我們將要介紹的 Bitwarden 就是符合標準的一個。</p>
 <p>它使用 <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES-256</a> 加密你的密碼庫，並將你的主密碼使用加鹽的 <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2 SHA-256</a> 形式儲存，以保證密碼庫的<strong>零訪問</strong>。零訪問意味著你的密碼庫只在客戶端被解密，就連 Bitwarden 的員工或可能搜查 Bitwarden 的警方都無法通過正常方式獲取你的密碼。</p>
-<p>最重要的 - 它幾乎全由自由軟體組成。得益於此，如果你不信任 Bitwarden 官方雲，你甚至可以自己搭建 Bitwarden 伺服器，自己管理自己的資料；不過 <em>noarch</em> 不會在此教你如何自建 Bitwarden 伺服器。</p>
+<p>最重要的 - 它幾乎全由自由軟體組成。得益於此，如果你不信任 Bitwarden 官方雲，你甚至可以自己搭建 Bitwarden 伺服器，自己管理自己的資料；不過 noarch 不會在此教你如何自建 Bitwarden 伺服器。</p>
 <h2 id="可能的疑問"><a class="header" href="#可能的疑問">可能的疑問</a></h2>
 <p>本章要講述的是 Bitwarden 的網頁版密碼庫。</p>
 <p>你可能會好奇，既然是網頁，那麼為什麼 Bitwarden 說他們不能訪問你的密碼呢？</p>
@@ -186,37 +187,37 @@
 <p>就像註冊任何其它帳號一樣，填寫你的郵箱地址和名字。名字可以使用假名，就像這樣：</p>
 <img loading="lazy" src="images/bw-reg-filled.webp" width="450"/>
 <p>不過<strong>等一下</strong>。你可能現在就在犯一個錯誤：<strong>在密碼管理器上使用你之前用過的密碼。</strong></p>
-<p><strong><em>noarch</em> 強烈反對這種行為</strong>。</p>
+<p><strong>noarch 強烈反對這種行為</strong>。</p>
 <p>請當場想出一個夠強的密碼，它最好有至少 15 位，擁有大小寫字母、數字和符號...</p>
 <blockquote>
 <p><em>到底怎麼做啊！我想不出來！</em></p>
 </blockquote>
 <h3 id="人腦密碼生成器"><a class="header" href="#人腦密碼生成器">人腦密碼生成器</a></h3>
 <p>在我們把生成密碼這件事交給密碼管理器前，請想想你之前用過的密碼。</p>
-<p><em>noarch</em> 就用過自己的名字首字母和生日；現在想起來最可怕的一個是直接使用使用者名稱，加上其中幾個字元用 <a href="https://en.wikipedia.org/wiki/Leet">Leet (1337)</a> 替換成對應的符號和數字。</p>
-<p>請別這樣做。如果你使用這些能聯絡到個人身份，或是關於你的，長久有效的資訊，例如 <del><code>n0@rcH1sn0tgaY</code></del>, 充分了解你的人將能猜出這個密碼，或黑客可以通過你的密碼獲取你的相關資訊。例如上面的密碼 <del><code>n0@rcH1sn0tgaY</code></del> 看起來很強，但瞭解 <em>noarch</em> 的人有一定的可能性會猜出它來。</p>
-<p>所以 <em>noarch</em> 想要分享一下自己的密碼“生成”思路，它用來“生成”你的密碼管理器主密碼：</p>
+<p>noarch 就用過自己的名字首字母和生日；現在想起來最可怕的一個是直接使用使用者名稱，加上其中幾個字元用 <a href="https://en.wikipedia.org/wiki/Leet">Leet (1337)</a> 替換成對應的符號和數字。</p>
+<p>請別這樣做。如果你使用這些能聯絡到個人身份，或是關於你的，長久有效的資訊，例如 <del><code>n0@rcH1sn0tgaY</code></del>, 充分了解你的人將能猜出這個密碼，或黑客可以通過你的密碼獲取你的相關資訊。例如上面的密碼 <del><code>n0@rcH1sn0tgaY</code></del> 看起來很強，但瞭解 noarch 的人有一定的可能性會猜出它來。</p>
+<p>所以 noarch 想要分享一下自己的密碼“生成”思路，它用來“生成”你的密碼管理器主密碼：</p>
 <blockquote>
-<p><i aria-hidden="true" class="fa fa-info-circle"></i> 這只是 <em>noarch</em> 的個人做法，提供給那些根本想不出來的讀者。如果你有更好的主意，<em>noarch</em> 將會非常感謝你的<a href="/CONTRIBUTING.html">貢獻</a>。</p>
+<p><i aria-hidden="true" class="fa fa-info-circle"></i> 這只是 noarch 的個人做法，提供給那些根本想不出來的讀者。如果你有更好的主意，noarch 將會非常感謝你的<a href="/CONTRIBUTING.html">貢獻</a>。</p>
 </blockquote>
 <ol start="0">
-<li>像 <em>noarch</em> 之前講的，避開任何自己的長期資訊。任何“最喜歡的”也要避開。</li>
+<li>像 noarch 之前講的，避開任何自己的長期資訊。任何“最喜歡的”也要避開。</li>
 <li>想想自己<strong>最近</strong>做的事情、讀的書、看的電影或是玩過的遊戲。</li>
 <li>如果適用，你也可以想想這些書、遊戲或電影中發生的事。</li>
-<li>把它們寫下來。<em>noarch</em> 最近在讀 <a href="https://en.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a> 的傳記 <a href="https://en.wikipedia.org/wiki/Free_as_in_Freedom"><em>Free as in Freedom</em></a>.</li>
+<li>把它們寫下來。noarch 最近在讀 <a href="https://en.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a> 的傳記 <a href="https://en.wikipedia.org/wiki/Free_as_in_Freedom"><em>Free as in Freedom</em></a>.</li>
 <li>用 <a href="https://en.wikipedia.org/wiki/Leet">1337</a> 編碼它。這樣它就包含了數字和符號。</li>
-<li>加上一些非常易變的數字。比如你“生成”密碼時的時間，或是你現在在使用的某個軟體版本號。<em>noarch</em> 在“生成”這個密碼時的時間是下午 5:40.</li>
+<li>加上一些非常易變的數字。比如你“生成”密碼時的時間，或是你現在在使用的某個軟體版本號。noarch 在“生成”這個密碼時的時間是下午 5:40.</li>
 <li>把它夾在第4步得出的內容中間某個位置。</li>
 </ol>
-<p>經過這樣一個步驟，<em>noarch</em> 寫出了一個這樣的密碼：</p>
+<p>經過這樣一個步驟，noarch 寫出了一個這樣的密碼：</p>
 <p><img alt="" loading="lazy" src="images/bw-reg-pwd.webp"/></p>
-<p>如果你有任何其它主意，你還可以把它和 <em>noarch</em> 的方法結合在一起！例如你還可以把最後的 <code>Freed.m</code> 倒序成 <code>m.deerF</code>, 得出最終結果 <code>fR3e@s!n1740m.deerF</code>. 現在你就得到了一個基本沒人猜得出來，並且機器也難以爆破的主密碼，用於加密你的 Bitwarden 密碼庫。</p>
+<p>如果你有任何其它主意，你還可以把它和 noarch 的方法結合在一起！例如你還可以把最後的 <code>Freed.m</code> 倒序成 <code>m.deerF</code>, 得出最終結果 <code>fR3e@s!n1740m.deerF</code>. 現在你就得到了一個基本沒人猜得出來，並且機器也難以爆破的主密碼，用於加密你的 Bitwarden 密碼庫。</p>
 <blockquote>
-<p>別擔心，<em>noarch</em> 當然不會將上述密碼進行實際使用，你也絕對不要真用上述的示例密碼。</p>
+<p>別擔心，noarch 當然不會將上述密碼進行實際使用，你也絕對不要真用上述的示例密碼。</p>
 </blockquote>
 <p>最後，你可以選擇提供一個密碼提示；當你真的忘記密碼時，你可以請求 Bitwarden 將它傳送到你的郵箱裡。</p>
 <blockquote>
-<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 密碼提示是明文儲存的，並且另一款密碼管理器 <a href="https://www.pcworld.com/article/2936621/the-lastpass-security-breach-what-you-need-to-know-do-and-watch-out-for.html">LastPass 曾經發生的資料洩露</a>中就包含密碼提示。因此，請不要在內填寫有關自己的資訊。例如 <em>noarch</em> 簡單地在這裡寫了 <code>GNU</code>, 因為 <code>GNU</code> 就是密碼中提到的“自由軟體”概念開創者之一。</p>
+<p><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> 密碼提示是明文儲存的，並且另一款密碼管理器 <a href="https://www.pcworld.com/article/2936621/the-lastpass-security-breach-what-you-need-to-know-do-and-watch-out-for.html">LastPass 曾經發生的資料洩露</a>中就包含密碼提示。因此，請不要在內填寫有關自己的資訊。例如 noarch 簡單地在這裡寫了 <code>GNU</code>, 因為 <code>GNU</code> 就是密碼中提到的“自由軟體”概念開創者之一。</p>
 </blockquote>
 <h3 id="記住密碼"><a class="header" href="#記住密碼">記住密碼</a></h3>
 <p>如果你從來沒有嘗試記憶過 <code>fR3e@s!n1740Freed.m</code> 這麼強的密碼，那麼你可能會在建立完帳號後一瞬間就忘掉你剛才建立的密碼。</p>
@@ -249,7 +250,7 @@
 <p><img alt="" loading="lazy" src="images/bw-verify-email.webp"/></p>
 <blockquote>
 <p><i aria-hidden="true" class="fa fa-info-circle"></i> 取決於你的郵件客戶端安全設定，這封郵件可能會像上圖一樣無法正常載入。不用擔心，這個按鈕能在不載入遠端內容的情況下工作。</p>
-<p><em>noarch</em> 推薦像 <a href="">Thunderbird</a> 或 <a href="">Tutanota</a> 這樣<strong>攔截遠端內容</strong>的郵件客戶端 / 提供商，它們能幫你阻擋大部分來自郵件的惡意軟體，並防止郵件傳送者通過遠端請求追蹤你。</p>
+<p>noarch 推薦像 <a href="">Thunderbird</a> 或 <a href="">Tutanota</a> 這樣<strong>攔截遠端內容</strong>的郵件客戶端 / 提供商，它們能幫你阻擋大部分來自郵件的惡意軟體，並防止郵件傳送者通過遠端請求追蹤你。</p>
 </blockquote>
 <p>在<strong>確認來源地址</strong>是 <code>no-reply@bitwarden.com</code> 後，點選這個按鈕，你會被帶到一個有提示的登入頁面。</p>
 <p><img alt="" loading="lazy" src="images/bw-popup-email-verified.webp"/></p>
@@ -257,12 +258,12 @@
 <p><img alt="" loading="lazy" src="images/bw-vault-verified.webp"/></p>
 <h2 id="新增你的第一條密碼"><a class="header" href="#新增你的第一條密碼">新增你的第一條密碼</a></h2>
 <p>在 Bitwarden 儲存密碼同樣簡單明瞭。</p>
-<p>不過，如果你在密碼管理器儲存以前重複使用的密碼，它將失去意義。所以 <em>noarch</em> 將在這演示為 Tutanota 郵箱使用 Bitwarden 生成並儲存密碼。</p>
+<p>不過，如果你在密碼管理器儲存以前重複使用的密碼，它將失去意義。所以 noarch 將在這演示為 Tutanota 郵箱使用 Bitwarden 生成並儲存密碼。</p>
 <p>要讓 Bitwarden 為你儲存密碼，點選“新增專案”。</p>
 <p><img alt="" loading="lazy" src="images/bw-add-item.webp"/></p>
 <p>然後你可以在這填寫你的帳號名稱（服務）、使用者名稱/郵箱，以及登入時的網址 (URI)。</p>
 <p><img alt="" loading="lazy" src="images/bw-form.webp"/></p>
-<p>雖然 URI 是可選的，但 <em>noarch</em> 建議你填寫它。URI 有兩個用途：</p>
+<p>雖然 URI 是可選的，但 noarch 建議你填寫它。URI 有兩個用途：</p>
 <ol start="0">
 <li>用於獲取這個帳號的圖示，並展示在 Bitwarden 密碼庫內。</li>
 <li>用於自動填寫。這個會在你使用 <a href="">Bitwarden 瀏覽器外掛或手機應用</a>時有用。</li>
@@ -298,7 +299,7 @@
 <p>同樣，輸入密碼然後“<i aria-hidden="true" class="fa fa-unlock-alt"></i> 解鎖”就可以了。</p>
 <hr/>
 <h2 id="進階功能"><a class="header" href="#進階功能">進階功能</a></h2>
-<p>下面是一些 <em>noarch</em> 認為一般人可能不會用到的功能，但也會在這做介紹。</p>
+<p>下面是一些 noarch 認為一般人可能不會用到的功能，但也會在這做介紹。</p>
 <h3 id="儲存信用卡身份以及筆記"><a class="header" href="#儲存信用卡身份以及筆記">儲存信用卡、身份、以及筆記</a></h3>
 <p>Bitwarden 還可以用來儲存信用卡和身份。搭配 <a href="">Bitwarden 瀏覽器外掛或手機應用</a>使用時，Bitwarden 可以幫你自動填寫這些表單。</p>
 <p>新增它們的方法和新增密碼類似，只不過需要填寫的資訊不同。你可以通過“這是什麼型別的專案？”在這些模式中切換。</p>
@@ -311,10 +312,10 @@
 <pre><code>WkRUdb6LRqF8sC
 </code></pre>
 <p>Bitwarden 這樣做是為了保證最大相容性，因為有些服務不支援密碼中包含符號。</p>
-<p>不過 <em>noarch</em> 以及一些其它密碼管理器，例如 KeepassXC 認為這樣生成的密碼強度不夠高。因此，如果你有需要，可以調節 Bitwarden 密碼生成器引數。</p>
+<p>不過 noarch 以及一些其它密碼管理器，例如 KeepassXC 認為這樣生成的密碼強度不夠高。因此，如果你有需要，可以調節 Bitwarden 密碼生成器引數。</p>
 <p>在 Bitwarden 密碼庫頂欄點選 <code>工具 -&gt; 密碼生成器</code>，你應該能看見一個專門的密碼生成器：</p>
 <p><img alt="" loading="lazy" src="images/bw-pwdgen.webp"/></p>
-<p>在這裡你可以調節密碼型別、長度、包含的字符集以及每種字元最小個數。<em>noarch</em> 建議你將密碼生成器調成這樣。現在它長度為 24 位，包含完整的 <code>[A-Za-z0-9!@#$%^&amp;*]</code>.</p>
+<p>在這裡你可以調節密碼型別、長度、包含的字符集以及每種字元最小個數。noarch 建議你將密碼生成器調成這樣。現在它長度為 24 位，包含完整的 <code>[A-Za-z0-9!@#$%^&amp;*]</code>.</p>
 <p><img alt="" loading="lazy" src="images/bw-pwdgen-rec.webp"/></p>
 <h3 id="匯入密碼庫"><a class="header" href="#匯入密碼庫">匯入密碼庫</a></h3>
 <p>如果你之前在使用其它“密碼管理器”，例如 Chrome 瀏覽器的“儲存密碼”功能，你可以將儲存在那裡的密碼匯入 Bitwarden.</p>
@@ -329,13 +330,13 @@
 <p><img alt="" loading="lazy" src="images/bw-export.webp"/></p>
 <p>Bitwarden 可以將你的密碼庫匯出為 <code>json</code> 或 <code>csv</code> 格式，它們可以進一步被匯入到 <a href="">KeepassXC</a> 或任何支援匯入這些格式的密碼管理器。</p>
 <h3 id="修改賬戶設定"><a class="header" href="#修改賬戶設定">修改賬戶設定</a></h3>
-<p>如果你不慎洩露了主密碼 (<em>noarch</em> 希望你絕對不要)，或你的郵箱被盜，在傷害發生前請立刻在 Bitwarden 內修改對應的設定。</p>
+<p>如果你不慎洩露了主密碼 (noarch 希望你絕對不要)，或你的郵箱被盜，在傷害發生前請立刻在 Bitwarden 內修改對應的設定。</p>
 <p>你可以進入 <code>設定 -&gt; 我的賬戶</code> 修改這些設定。無論是修改郵箱地址或是主密碼，你都需要確認當前的主密碼。</p>
 <p><img alt="" loading="lazy" src="images/bw-settings.webp"/></p>
 <h2 id="總結"><a class="header" href="#總結">總結</a></h2>
 <p>你現在應該能夠順利使用 Bitwarden 管理你的密碼了。</p>
 <p>雖然目前你的 Bitwarden 密碼庫內只存有一個帳號，不過你可以在之後使用某個沒有存入 Bitwarden 的帳號時下意識將它存入 Bitwarden 並<strong>通過上述方法改密碼</strong>。</p>
-<p><strong>密碼管理器的使用時間越久，它對你提供的便利和安全性越大</strong>；<em>noarch</em> 希望你不要被剛開始的麻煩嚇跑，因為它在長期使用後是你的得力助手。</p>
+<p><strong>密碼管理器的使用時間越久，它對你提供的便利和安全性越大</strong>；noarch 希望你不要被剛開始的麻煩嚇跑，因為它在長期使用後是你的得力助手。</p>
 </main>
 <nav aria-label="Page navigation" class="nav-wrapper">
 <!-- Mobile navigation buttons -->

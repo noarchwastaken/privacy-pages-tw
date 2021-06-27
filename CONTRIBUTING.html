@@ -85,8 +85,9 @@
 <!-- mods to the vanilla sidebar-->
 <hr/>
 <p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><b>無廣告，無追蹤，無跨站請求，可退出的 CDN.</b> privacy.noarch 致力於維持網際網路該有的樣子。</p>
 <p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
-<p><a href="https://git.n0ar.ch/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://github.com/noarchwastaken/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
 <p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
 </div>
 <div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
@@ -171,7 +172,7 @@
 <p>如果你想自己修正 <code>privacy.noarch</code> 的錯誤，或是為它寫一篇文章，自己修改然後開個 <a href="https://github.com/noarchwastaken/privacy/pulls">Pull request</a> 則是更直接的方法！</p>
 <h3 id="文字格式"><a class="header" href="#文字格式">文字格式</a></h3>
 <h4 id="markdown-語法"><a class="header" href="#markdown-語法">Markdown 語法</a></h4>
-<p>為了人類可讀性和編寫的便捷，Markdown 的語法很靈活：很多不同的語法可以帶來相同的結果。<em>noarch</em> 為了最大化文章的可讀性和格式的統一，擬定了一個 Markdown 語法使用規範：</p>
+<p>為了人類可讀性和編寫的便捷，Markdown 的語法很靈活：很多不同的語法可以帶來相同的結果。noarch 為了最大化文章的可讀性和格式的統一，擬定了一個 Markdown 語法使用規範：</p>
 <table><thead><tr><th>效果</th><th>格式</th></tr></thead><tbody>
 <tr><td>標題</td><td><code>#</code>, 僅在行首使用</td></tr>
 <tr><td><em>斜體</em></td><td><code>*</code></td></tr>
@@ -182,7 +183,7 @@
 <tr><td>分割線</td><td><code>---</code></td></tr>
 </tbody></table>
 <h4 id="文法與語氣"><a class="header" href="#文法與語氣">文法與語氣</a></h4>
-<p><em>noarch</em> 原本想盡量接近“維基”的語氣和文法，但在寫作的過程中發現使用第二人稱、貼近日常生活的語氣更加親切。</p>
+<p>noarch 原本想盡量接近“維基”的語氣和文法，但在寫作的過程中發現使用第二人稱、貼近日常生活的語氣更加親切。</p>
 <p>請不要大量使用幽默，或是使用可能帶來誤導的幽默，以保證讀者都能正確遵循指導。</p>
 <p>請僅在必要時使用第一人稱和第三人稱代詞，並用名字代替<em>它們</em>（這是一個必要的使用）；第二人稱使用“你”。</p>
 <h4 id="標點與空格"><a class="header" href="#標點與空格">標點與空格</a></h4>
@@ -234,7 +235,7 @@ You also need to add spaces accordingly to 114514.
 <p>上方程式碼的執行效果是這樣：</p>
 <img alt="bromite-org" loading="lazy" src="Browsers/Bromite/images/bromite-org.webp" width="450"/>
 <h4 id="在程式碼塊中使用-font-awesome"><a class="header" href="#在程式碼塊中使用-font-awesome">在程式碼塊中使用 Font Awesome</a></h4>
-<p><em>noarch</em> 找不到好方法來讓 Font Awesome 的引用逃逸 Markdown 的程式碼段 / 塊 ; 於是只好用 <code>html</code> 的 <code>&lt;code&gt;</code> 塊來代替。下面是一個例子：</p>
+<p>noarch 找不到好方法來讓 Font Awesome 的引用逃逸 Markdown 的程式碼段 / 塊 ; 於是只好用 <code>html</code> 的 <code>&lt;code&gt;</code> 塊來代替。下面是一個例子：</p>
 <pre><code>&lt;code&gt;&lt;i class="fa fa-smile-o" aria-hidden="true"&gt;&lt;/i&gt; 可以被正確顯示。&lt;/code&gt;
 </code></pre>
 <p>執行效果是： <code><i aria-hidden="true" class="fa fa-smile-o"></i> 可以被正確顯示。</code></p>
@@ -245,8 +246,8 @@ You also need to add spaces accordingly to 114514.
 <pre><code><i aria-hidden="true" class="fa fa-smile-o"></i> 可以被正確顯示。</code></pre>
 <h3 id="媒體格式"><a class="header" href="#媒體格式">媒體格式</a></h3>
 <p>請使用<a href="https://en.wikipedia.org/wiki/List_of_open_formats">這個列表</a>中列出的開放格式。這樣可以保證讀者不需要為閱讀 <code>privacy.noarch</code> 付任何直接或間接的版權費。使用開放格式同時也是一種推廣它們的方式。</p>
-<p>點陣圖請儘量使用 WEBP 格式編碼，以加快頁面載入速度；如果轉載或擷取的原圖非 WEBP, <em>noarch</em> 建議你把它們轉換成無失真壓縮的 WEBP.</p>
-<p>下面是 <em>noarch</em> 在 GNU/Linux 上使用 <code>ImageMagick</code> 批量將 <code>.jpg</code> 和 <code>.png</code> 轉換成無損 <code>.webp</code> 的 one-liner:</p>
+<p>點陣圖請儘量使用 WEBP 格式編碼，以加快頁面載入速度；如果轉載或擷取的原圖非 WEBP, noarch 建議你把它們轉換成無失真壓縮的 WEBP.</p>
+<p>下面是 noarch 在 GNU/Linux 上使用 <code>ImageMagick</code> 批量將 <code>.jpg</code> 和 <code>.png</code> 轉換成無損 <code>.webp</code> 的 one-liner:</p>
 <pre><code>$ mogrify -format webp -define webp:lossless=true *.png &amp;&amp; rm *.png &amp;&amp; mogrify -format webp -define webp:lossless=true *.jpg &amp;&amp; rm *.jpg
 </code></pre>
 <p>視訊請使用開放的 WEBM/VP9 格式編碼；這樣能在保證質量和播放效能的同時最大程度降低大小。</p>
@@ -254,7 +255,7 @@ You also need to add spaces accordingly to 114514.
 <p>關於使用 <code>ffmpeg</code> 將視訊轉碼成 VP9, 請看<a href="https://trac.ffmpeg.org/wiki/Encode/VP9">FFmpeg 官方文件</a>。</p>
 <h3 id="版權和引用"><a class="header" href="#版權和引用">版權和引用</a></h3>
 <p>請在進行任何非原創引用時檢查來源的版權資訊，並註明來源。</p>
-<p>在引用維基百科條目解釋名詞時，除非中文版條目質量非常接近英文版，否則請引用英文版條目。<em>noarch</em> 很遺憾需要這麼做，因為中文版維基百科在隱私和計算機領域的條目可參考性還有很長一段路要走。</p>
+<p>在引用維基百科條目解釋名詞時，除非中文版條目質量非常接近英文版，否則請引用英文版條目。noarch 很遺憾需要這麼做，因為中文版維基百科在隱私和計算機領域的條目可參考性還有很長一段路要走。</p>
 <p>不過，如果你為 <code>privacy.noarch</code> 翻譯了英文版維基百科的條目，請把它貢獻回中文版維基百科的對應條目，讓它們在艱難的環境下也能成長！</p>
 <h3 id="還有疑問"><a class="header" href="#還有疑問">還有疑問？</a></h3>
 <p>別猶豫，去 <code>privacy.noarch</code> 的 <a href="https://t.me/chat_privacy_noarch">Telegram 群組</a>提問！</p>

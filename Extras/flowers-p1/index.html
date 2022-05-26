@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+
+<html class="sidebar-visible no-js light" lang="zh-Hant">
+<head>
+<!-- Book generated using mdBook -->
+<meta charset="utf-8"/>
+<title>在虛空中與 amitié 相遇：Void Linux 和 FLOWERS 四季的邂逅 上篇 ^ - privacy.noarch</title>
+<!-- Custom HTML head -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="一本面向新手的隱私教程" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color">
+<link href="../../favicon.png" rel="shortcut icon"/>
+<link href="../../css/variables.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../css/variables.css" rel="stylesheet"/></noscript>
+<link href="../../css/general.css" rel="stylesheet"/>
+<link href="../../css/chrome.css" rel="stylesheet"/>
+<!-- Font Awesome 5.13 free content -->
+<link href="../../FontAwesome/css/all.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../FontAwesome/css/all.css" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" rel="stylesheet"/>
+</noscript>
+<!-- Fonts -->
+<!-- Highlight.js Stylesheets -->
+<link href="../../highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../highlight.css" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" rel="stylesheet"/>
+</noscript>
+<!-- Custom theme stylesheets -->
+<link href="../../sidebar.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../sidebar.css" rel="stylesheet"/></noscript>
+</meta></head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+<nav aria-label="Table of contents" class="sidebar" id="sidebar">
+<div class="sidebar-scrollbox">
+<ol class="chapter"><li class="chapter-item expanded affix"><a href="../../index.html">privacy.noarch</a></li><li class="chapter-item expanded affix"><a href="../../SUMMARY.html">目錄</a></li><li class="chapter-item expanded affix"><div>前言</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">1.</strong> 在開始前</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Fundamentals/BasicOfTheBasics.html"><strong aria-hidden="true">1.1.</strong> 常見錯誤集合：線上安全基本原則</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.</strong> 從可信的來源安裝軟體</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">2.1.</strong> [Android] F-Droid</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.2.</strong> [Android] Aurora Store</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.</strong> 安全地使用瀏覽器上網</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Browsers/Bromite/Bromite.html"><strong aria-hidden="true">3.1.</strong> [Android] Bromite</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.</strong> [Desktop/All] Firefox</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.1.</strong> 使用外掛來增強瀏覽體驗 ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.3.</strong> [Desktop/All]Tor Browser ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Input/Input.html"><strong aria-hidden="true">4.</strong> 自由打字，打字自由</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Input/NoNetworkAccess/NoNetworkAccess.html"><strong aria-hidden="true">4.1.</strong> [Android] 禁止輸入法聯網</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">4.2.</strong> 同文輸入法 (TRIME) ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Passwords/Passwords.html"><strong aria-hidden="true">5.</strong> 帳號安全：保護，隔離，整理</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Passwords/PasswordManagers.html"><strong aria-hidden="true">5.1.</strong> 讓密碼管理器幫你記住密碼</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.1.</strong> [Android] Bitwarden</div></li><li class="chapter-item expanded"><a href="../../Passwords/BitwardenWeb/BitwardenWeb.html"><strong aria-hidden="true">5.1.2.</strong> [Web] Bitwarden</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.3.</strong> [Desktop/All] KeePassXC ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.</strong> 二步驗證 - 增強帳號安全</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.1.</strong> [Android] andOTP</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.2.</strong> [Desktop/All] KeePassXC 的二步驗證功能</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../WallBreak/WallBreak.html"><strong aria-hidden="true">6.</strong> 突破網路長城</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.1.</strong> 代理提供商</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.</strong> 代理工具 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.1.</strong> V2Ray</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.2.</strong> Trojan</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.3.</strong> Shadowsocks*</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">7.</strong> 在享受自由言論之前：“分裂人格”的魅力</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Identities/iYP_DID/iYP_DID.html"><strong aria-hidden="true">7.1.</strong> [轉載] 分身術完整指南：妥善管理您的線上身份並獲得安全的方法</a></li><li class="chapter-item expanded"><a href="../../Identities/WorldIsMine/WorldIsMine.html"><strong aria-hidden="true">7.2.</strong> [轉載] 一個網友的“個人網路身份整改方案”</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.</strong> 在網路圍牆外社交</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.</strong> 中心化</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.1.</strong> [All] Telegram</div></li><li class="chapter-item expanded"><a href="../../RTC/Signal/Signal.html"><strong aria-hidden="true">8.1.2.</strong> [Android] Signal</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.</strong> 去中心化 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.1.</strong> [Android/iOS] Matrix/Element</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.2.</strong> [Web] Matrix/Element</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.</strong> 私密地傳送和接收郵件</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.</strong> 郵件提供商</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.1.</strong> [Web] ProtonMail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.2.</strong> [Web] Tutanota</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.</strong> 郵件客戶端 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.1.</strong> [Android] K-9 Mail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.2.</strong> [Desktop/All] Thunderbird</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../Encryption/Encryption.html"><strong aria-hidden="true">10.</strong> 加密，加密一切</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Encryption/Pubkey/Pubkey.html"><strong aria-hidden="true">10.1.</strong> [翻譯] 公鑰加密簡介</a></li><li class="chapter-item expanded"><a href="../../Encryption/OpenKeychain/OpenKeychain.html"><strong aria-hidden="true">10.2.</strong> [Android] PGP: OpenKeychain</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.</strong> Android 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.1.</strong> 系統設定</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.</strong> “刷機”基礎</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.1.</strong> 深入瞭解自己的裝置</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.2.</strong> 選擇第三方 ROM</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.3.</strong> Magisk</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.4.</strong> microG</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">12.</strong> Windows 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Windows/VHD/VHD.html"><strong aria-hidden="true">12.1.</strong> 使用 VHD(X) 部署原生多系統 ^</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">13.</strong> 類 Unix 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Unix/dos-donts/dos-donts.html"><strong aria-hidden="true">13.1.</strong> 網上教程不會告訴你的類 Unix 使用注意事項</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">14.</strong> 番外</div></li><li><ol class="section"><li class="chapter-item expanded"><a class="active" href="../../Extras/flowers-p1/index.html"><strong aria-hidden="true">14.1.</strong> 在虛空中與 amitié 相遇：Void Linux 和 FLOWERS 四季的邂逅 上篇 ^</a></li></ol></li><li class="chapter-item expanded"><div>後記</div></li><li class="chapter-item expanded affix"><a href="../../CONTRIBUTING.html">反饋與貢獻</a></li></ol>
+<!-- mods to the vanilla sidebar-->
+<hr/>
+<p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><b>無廣告，無追蹤，無跨站請求，可退出的 CDN.</b> privacy.noarch 致力於維持網際網路該有的樣子。</p>
+<p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
+<p><a href="https://github.com/noarchwastaken/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
+</div>
+<div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+</nav>
+<div class="page-wrapper" id="page-wrapper">
+<div class="page">
+<div id="menu-bar-hover-placeholder"></div>
+<div class="menu-bar sticky bordered" id="menu-bar">
+<div class="left-buttons">
+<button aria-controls="sidebar" aria-label="Toggle Table of Contents" class="icon-button" id="sidebar-toggle" title="Toggle Table of Contents" type="button">
+<i class="fa fa-bars"></i>
+</button>
+<button aria-controls="theme-list" aria-expanded="false" aria-haspopup="true" aria-label="Change theme" class="icon-button" id="theme-toggle" title="Change theme" type="button">
+<i class="fa fa-paint-brush"></i>
+</button>
+<ul aria-label="Themes" class="theme-popup" id="theme-list" role="menu">
+<li role="none"><button class="theme" id="light" role="menuitem">Light (default)</button></li>
+<li role="none"><button class="theme" id="rust" role="menuitem">Rust</button></li>
+<li role="none"><button class="theme" id="coal" role="menuitem">Coal</button></li>
+<li role="none"><button class="theme" id="navy" role="menuitem">Navy</button></li>
+<li role="none"><button class="theme" id="ayu" role="menuitem">Ayu</button></li>
+</ul>
+</div>
+<h1 class="menu-title">privacy.noarch</h1>
+<div class="right-buttons">
+<a aria-label="Switch between Simplified and Traditional Chinese" class="icon-button" onclick="
+                        'use strict';
+
+                        const CN_CLEAR = 'privacy.n0ar.ch';
+                        const TW_CLEAR = 'privacy-tw.n0ar.ch';
+                        const CN_TOR = 'fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+                        const TW_TOR = 'tw.fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+
+                        switch (window.location.hostname) {
+                            case CN_CLEAR:
+                                window.location.hostname = TW_CLEAR;
+                                break;
+                            case TW_CLEAR:
+                                window.location.hostname = CN_CLEAR;
+                                break;
+                            case CN_TOR:
+                                window.location.hostname = TW_TOR;
+                                break;
+                            case TW_TOR:
+                                window.location.hostname = CN_TOR;
+                                break;
+                            default:
+                                window.alert('Error determining current site language.\nI\'m either being served locally, or running as a mirror.\n\nIf you are running a mirror, please change the hostnames on line ~166 in theme/index.hbs.');
+                                break;
+                        }
+                        " title="Switch between Simplified and Traditional Chinese">
+<strong>簡/繁</strong>
+</a>
+<a aria-label="Git repository" href="https://github.com/noarchwastaken/privacy" title="Git repository">
+<i class="fa fa-github" id="git-repository-button"></i>
+</a>
+</div>
+</div>
+<!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+<script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+<div class="content" id="content">
+<main>
+<!-- Page table of contents -->
+<div class="sidetoc"><nav class="pagetoc"></nav></div>
+<h1 id="在虛空中與-amitié-相遇上篇"><a class="header" href="#在虛空中與-amitié-相遇上篇">在虛空中與 amitié 相遇。上篇</a></h1>
+<blockquote>
+<p>接下來上演的，是 Void Linux 和 FLOWERS 四季的邂逅。</p>
+</blockquote>
+<script type="text/javascript">
+function showIframe() {
+    document.getElementById("sc_frame").src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/307308303&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false";
+}
+</script>
+<p><a href="#" onclick="showIframe()">夏空の光 - 考崎千鳥&amp;八重垣えりか on Soundcloud</a></p>
+<iframe allow="autoplay" data-src="" frameborder="no" height="166" id="sc_frame" scrolling="no" src="about:blank" width="100%"></iframe>
+<h2 id="序章"><a class="header" href="#序章">序章</a></h2>
+<p>noarch 也喜歡百合呢。2021 年某個時候，我在翻看萌娘百科的時候發現了 FLOWERS，本來以為是個番劇...</p>
+<p>點開連結，好傢伙，是個分成四篇的視覺小說，分別講述了九個少女在天主教寄宿學校（啊，傳統藝能）的百合故事。工作室 Innocent Grey，本業是獵奇解謎遊戲，而 FLOWERS 是他們為數不多的全年齡作品之一。</p>
+<p>所以問題出現了：noarch 的筆記本絕大多數時間都在執行 Void Linux，為了 FLOWERS 經常重啟進 Windows 顯然不現實，虛擬機器又沒有硬體加速，所以一直避而不及的 Wine 現在看上去變得不可避了。</p>
+<p>能否藉助 Steam 和 Proton 呢？答案是肯定的，但 noarch 不想在筆記本上裝 Steam，以及嘗試 KISS 的方法把 Wine 配起來聽著挺誘人的。</p>
+<p>noarch 不在此提供 FLOWERS 資源下載，請自行購買支援正版或去 BT 站及論壇獲取 FLOWERS 遊戲本體。FLOWERS 前三篇（<a href="https://store.steampowered.com/app/452440/Flowers_Le_volume_sur_printemps/">春</a>，<a href="https://store.steampowered.com/app/858940/Flowers_Le_volume_sur_ete/">夏</a>，<a href="https://store.steampowered.com/app/1238730/Flowers_Le_volume_sur_automne/">秋</a>）都在 Steam 有售，並且沒有 DRM，在 Steam 內安裝後可以直接複製到其它電腦上執行。冬篇漢化預計在 2022 年內 Steam 釋出，但下面 noarch 會跟你一起體驗啃生肉的樂趣！</p>
+<p>我們一起來跳進 Void Linux + Wine + Gallium Nine + Textractor + FLOWERS 這個兔子窩吧（是夏篇劇透哦。）</p>
+<h2 id="first-things-first-wine-multilib"><a class="header" href="#first-things-first-wine-multilib">First things first: Wine (multilib)</a></h2>
+<p>既然已經在用 Void Linux，安裝 Wine 應該已經輕車熟路了吧。<code># xbps-install wine</code> 就行了嗎？好像不是，還有幾個額外的注意事項。</p>
+<p>首先，FLOWERS 是個 32 位的遊戲，需要利用 32 位 Wine 以及配套的 <code>multilib</code> 庫來執行。Void 預設不啟用 32 位支援，如果你用的是 musl 版則完全沒有 multilib，需要用到 glib chroot 等奇技淫巧。noarch 的 Void Linux 是 <code>glibc</code> 風味的，所以只需要安裝 <code>void-repo-multilib</code> 包即可。</p>
+<p>新添加了源，你多半要改掉映象：根據 <a href="https://docs.voidlinux.org/xbps/repositories/mirrors/changing.html">Void Handbook</a>，複製 <code>/usr/share/xbps.d/10-repository-multilib.conf</code> 到 <code>/etc/xbps.d/</code> 然後編輯。</p>
+<p>現在再 <code># xbps-install -S</code> 然後 <code>xbps-query -Rs wine</code>:</p>
+<pre><code>$ xbps-query -Rs wine
+[*] libwine-7.7_1          Run Microsoft Windows applications - Runtime library
+[-] protontricks-1.8.1_1   Simple wrapper that does winetricks things for Proton enabled games
+[*] wine-7.7_1             Run Microsoft Windows applications
+[*] wine-common-7.7_1      Run Microsoft Windows applications - common files
+[-] wine-devel-7.7_1       Run Microsoft Windows applications - development files
+[*] wine-gecko-2.47.2_1    Mozilla Gecko Layout Engine for WINE (32bit)
+[*] wine-mono-7.2.0_1      Mono built for running .NET applications with WINE
+[-] wine-tools-7.7_1       Run Microsoft Windows applications - development tools
+[*] winetricks-20210825_1  Script to install various redistributable runtime libraries in Wine
+[*] libwine-32bit-7.7_1    Run Microsoft Windows applications - Runtime library (32bit)
+[*] wine-32bit-7.7_1       Run Microsoft Windows applications (32bit)
+[-] wine-devel-32bit-7.7_1 Run Microsoft Windows applications - development files (32bit)
+</code></pre>
+<p>多出來的，帶 <code>-32bit</code> 字尾的包就是我們想要的。</p>
+<p>然後安裝 <code>wine wine-32bit winetricks</code>。<code>wine-gecko</code> 和 <code>wine-mono</code> 也可選，但 FLOWERS 用不到。接下來，<code>xbps</code> 會安裝大量的依賴，但只要你選對了源，它快得讓你坐和放寬的機會都沒有。</p>
+<h2 id="首次執行"><a class="header" href="#首次執行">首次執行</a></h2>
+<p>你可能注意到了我們缺點什麼。嘗試在遊戲目錄執行 <code>wine FLOWERS.exe</code>，果然，遊戲崩潰，Wine 丟擲錯誤：</p>
+<p><img alt="遊戲崩潰" loading="lazy" src="images/panik.webp"/></p>
+<p>但是，我們能在終端看到 Wine 給我們的線索：</p>
+<pre><code>0024:err:wgl:X11DRV_WineGL_InitOpenglInfo  couldn't initialize OpenGL, expect problems
+</code></pre>
+<p>不應該啊！這混成器跑得好好的，怎麼就沒有 OpenGL 了呢？</p>
+<p><img alt="glxgears 能執行" loading="lazy" src="images/glxgears.webp"/></p>
+<pre><code>$ xbps-query -Rs mesa
+...
+[*] mesa-21.3.5_1                            Graphics library similar to SGI's OpenGL
+[-] mesa-XvMC-21.3.5_1                       Mesa XvMC drivers
+[-] mesa-ati-dri-21.3.5_1                    Mesa DRI drivers for ATI GPUs (transitional dummy package)
+[*] mesa-demos-8.4.0_3                       Mesa 3D demos and tools
+[*] mesa-dri-21.3.5_1                        Mesa DRI drivers
+...
+[-] mesa-32bit-21.3.5_1                      Graphics library similar to SGI's OpenGL (32bit)
+[-] mesa-XvMC-32bit-21.3.5_1                 Mesa XvMC drivers (32bit)
+[-] mesa-ati-dri-32bit-21.3.5_1              Mesa DRI drivers for ATI GPUs (transitional dummy package) (32bit)
+[-] mesa-dri-32bit-21.3.5_1                  Mesa DRI drivers (32bit)
+...
+</code></pre>
+<p>還記得之前 noarch 說的，這是個 32 位遊戲嗎？因此，Wine 需要對應的 32 位 Mesa 來執行 OpenGL。</p>
+<p>安裝 <code>mesa-32bit mesa-dri-32bit</code>，然後再次運行遊戲：</p>
+<p><img alt="標題介面" loading="lazy" src="images/first-run.webp"/></p>
+<blockquote>
+<p>遊戲啟動後，請暫離現實，開始享受少女們甜美的百合世界。</p>
+</blockquote>
+<p>... 嗎？</p>
+<h2 id="更多故障排除"><a class="header" href="#更多故障排除">更多故障排除</a></h2>
+<p>要命的是，這才是我們 debug 旅途的開始。</p>
+<h3 id="字型缺失"><a class="header" href="#字型缺失">字型缺失</a></h3>
+<p>首先， <del>根據 Wine 老傳統，</del> 字型缺失是要有的：</p>
+<p><img alt="英文版春篇缺失字型" loading="lazy" src="images/english-missing-font.webp"/></p>
+<p>不過這也不是 Wine 的鍋，是因為遊戲用了一個 Windows 都沒預裝的，叫做 Overlock 的字型，還魔改加入了一些字元。</p>
+<p>從<a href="misc/Overlock-Mod.ttf">這裡</a>下載之後放進 WINEPREFIX 裡的 <code>C:\windows\Fonts</code> 裡就行了。
+比如 noarch 用 <code>winetricks</code> 建立了一個 WINEPREFIX 叫 Games，那麼我應該先執行 <code>export WINEPREFIX=$HOME/.local/share/wineprefixes/Games</code>，對應的字型目錄就是 <code>$WINEPREFIX/drive_c/windows/Fonts</code>。</p>
+<p>對於中文版和日文版，字型缺失會直接不顯示，這裡照例在同一個 WINEPREFIX 下 <code>winetricks cjkfonts</code> 即可。</p>
+<h3 id="oped-白屏"><a class="header" href="#oped-白屏">OP/ED 白屏</a></h3>
+<p>序章看完後，遊戲可能會白屏，並伴隨終端輸出：</p>
+<pre><code>winegstreamer error: decodebin0: Your GStreamer installation is missing a plug-in.
+winegstreamer error: decodebin0: ../gst/playback/gstdecodebin2.c(4701): gst_decode_bin_expose (): /GstBin:bin0/GstDecodeBin:decodebin0:
+no suitable plugins found:
+Missing decoder: MPEG-1 System Stream (video/mpeg, systemstream=(boolean)true, mpegversion=(int)1)
+</code></pre>
+<blockquote>
+<p>Ah, proprietary codecs, here we go again.</p>
+</blockquote>
+<p>缺失的這個 MPEG-1 外掛在 <code>gst-plugins-bad1</code> 裡面，安裝它的 32 位版本 <code>gst-plugins-bad1-32bit</code> 即可。</p>
+<h2 id="可選使用-gallium-nine"><a class="header" href="#可選使用-gallium-nine">可選：使用 Gallium Nine</a></h2>
+<p>雖然這個文字遊戲基本上只要有個顯示卡就能玩，沒顯示卡也能用軟體渲染，但如果你想要省點電，或者提升一些效能，Gallium Nine 是一個高效能的 DirectX 9 實現。</p>
+<p>與 wined3d 將 DX9 渲染指令轉換成 OpenGL 不同，它能直接將 DX9 渲染指令交給任何支援 Gallium 的圖形驅動（Mesa，nouveau...），以達到接近原生的效能。</p>
+<p>在 WINEPREFIX 裡執行 <code>winetricks galliumnine</code> 即可安裝 Gallium Nine。</p>
+<p>之後，你啟動遊戲就會看到：</p>
+<pre><code>$ wine FLOWERS.exe
+Native Direct3D 9 v0.8.0.385-release is active.
+For more information visit https://github.com/iXit/wine-nine-standalone
+fixme:d3d9nine:DRIPresentGroup_GetMultiheadCount (0x270f78), stub!
+fixme:d3d9nine:DRIPresentGroup_GetMultiheadCount (0x270f78), stub!
+</code></pre>
+<p>代表 Gallium Nine 正常執行。</p>
+<h2 id="旅途還未結束"><a class="header" href="#旅途還未結束">旅途還未結束</a></h2>
+<p>noarch 從 2022 年初就有了寫這篇文章的想法，並斷斷續續寫了不多。因為其實 noarch 只在 Void 上玩了英文版春篇，一開始並沒有測試中文版，續作是在 Windows 上玩的。</p>
+<p>寫完第一小節之後，一在 Wine 上測試，好傢伙，直接黑屏卡死。試了種種方法，也採集了日誌，都看不到任何問題的影子。再看了看 Wine bug tracker，面對裡面多年未解決，甚至開發者完全不搭理的 bug，再想想 FLOWERS 這個系列的小眾程度，直接絕望（這也是為什麼我一直不想碰 Wine 的原因之一啊！）</p>
+<p>直到某次 Wine 更新（7.5?），noarch 又嘗試啟動了一下游戲，這次可以了，後續執行看上去也沒問題。可能是 Wine 修復其它遊戲的過程中受益了吧。</p>
+<p>引子裡 noarch 寫了 Textractor，它去哪了呢？它沒消失，被分次釋出了。noarch 現在還在完善第二部分，預計兩週左右會發布吧。</p>
+</main>
+<nav aria-label="Page navigation" class="nav-wrapper">
+<!-- Mobile navigation buttons -->
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="mobile-nav-chapters previous" href="../../Tricks-Unix/dos-donts/dos-donts.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="mobile-nav-chapters next" href="../../CONTRIBUTING.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+<div style="clear: both"></div>
+</nav>
+</div>
+</div>
+<nav aria-label="Page navigation" class="nav-wide-wrapper">
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="nav-chapters previous" href="../../Tricks-Unix/dos-donts/dos-donts.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="nav-chapters next" href="../../CONTRIBUTING.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+</nav>
+</div>
+<script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+<script charset="utf-8" src="../../clipboard.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../highlight.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../book.js" type="text/javascript"></script>
+<!-- Custom JS scripts -->
+<script src="../../sidebar.js" type="text/javascript"></script>
+</body>
+</html>

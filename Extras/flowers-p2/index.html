@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+
+<html class="sidebar-visible no-js light" lang="zh-Hant">
+<head>
+<!-- Book generated using mdBook -->
+<meta charset="utf-8"/>
+<title>Textractor 是情感的信使：Void Linux 和 FLOWERS 四季的邂逅 下篇 ^ - privacy.noarch</title>
+<!-- Custom HTML head -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="一本面向新手的隱私教程" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color">
+<link href="../../favicon.png" rel="shortcut icon"/>
+<link href="../../css/variables.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../css/variables.css" rel="stylesheet"/></noscript>
+<link href="../../css/general.css" rel="stylesheet"/>
+<link href="../../css/chrome.css" rel="stylesheet"/>
+<!-- Font Awesome 5.13 free content -->
+<link href="../../FontAwesome/css/all.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../FontAwesome/css/all.css" rel="stylesheet"/>
+<link href="../../FontAwesome/css/v4-shims.css" rel="stylesheet"/>
+</noscript>
+<!-- Fonts -->
+<!-- Highlight.js Stylesheets -->
+<link href="../../highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="../../highlight.css" rel="stylesheet"/>
+<link href="../../tomorrow-night.css" rel="stylesheet"/>
+<link href="../../ayu-highlight.css" rel="stylesheet"/>
+</noscript>
+<!-- Custom theme stylesheets -->
+<link href="../../sidebar.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="../../sidebar.css" rel="stylesheet"/></noscript>
+</meta></head>
+<body>
+<!-- Provide site root to javascript -->
+<script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+<!-- Work around some values being stored in localStorage wrapped in quotes -->
+<script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+<!-- Set the theme before any content is loaded, prevents flash -->
+<script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+<!-- Hide / unhide sidebar before it is displayed -->
+<script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+<nav aria-label="Table of contents" class="sidebar" id="sidebar">
+<div class="sidebar-scrollbox">
+<ol class="chapter"><li class="chapter-item expanded affix"><a href="../../index.html">privacy.noarch</a></li><li class="chapter-item expanded affix"><a href="../../SUMMARY.html">目錄</a></li><li class="chapter-item expanded affix"><div>前言</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">1.</strong> 在開始前</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Fundamentals/BasicOfTheBasics.html"><strong aria-hidden="true">1.1.</strong> 常見錯誤集合：線上安全基本原則</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.</strong> 從可信的來源安裝軟體</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">2.1.</strong> [Android] F-Droid</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">2.2.</strong> [Android] Aurora Store</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.</strong> 安全地使用瀏覽器上網</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Browsers/Bromite/Bromite.html"><strong aria-hidden="true">3.1.</strong> [Android] Bromite</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.</strong> [Desktop/All] Firefox</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">3.2.1.</strong> 使用外掛來增強瀏覽體驗 ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">3.3.</strong> [Desktop/All]Tor Browser ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Input/Input.html"><strong aria-hidden="true">4.</strong> 自由打字，打字自由</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Input/NoNetworkAccess/NoNetworkAccess.html"><strong aria-hidden="true">4.1.</strong> [Android] 禁止輸入法聯網</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">4.2.</strong> 同文輸入法 (TRIME) ^</div></li></ol></li><li class="chapter-item expanded"><a href="../../Passwords/Passwords.html"><strong aria-hidden="true">5.</strong> 帳號安全：保護，隔離，整理</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Passwords/PasswordManagers.html"><strong aria-hidden="true">5.1.</strong> 讓密碼管理器幫你記住密碼</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.1.</strong> [Android] Bitwarden</div></li><li class="chapter-item expanded"><a href="../../Passwords/BitwardenWeb/BitwardenWeb.html"><strong aria-hidden="true">5.1.2.</strong> [Web] Bitwarden</a></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.1.3.</strong> [Desktop/All] KeePassXC ^</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.</strong> 二步驗證 - 增強帳號安全</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.1.</strong> [Android] andOTP</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">5.2.2.</strong> [Desktop/All] KeePassXC 的二步驗證功能</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../WallBreak/WallBreak.html"><strong aria-hidden="true">6.</strong> 突破網路長城</a></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.1.</strong> 代理提供商</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.</strong> 代理工具 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.1.</strong> V2Ray</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.2.</strong> Trojan</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">6.2.3.</strong> Shadowsocks*</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">7.</strong> 在享受自由言論之前：“分裂人格”的魅力</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Identities/iYP_DID/iYP_DID.html"><strong aria-hidden="true">7.1.</strong> [轉載] 分身術完整指南：妥善管理您的線上身份並獲得安全的方法</a></li><li class="chapter-item expanded"><a href="../../Identities/WorldIsMine/WorldIsMine.html"><strong aria-hidden="true">7.2.</strong> [轉載] 一個網友的“個人網路身份整改方案”</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.</strong> 在網路圍牆外社交</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.</strong> 中心化</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.1.1.</strong> [All] Telegram</div></li><li class="chapter-item expanded"><a href="../../RTC/Signal/Signal.html"><strong aria-hidden="true">8.1.2.</strong> [Android] Signal</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.</strong> 去中心化 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.1.</strong> [Android/iOS] Matrix/Element</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">8.2.2.</strong> [Web] Matrix/Element</div></li></ol></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.</strong> 私密地傳送和接收郵件</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.</strong> 郵件提供商</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.1.</strong> [Web] ProtonMail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.1.2.</strong> [Web] Tutanota</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.</strong> 郵件客戶端 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.1.</strong> [Android] K-9 Mail</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">9.2.2.</strong> [Desktop/All] Thunderbird</div></li></ol></li></ol></li><li class="chapter-item expanded"><a href="../../Encryption/Encryption.html"><strong aria-hidden="true">10.</strong> 加密，加密一切</a></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Encryption/Pubkey/Pubkey.html"><strong aria-hidden="true">10.1.</strong> [翻譯] 公鑰加密簡介</a></li><li class="chapter-item expanded"><a href="../../Encryption/OpenKeychain/OpenKeychain.html"><strong aria-hidden="true">10.2.</strong> [Android] PGP: OpenKeychain</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.</strong> Android 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.1.</strong> 系統設定</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.</strong> “刷機”基礎</div></li><li><ol class="section"><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.1.</strong> 深入瞭解自己的裝置</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.2.2.</strong> 選擇第三方 ROM</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.3.</strong> Magisk</div></li><li class="chapter-item expanded"><div><strong aria-hidden="true">11.4.</strong> microG</div></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">12.</strong> Windows 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Windows/VHD/VHD.html"><strong aria-hidden="true">12.1.</strong> 使用 VHD(X) 部署原生多系統 ^</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">13.</strong> 類 Unix 玩機技巧 ^</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Tricks-Unix/dos-donts/dos-donts.html"><strong aria-hidden="true">13.1.</strong> 網上教程不會告訴你的類 Unix 使用注意事項</a></li></ol></li><li class="chapter-item expanded"><div><strong aria-hidden="true">14.</strong> 番外</div></li><li><ol class="section"><li class="chapter-item expanded"><a href="../../Extras/flowers-p1/index.html"><strong aria-hidden="true">14.1.</strong> 在虛空中與 amitié 相遇：Void Linux 和 FLOWERS 四季的邂逅 上篇 ^</a></li><li class="chapter-item expanded"><a class="active" href="../../Extras/flowers-p2/index.html"><strong aria-hidden="true">14.2.</strong> Textractor 是情感的信使：Void Linux 和 FLOWERS 四季的邂逅 下篇 ^</a></li></ol></li><li class="chapter-item expanded"><div>後記</div></li><li class="chapter-item expanded affix"><a href="../../CONTRIBUTING.html">反饋與貢獻</a></li></ol>
+<!-- mods to the vanilla sidebar-->
+<hr/>
+<p>© 2020-2021 <code>privacy.noarch</code> project.</p>
+<p><b>無廣告，無追蹤，無跨站請求，可退出的 CDN.</b> privacy.noarch 致力於維持網際網路該有的樣子。</p>
+<p><a href="https://t.me/privacy_noarch" target="_blank"><img height="20" src="/images/badge-telegram.svg"/></a></p>
+<p><a href="https://github.com/noarchwastaken/privacy" target="_blank"><img height="20" src="/images/badge-git.svg"/></a></p>
+<p><a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank"><img height="20" src="/images/badge-gfdl.svg"/></a></p>
+</div>
+<div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+</nav>
+<div class="page-wrapper" id="page-wrapper">
+<div class="page">
+<div id="menu-bar-hover-placeholder"></div>
+<div class="menu-bar sticky bordered" id="menu-bar">
+<div class="left-buttons">
+<button aria-controls="sidebar" aria-label="Toggle Table of Contents" class="icon-button" id="sidebar-toggle" title="Toggle Table of Contents" type="button">
+<i class="fa fa-bars"></i>
+</button>
+<button aria-controls="theme-list" aria-expanded="false" aria-haspopup="true" aria-label="Change theme" class="icon-button" id="theme-toggle" title="Change theme" type="button">
+<i class="fa fa-paint-brush"></i>
+</button>
+<ul aria-label="Themes" class="theme-popup" id="theme-list" role="menu">
+<li role="none"><button class="theme" id="light" role="menuitem">Light (default)</button></li>
+<li role="none"><button class="theme" id="rust" role="menuitem">Rust</button></li>
+<li role="none"><button class="theme" id="coal" role="menuitem">Coal</button></li>
+<li role="none"><button class="theme" id="navy" role="menuitem">Navy</button></li>
+<li role="none"><button class="theme" id="ayu" role="menuitem">Ayu</button></li>
+</ul>
+</div>
+<h1 class="menu-title">privacy.noarch</h1>
+<div class="right-buttons">
+<a aria-label="Switch between Simplified and Traditional Chinese" class="icon-button" onclick="
+                        'use strict';
+
+                        const CN_CLEAR = 'privacy.n0ar.ch';
+                        const TW_CLEAR = 'privacy-tw.n0ar.ch';
+                        const CN_TOR = 'fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+                        const TW_TOR = 'tw.fluffyvv5b7iztvxxpu23ylr3o7dxgcgszqx5eb7drk35jyzkrk5q2ad.onion';
+
+                        switch (window.location.hostname) {
+                            case CN_CLEAR:
+                                window.location.hostname = TW_CLEAR;
+                                break;
+                            case TW_CLEAR:
+                                window.location.hostname = CN_CLEAR;
+                                break;
+                            case CN_TOR:
+                                window.location.hostname = TW_TOR;
+                                break;
+                            case TW_TOR:
+                                window.location.hostname = CN_TOR;
+                                break;
+                            default:
+                                window.alert('Error determining current site language.\nI\'m either being served locally, or running as a mirror.\n\nIf you are running a mirror, please change the hostnames on line ~166 in theme/index.hbs.');
+                                break;
+                        }
+                        " title="Switch between Simplified and Traditional Chinese">
+<strong>簡/繁</strong>
+</a>
+<a aria-label="Git repository" href="https://github.com/noarchwastaken/privacy" title="Git repository">
+<i class="fa fa-github" id="git-repository-button"></i>
+</a>
+</div>
+</div>
+<!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+<script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+<div class="content" id="content">
+<main>
+<!-- Page table of contents -->
+<div class="sidetoc"><nav class="pagetoc"></nav></div>
+<h1 id="在虛空中與-amitié-相遇下篇"><a class="header" href="#在虛空中與-amitié-相遇下篇">在虛空中與 amitié 相遇。下篇</a></h1>
+<script type="text/javascript">
+function showIframe() {
+    document.getElementById("sc_frame").src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/474713709&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false";
+}
+</script>
+<p><a href="#" onclick="showIframe()">FLOWERS 三重唱 - 名塚佳織, 岡本理絵, 明島ゆうり on Soundcloud</a></p>
+<iframe allow="autoplay" data-src="" frameborder="no" height="166" id="sc_frame" scrolling="no" src="about:blank" width="100%"></iframe>
+<p>你在讀到本文時 FLOWERS 冬篇的官方漢化版可能已經出了，但 noarch 在 2022 年初就啃完冬篇生肉了。完全不會日語的 noarch 是怎麼做到的呢...</p>
+<p>很抱歉這篇文章從年初一直咕到現在才寫完，希望下面的操作能為你看其它生肉 gal 提供一些參考。</p>
+<h2 id="textractor-簡介"><a class="header" href="#textractor-簡介">Textractor 簡介</a></h2>
+<p>這次探索生肉 gal 自動翻譯的旅程著實讓 noarch 敬佩阿宅們為了能玩上游戲做出的努力。</p>
+<p>noarch 在中文圈搜了一圈，發現教程最多的是“Visual Novel Reader”，而進一步調查 noarch 發現這個軟體處於一個被社群瘋狂魔改的狀態，原開發者疑似已經跑路了。</p>
+<p>看到這，noarch 想著，總有比這更優雅的解決方案吧；於是我在 GitHub 找到了 Textractor。它設計看起來明顯比上述的 VNR 看起來簡單，並且是 GPL 協議的自由軟體。</p>
+<p>從使用者角度來看，Textractor 做的事情非常簡單：從遊戲內提取文字，將文字送入外掛管線做翻譯等處理，並將處理後的文字輸出。</p>
+<p>下面我們開始吧。別被嚇到，本文簡短的長度就是 Textractor 易用性的最好證明。</p>
+<h2 id="安裝"><a class="header" href="#安裝">安裝</a></h2>
+<p><a href="https://github.com/Artikash/Textractor">Textractor</a> 釋出在 GitHub 上，能開始讀本文的你應該也熟悉反直覺的 GitHub 下載二進位制 Releases 的方法了。</p>
+<p>Textractor 作者在 Releases 裡提供了兩種安裝方式，exe 和 zip，而其實 exe 安裝器做的只是將 Textractor 解壓到目標位置然後安裝作者改的 Arial Unicode MS 字型。</p>
+<p>如果你選擇 exe，請注意選擇 "Install for all users" 即“全域性”安裝。這樣能保證字型被安裝到 <code>%WINDIR%/Fonts</code> 而不是使用者的字型資料夾。</p>
+<p>如果你選擇了 zip，請在解壓後自行按照<a href="#%E5%AD%97%E4%BD%93%E7%BC%BA%E5%A4%B1">前面的</a>方法安裝附帶的字型。當然，你也可以自己安裝和使用別的字型。</p>
+<h2 id="排錯"><a class="header" href="#排錯">排錯</a></h2>
+<p>安裝過程一切順利，但 noarch 在開啟 Textractor 本體之後整個人都不好了：sway 將它的多個懸浮視窗全部水平排列，非常喜感；而且 Textractor 的翻譯懸浮窗無法移動。</p>
+<p>最生草的是，在 Wine 7.4 之後預設啟用的 "Light" 主題下，Textractor UI 元素崩壞。好在 <code>wine winecfg</code> -&gt; “桌面整合” -&gt; “（無主題）” 即可恢復正常，不過你就要忍受一下 Windows 經典樣式了。</p>
+<p>如果你遇到了視窗管理問題，你還需要在 <code>winecfg</code> -&gt; “顯示”裡面開啟一個大小合適的“虛擬桌面”。這樣，視窗管理器就不會影響任何在這個 WINEPREFIX 裡執行的程式視窗。</p>
+<p><img alt="Textractor 崩壞" loading="lazy" src="images/window-management-mess.webp"/></p>
+<p>按照上面的步驟修正之後：</p>
+<p><img alt="虛擬桌面和經典主題" loading="lazy" src="images/virtual-desktop.webp"/></p>
+<blockquote>
+<p>不過... noarch 後來發現，可能是因為虛擬桌面裡沒有混成，Textractor 翻譯懸浮窗無法置頂。如果你遇到了這個問題，解決方案可能只有換回 X11 並禁用 Wine 虛擬桌面。noarch 確認在 X 下面沒有這個問題，並且視窗管理器也可以將懸浮窗置頂。如果你用的是 i3 之類的平鋪式視窗管理器，你可能需要手動懸浮一些視窗。</p>
+</blockquote>
+<h2 id="啟動勾住遊戲"><a class="header" href="#啟動勾住遊戲">啟動/勾住遊戲</a></h2>
+<p>Textractor 分為兩個獨立版本，<code>x86</code> 和 <code>x64</code>，分別對應 32 位和 64 位 x86 程式。FLOWERS 是 32 位的，所以我們選擇 <code>x86</code>。</p>
+<p>有了 Textractor 後，你可以在 Textractor 裡面啟動（Launch）冬篇，也可以啟動完遊戲再載入（Attach）Textractor。這樣，Textractor 就勾（Hook）住了遊戲。</p>
+<p><img alt="啟動/載入" loading="lazy" src="images/launch-attach.webp"/></p>
+<blockquote>
+<p>即使你熟悉 VNR 或其他翻譯姬，也大可不必馬上開始找鉤子，FLOWERS 可以被 Textractor 自動勾住，開箱即用。</p>
+</blockquote>
+<p>"Launch game":</p>
+<p><img alt="選擇檔案" loading="lazy" src="images/select-process.webp"/></p>
+<blockquote>
+<p>Wine 從來不是一個沙盒；別忘了你可以在 <code>Z:</code> 盤訪問整個 Unix 檔案系統。</p>
+</blockquote>
+<p>Textractor 會記住你以前啟動的程式。下一次你就不用手動選擇檔案了。</p>
+<p>因為 Textractor 集成了 Locale Emulator，接下來它會問你要不要模擬日語編碼。FLOWERS 所有版本都使用 Unicode，因此不需要模擬。</p>
+<p><img alt="LE彈窗" loading="lazy" src="images/emulate-jp-locale-prompt.webp"/></p>
+<h2 id="選擇鉤子"><a class="header" href="#選擇鉤子">選擇鉤子</a></h2>
+<p>啟動冬篇之後點開始。真由理和文字框出現之後，展開 Textractor 的鉤子列表。</p>
+<p><img alt="鉤子列表" loading="lazy" src="images/hooks-list.webp"/></p>
+<p>翻過這些鉤子，你會發現絕大多數內容都是垃圾。</p>
+<p>以 FLOWERS 冬篇為例，正確的文字鉤子是 <code>GetGlyphOutlineW@6c9eb090</code>（如果你的 FLOWERS 遊戲程式跟 noarch 不同，記憶體地址可能不同，但函式都是 <code>GetGlyphOutlineW</code>），因此你需要在“Remove hook(s)”裡面雙擊刪掉除了它之外的所有鉤子。</p>
+<p><img alt="刪掉鉤子" loading="lazy" src="images/remove-hooks.webp"/></p>
+<h2 id="關於文字滾動和延遲"><a class="header" href="#關於文字滾動和延遲">關於文字滾動和延遲</a></h2>
+<p>很多視覺小說都有文字滾動出現的效果，FLOWERS 也不例外。然而，這個效果會影響 Textractor 的文字提取，所以你需要把這個效果儘可能關掉：在 FLOWERS 遊戲設定裡把“message speed”調到最大即可。</p>
+<p>雖然抓幀看它並沒有完全禁用文字滾動，但接下來 noarch 告訴你為啥這不成問題。</p>
+<p>提升文字滾動速度之後，我們可以通過減少文字輸入等待時間來提升 Textractor 的響應速度，即 Textractor 收到第一個字 -&gt; 將文字送入外掛管線的延遲。</p>
+<p>之所以需要這個延遲，是因為在遊戲的文字滾動下，文字框裡的文字並不是一次性就輸出到螢幕上的。因此，Textractor 會分次收到文字，它必須等待一段時間，等文字框的文字輸出完，才能送進管線。如果這個延遲太短，則會使文字沒提取完就被翻譯；太長則會增加翻譯延遲，影響使用體驗。</p>
+<p>總而言之，在“禁用”文字滾動之後你可以在 Textractor 主視窗 -&gt; "Settings" 裡調低預設 500 毫秒的“Flush delay”。noarch 在這裡給了它一幀 (60 fps, ~16 ms) 的等待時間，並在測試中發現長段文字也不會有分開的問題。</p>
+<p><img alt="重新整理延遲" loading="lazy" src="images/flush-delay.webp"/></p>
+<h2 id="配置外掛管線"><a class="header" href="#配置外掛管線">配置外掛管線</a></h2>
+<p>接下來我們要進入 Textractor 的核心：外掛/擴充套件系統。</p>
+<p>根據 Textractor 作者的說法，Textractor 本身只是一個文字提取工具。讓 Textractor 能翻譯視覺小說的，是和它一起釋出和編寫的種種外掛。外掛的輸入和輸出都是文字，而且 Textractor 的外掛管線把多個外掛串聯在一起，形成最終的翻譯結果。</p>
+<p><img alt="外掛" loading="lazy" src="images/extensions.webp"/></p>
+<p>FLOWERS 算是一個比較安分的遊戲，我們不需要特意去重或過濾。因此，noarch 用的外掛管線很簡單：</p>
+<p><img alt="外掛管線成品" loading="lazy" src="images/extensions-config.webp"/></p>
+<p>外掛的作用也顯而易見：</p>
+<ol>
+<li>Google Translate 將抓取的日文翻譯</li>
+<li>Extra Window 不對管線裡的文字做任何更改，只是將原文和翻譯後的文字顯示在一個懸浮窗裡，可以置頂併疊在遊戲文字框之上。</li>
+<li>Extra Newlines 在 Textractor 主視窗的日誌裡換行分開每一次翻譯請求</li>
+</ol>
+<p>如果你更喜歡 DeepL，可以刪除 Google Translate 外掛然後右鍵新增 DeepL 外掛替代：</p>
+<p><img alt="外掛資料夾" loading="lazy" src="images/extension-picker.webp"/></p>
+<p>你應該還記得前面提到的，這個外掛列表是一個管線，一個外掛的輸入是上一個外掛的輸出吧。因此 DeepL Translate 跟 Google Translate 一樣應該放在外掛列表的最頂端。</p>
+<p><img alt="DeepL 外掛管線" loading="lazy" src="images/extensions-config-deepl.webp"/></p>
+<p>noarch 的個人體驗證明，DeepL 的日譯英結果相比 Google Translate 相對更通順（準確度未知），但如果你要用 DeepL 你需要註冊一個 DeepL API 帳號，並將 API 金鑰填入 <em>API key</em> 一欄，否則外掛會預設使用測試 API Key，而它的限流嚴格到根本沒法用。</p>
+<h2 id="新增詞典"><a class="header" href="#新增詞典">新增詞典</a></h2>
+<p>機翻在整個遊戲間總會出現翻譯錯誤。如如果你想學日語，或者只是驗證翻譯的正確性，可以使用 Textractor 懸浮窗外掛提供的一個實用功能：把滑鼠懸浮在原文即可顯示詞典。</p>
+<p>限於版權，體積問題以及使用者語言繁多，Textractor 並沒有內建詞典，你需要自己下載或轉換詞典，不過作者為英語使用者提供了<a href="https://github.com/Artikash/Textractor-Dictionaries">轉換好的 JMDict 下載</a>。</p>
+<p>下載完後將壓縮包裡唯一一個檔案解壓到 Textractor 安裝目錄，然後在懸浮窗右鍵開啟“Dictionary” 即可。</p>
+<p>noarch 沒有自定義詞典的需求，但如果你要自定義詞典，你可以用上面連結裡提供的指令碼將 FreeDict 或 JMDict 格式的詞典轉換成 Textractor 的詞典格式並用相同的方法丟進 Textractor。</p>
+<h2 id="最終效果"><a class="header" href="#最終效果">最終效果</a></h2>
+<p>最後 noarch 放個樸素但“just works”的效果圖：</p>
+<p><img alt="最終效果" loading="lazy" src="images/end-result.webp"/></p>
+<h2 id="遺留問題和總結"><a class="header" href="#遺留問題和總結">遺留問題和總結</a></h2>
+<p>作為總結，noarch 依然要列出我遇到並且沒有完全解決的問題：</p>
+<ul>
+<li>Google 和 DeepL 對遊戲里人名的翻譯都很玄學，正確翻譯的例子不到一半，DeepL API 的“詞彙表”功能也沒有支援日譯英的打算。這個問題你可以用 Regex Replacer 部分解決，思路是窮舉所有可能的錯誤翻譯結果並替換成正確的人名，用法可以在 Textractor 文件裡檢視。但這個方法也不是萬能的，總有你不能替換到的例子。</li>
+<li>出現選擇支時選項文字會全部糊在一起，沒有換行，並造成翻譯結果錯誤。因此解謎部分還得麻煩你自動複製翻譯了。</li>
+<li>過場動畫，尤其是遊戲結尾和真由理重逢的表演完全沒有翻譯，可能是螢幕上的文字都以圖片形式儲存和顯示吧... 這一點挺煩並且會打破沉浸感。變通的解法則是在過場動畫放完之後開啟裡面有過場動畫文字的 log，然後 Textractor 會翻譯日誌頁面的文字。</li>
+</ul>
+<p>這些問題其實 noarch 從一開始就預料到了，是機翻和文字提取不可避免的麻煩。不過如果你抱著學日語的態度或對故事的痴迷玩生肉 Gal，略低的翻譯質量和小麻煩估計也不會勸退你吧。畢竟這就是為什麼 Textractor 存在嘛。</p>
+<p>到這裡，分成兩部分姍姍來遲的 Wine FLOWERS 旅程就結束了。對於一些讀者，這兩篇文章可能資訊量極大，涉及到了 multilib，Wine 執行庫替換，字型配置，文字編碼，Wayland 和 X 等深度使用 GNU/Linux 一段時間才會掌握的知識點。如果你還對這些知識點一知半解，<a href="https://wiki.archlinux.org/">Arch Wiki</a> 永遠是你最好的 <del>葵花寶典</del>；上述內容在 Arch Wiki 都有詳細描述，並請將本文作為你對這些概念的引導吧。</p>
+</main>
+<nav aria-label="Page navigation" class="nav-wrapper">
+<!-- Mobile navigation buttons -->
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="mobile-nav-chapters previous" href="../../Extras/flowers-p1/index.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="mobile-nav-chapters next" href="../../CONTRIBUTING.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+<div style="clear: both"></div>
+</nav>
+</div>
+</div>
+<nav aria-label="Page navigation" class="nav-wide-wrapper">
+<a aria-keyshortcuts="Left" aria-label="Previous chapter" class="nav-chapters previous" href="../../Extras/flowers-p1/index.html" rel="prev" title="Previous chapter">
+<i class="fa fa-angle-left"></i>
+</a>
+<a aria-keyshortcuts="Right" aria-label="Next chapter" class="nav-chapters next" href="../../CONTRIBUTING.html" rel="next" title="Next chapter">
+<i class="fa fa-angle-right"></i>
+</a>
+</nav>
+</div>
+<script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+<script charset="utf-8" src="../../clipboard.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../highlight.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../book.js" type="text/javascript"></script>
+<!-- Custom JS scripts -->
+<script src="../../sidebar.js" type="text/javascript"></script>
+</body>
+</html>
